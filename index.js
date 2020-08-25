@@ -21,11 +21,9 @@ $(".navbar-nav>li>a").on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });
 
-// menu list change color when hover
-$(".navbar-nav>li>a").hover(function() {
-  $(this).css("color", "#ffcd32");
-}, function() {
-  $(this).css("color", "#ffffff");
+// navbar collapse when click any anywhere on the dropdown
+$("#navbar-menus").on("click", function() {
+  $(".navbar-collapse").collapse("hide");
 });
 
 // navbar-brand change color when hover
