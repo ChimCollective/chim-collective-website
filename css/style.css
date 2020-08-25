@@ -10,8 +10,13 @@
 }
 
 #logo {
-  /*hover*/
   padding-left: 35px;
+  transition: 0.5s;
+}
+
+#logo:hover{
+  transform: scale(1.2);
+  transition-duration: 0.5s;
 }
 
 #navbar-menus {
