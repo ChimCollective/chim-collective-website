@@ -1,6 +1,48 @@
+/* Entire Document */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Quicksand;
+}
+
+.head-font {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
 /* Header Bar Section */
+.navbar-custom-color {
+  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar {
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.navbar.scrolled {
+  /* NON-IE */
+  background: rgba(0, 0, 0, 1);
+  transform: translateY(-27px);
+}
+
+.navbar-brand {
+  padding-left: 35px;
+  color: #ffcd32;
+  transition: 0.5s;
+}
+
+.navbar-brand:hover{
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+}
+
 .contact-info {
-  color: white;
   font-size: .6rem;
   line-height: .5;
   position: absolute;
@@ -9,31 +51,60 @@
   top: 55px;
 }
 
-#logo {
-  /*hover*/
-  padding-left: 35px;
+.contact-btn {
+  background-color: #ffcd32;
+}
+
+.contact-btn:hover {
+  background-color: #000000;
+  color: #ffcd32;
+}
+
+.navbar-toggler {
+  background-color: #000000;
+  color: #ffcd32;
+}
+
+.navbar-toggler:hover {
+  background-color: #ffcd32;
+  color: #ffffff;
 }
 
 #navbar-menus {
+  background-color: #000000;
   font-size: 2.5rem;
-  line-height: 2;
+  line-height: 1.5;
   text-align: center;
   vertical-align: middle;
 }
 
+.nav-item a {
+  color: #ffffff;
+}
+
+.home-a {
+  margin-top: 200px;
+}
+
+.contact-a {
+  margin-bottom: 200px;
+}
+
 /* Home Section */
+#home {
+  text-align: center;
+}
+
 .home-body {
-  padding: 300px 10% 20% 10%;
+  margin: 400px auto;
 }
 
 .home-heading {
-  color: white;
   font-size: 3.5rem;
 }
 
-.home-bullet {
-  color: white;
-  font-size: 2.5rem;
+.animate-career-heading {
+  font-size: 5rem;
 }
 
 /* About Section */
@@ -42,7 +113,6 @@
 }
 
 .about-heading {
-  color: white;
   font-size: 3.5rem;
 }
 
@@ -66,23 +136,14 @@
   padding: 40px;
 }
 
-.about-bullet-heading {
-  color: white;
-}
-
-.about-bullet-desc{
-  color: white;
-}
-
 /* Works */
-#works{
+#works {
   padding-left: 50px;
   padding-right: 70px;
   margin-bottom: 100px;
 }
 
 .works-heading {
-  color: white;
   font-size: 3.5rem;
   margin-bottom: 50px;
 }
@@ -93,14 +154,13 @@
 }
 
 /* Team */
-#team{
+#team {
   padding-left: 50px;
   padding-right: 70px;
   margin-bottom: 100px;
 }
 
 .team-heading {
-  color: white;
   font-size: 3.5rem;
   margin-bottom: 50px;
 }
