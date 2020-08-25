@@ -191,6 +191,72 @@ body {
   user-select: none;
 }
 
+/* CONTACT FORM PAGE  */
+#let{
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.form-control {
+  /* give input boxes right angles */
+  border-radius: 0;
+
+  /* keep from horizontally resizing text area */
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.submit-btn {
+  /* Box-model */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: lighter;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  /* Typography */
+  color: #fff;
+
+  /* Visual */
+  background-color: #0a53b3;
+  border: 0;
+}
+
+.submit-btn:hover {
+  opacity: .7;
+}
+
+/* END CONTACT FORM PAGE */
+/* BEGIN FOOTER */
+.footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 60px;
+
+  /* Visual */
+  background-color: #666;
+}
+
+.text-muted-footer {
+  /* Box-model */
+  margin-top: 15px;
+
+  /* Typography */
+  color: #fff;
+}
+
+.two-toned-footer-color {
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+  /* Visual */
+  background-color: #4aaaa5;
+}
+/* END FOOTER */
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
