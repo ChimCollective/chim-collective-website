@@ -9,39 +9,43 @@
   <meta name="generator" content="Jekyll v4.1.1">
   <title>Chim Collective</title>
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Fontawesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body class="container-fluid">
 
   <!-- Header Bar -->
-  <nav class="navbar navbar-dark bg-dark pt-5 pb-3 fixed-top">
-    <a class="navbar-brand" href="#home" id="logo"><strong>Chim Collective</strong></a>
+  <nav class="navbar navbar-custom-color pt-5 pb-3 fixed-top">
+    <a class="navbar-brand head-font" href="#home"><strong>Chim Collective</strong></a>
     <div class="d-flex justify-content-end">
-      <button class="contact-btn btn btn-warning mr-3" type="button" name="button">CONTACT US</button>
-      <button class="navbar-toggler btn btn-outline-warning mr-5" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="contact-btn btn mr-3 head-font" type="button" name="button">CONTACT US</button>
+      <button class="navbar-toggler btn mr-5" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
       </button>
-      <div class="contact-info">
+      <div class="contact-info head-font">
         <p>Email: email@chim.com</p>
         <p>Phone: +1 987 654-3210</p>
       </div>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-menus">
-      <ul class="navbar-nav mr-auto" id="navbar-menu-list">
-        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#about">ABOUT</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#works">WORKS</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#team">TEAM</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#contact">CONTACT</a></li>
+      <ul class="navbar-nav mr-auto head-font" id="navbar-menu-list">
+        <li class="nav-item active"><a class="nav-link home-a" href="#home">HOME</a></li>
+        <li class="nav-item active"><a class="nav-link about-a" href="#about">ABOUT</a></li>
+        <li class="nav-item active"><a class="nav-link works-a" href="#works">WORKS</a></li>
+        <li class="nav-item active"><a class="nav-link team-a" href="#team">TEAM</a></li>
+        <li class="nav-item active"><a class="nav-link contact-a" href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </nav>
@@ -53,7 +57,7 @@
       <div class="container-fluid home-body">
         <div class="row">
           <div class="col-lg-6">
-            <h1 class="home-heading">This is Home section, waiting for contents.</h1>
+            <h1 class="home-heading head-font">This is Home section, waiting for contents.</h1>
           </div>
           <div class="col-lg-6">
             <p class="home-bullet">Point 1</h1>
@@ -68,7 +72,7 @@
     <section id="about">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center about-heading">This is About section, waiting for contents.</h1>
+          <h1 class="text-center about-heading head-font">This is About section, waiting for contents.</h1>
         </div>
       </div>
 
@@ -80,17 +84,17 @@
         <div class="about-bullet-container col-6">
           <div class="about-bullet">
             <button class="btn btn-outline-warning btn-lg bullet" type="button" name="button">+</button>
-            <h3 class="about-bullet-heading" for="">Marketing Plan</h3>
+            <h3 class="about-bullet-heading head-font" for="">Marketing Plan</h3>
             <p class="about-bullet-desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
           <div class="about-bullet">
             <button class="btn btn-outline-warning btn-lg bullet" type="button" name="button">+</button>
-            <h3 class="about-bullet-heading" for="">Branding</h3>
+            <h3 class="about-bullet-heading head-font" for="">Branding</h3>
             <p class="about-bullet-desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
           <div class="about-bullet">
             <button class="btn btn-outline-warning btn-lg bullet" type="button" name="button">+</button>
-            <h3 class="about-bullet-heading" for="">Website Design</h3>
+            <h3 class="about-bullet-heading head-font" for="">Website Design</h3>
             <p class="about-bullet-desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
         </div>
@@ -101,7 +105,7 @@
     <section class="text-center" id="works">
       <div class="row">
         <div class="col-12">
-          <h1 class="works-heading">This is Works section, waiting for contents.</h1>
+          <h1 class="works-heading head-font">This is Works section, waiting for contents.</h1>
         </div>
       </div>
 
@@ -131,7 +135,7 @@
     <section class="text-center" id="team">
       <div class="row">
         <div class="col-12">
-          <h1 class="team-heading">This is Team section, waiting for contents.</h1>
+          <h1 class="team-heading head-font">This is Team section, waiting for contents.</h1>
         </div>
       </div>
 
@@ -167,7 +171,7 @@
     <section class="text-center" id="contact">
       <div class="row">
         <div class="col-12">
-          <h1 class="team-heading">This is Contact section.</h1>
+          <h1 class="team-heading head-font">This is Contact section.</h1>
         </div>
       </div>
     </section>
@@ -184,6 +188,12 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
