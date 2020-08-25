@@ -35,6 +35,7 @@ body {
   transition: 0.5s;
 }
 
+/*add animate hover navbar-brand*/
 .navbar-brand:hover{
   transform: scale(1.2);
   transition-duration: 0.5s;
