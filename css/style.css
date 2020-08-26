@@ -5,6 +5,10 @@ body {
   font-family: Quicksand;
 }
 
+.no-padding {
+  padding: 0;
+}
+
 .head-font {
   color: #ffffff;
   font-family: Montserrat;
