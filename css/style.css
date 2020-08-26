@@ -383,20 +383,6 @@ body {
   border-radius: 0;
 }
 
-/* ===== Partner ===== */
-#partner {
-  margin-bottom: 10%;
-}
-
-.partner-logo img {
-  height: 60%;
-  width: 60%;
-  border-radius: 100%;
-}
-
-#partner .row {
-  text-align: center;
-}
 
 /* ===== Works ===== */
 #works {
