@@ -138,6 +138,77 @@ body {
   font-size: 5rem;
 }
 
+/* Animation word rotating */
+
+.animate-career-heading {
+  font-size: 5rem;
+  display: block;
+  position:relative;
+
+}
+
+.animate-career-heading span{
+  animation:  fadeEffect 15s linear infinite 0s;
+  -ms-animation:   fadeEffect 15s linear infinite 0s;
+  -webkit-animation:   fadeEffect 15s linear infinite 0s;
+  color: #FFCD32;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  margin-left: -50%;
+}
+
+.animate-career-heading span:nth-child(2){
+	animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+}
+.animate-career-heading span:nth-child(3){
+	animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	-webkit-animation-delay: 6s;
+}
+.animate-career-heading span:nth-child(4){
+	animation-delay: 9s;
+	-ms-animation-delay: 9s;
+	-webkit-animation-delay: 9s;
+}
+.animate-career-heading span:nth-child(5){
+	animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+@-moz-keyframes fadeEffect{
+	0% { opacity: 0; }
+	5% { opacity: 1; -moz-transform: translateY(0px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	20% { opacity: 0; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes fadeEffect{
+	0% { opacity: 0; }
+	5% { opacity: 1; -webkit-transform: translateY(0px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes fadeEffect{
+	0% { opacity: 0; }
+	5% { opacity: 1; -ms-transform: translateY(0px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/* Animation Word Rotating End */
+
 /* ===== About Section ===== */
 #about {
   margin-bottom: 10%;
