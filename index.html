@@ -26,26 +26,26 @@
 <body class="container-fluid">
 
   <!-- Header Bar -->
-  <nav class="navbar navbar-dark bg-dark pt-5 pb-3 fixed-top">
-    <a class="navbar-brand" href="#home" id="logo"><strong>Chim Collective</strong></a>
+  <nav class="navbar navbar-custom-color pt-5 pb-3 fixed-top">
+    <a class="navbar-brand head-font" href="#home"><strong>Chim Collective</strong></a>
     <div class="d-flex justify-content-end">
-      <button class="contact-btn btn btn-warning mr-3" type="button" name="button">CONTACT US</button>
-      <button class="navbar-toggler btn btn-outline-warning mr-5" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="contact-btn btn mr-3 head-font" type="button" name="button">CONTACT US</button>
+      <button class="navbar-toggler btn mr-5" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
       </button>
-      <div class="contact-info">
+      <div class="contact-info head-font">
         <p>Email: email@chim.com</p>
         <p>Phone: +1 987 654-3210</p>
       </div>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-menus">
-      <ul class="navbar-nav mr-auto" id="navbar-menu-list">
-        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#about">ABOUT</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#works">WORKS</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#team">TEAM</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#contact">CONTACT</a></li>
+      <ul class="navbar-nav mr-auto head-font" id="navbar-menu-list">
+        <li class="nav-item active"><a class="nav-link home-a" href="#home">HOME</a></li>
+        <li class="nav-item active"><a class="nav-link about-a" href="#about">ABOUT</a></li>
+        <li class="nav-item active"><a class="nav-link works-a" href="#works">WORKS</a></li>
+        <li class="nav-item active"><a class="nav-link team-a" href="#team">TEAM</a></li>
+        <li class="nav-item active"><a class="nav-link contact-a" href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </nav>
@@ -53,18 +53,10 @@
   <main role="main">
 
     <!-- Home -->
-    <section class="text-center" id="home">
-      <div class="container-fluid home-body">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="home-heading">This is Home section, waiting for contents.</h1>
-          </div>
-          <div class="col-lg-6">
-            <p class="home-bullet">Point 1</h1>
-            <p class="home-bullet">Point 2</h1>
-            <p class="home-bullet">Point 3</h1>
-          </div>
-        </div>
+    <section id="home">
+      <div class="container home-body">
+        <h1 class="home-heading head-font">WE ARE</h1>
+        <h1 class="animate-career-heading head-font">INNOVATORS</h1>
       </div>
     </section>
 
@@ -72,7 +64,7 @@
     <section id="about">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center about-heading">This is About section, waiting for contents.</h1>
+          <h1 class="text-center about-heading head-font">This is About section, waiting for contents.</h1>
         </div>
       </div>
 
@@ -84,17 +76,17 @@
         <div class="about-bullet-container col-6">
           <div class="about-bullet">
             <button class="btn btn-outline-warning btn-lg bullet" type="button" name="button">+</button>
-            <h3 class="about-bullet-heading" for="">Marketing Plan</h3>
+            <h3 class="about-bullet-heading head-font" for="">Marketing Plan</h3>
             <p class="about-bullet-desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
           <div class="about-bullet">
             <button class="btn btn-outline-warning btn-lg bullet" type="button" name="button">+</button>
-            <h3 class="about-bullet-heading" for="">Branding</h3>
+            <h3 class="about-bullet-heading head-font" for="">Branding</h3>
             <p class="about-bullet-desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
           <div class="about-bullet">
             <button class="btn btn-outline-warning btn-lg bullet" type="button" name="button">+</button>
-            <h3 class="about-bullet-heading" for="">Website Design</h3>
+            <h3 class="about-bullet-heading head-font" for="">Website Design</h3>
             <p class="about-bullet-desc">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           </div>
         </div>
@@ -102,10 +94,10 @@
     </section>
 
     <!-- Works -->
-    <section class="text-center" id="works">
+    <section id="works">
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center about-heading">Our Work</h1>
+          <h1 class="works-heading head-font">Our Work</h1>
         </div>
       </div>
 
@@ -171,7 +163,7 @@
     <section class="text-center" id="team">
       <div class="row">
         <div class="col-12">
-          <h1 class="team-heading">This is Team section, waiting for contents.</h1>
+          <h1 class="team-heading head-font">This is Team section, waiting for contents.</h1>
         </div>
       </div>
 
@@ -204,8 +196,8 @@
     </section>
 
     <!-- Contact -->
-    
     <section class="row" id="contact">
+<<<<<<< HEAD
       <div class="container">
         <div class= "row">
       <div class="col-md-4">
@@ -254,9 +246,35 @@
           <div class="col-sm-2">
             <img class="icon" src="./assets/imgs/facebook.jpg" alt="faceBookIcon">
           </div>
+=======
+      <div class="container contact-box">
+        <div class="col-md-6">
+          <form class="block form-horizontal">
+            <h1 class="block-header head-font">Let's Get In Touch</h1>
+            <hr>
+            <div class="form-group">
+              <label for="name" class="col-sm-2 control-label head-font">Name</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-sm-2 control-label head-font">Email</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label head-font" for="msg">Message</label>
+              <div class="col-sm-10">
+                <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <button class="submit-btn head-font">Submit</button>
+          </form>
+>>>>>>> f87b2f7d07535d9692443e98594500357eeadba9
         </div>
       </div>
-    </div>
     </section>
  
   </main>
@@ -272,12 +290,20 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+<<<<<<< HEAD
  <!-- AOS Scripts -->
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <script>
    AOS.init();
  </script>
 
+=======
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+>>>>>>> f87b2f7d07535d9692443e98594500357eeadba9
 </body>
 
 </html>
