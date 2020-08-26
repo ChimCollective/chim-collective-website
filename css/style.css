@@ -1,19 +1,3 @@
-/* ===== Bootstrap's Styles ===== */
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
 /* ===== Entire Document ===== */
 body {
   background-color: #000000;
@@ -25,6 +9,19 @@ body {
   color: #ffffff;
   font-family: Montserrat;
   font-weight: 700;
+}
+
+.heading-big {
+  font-size: 3.5rem;
+}
+
+.heading-hr {
+  border-color: #ffcd32;
+  border-style: none;
+  border-top-style: solid;
+  border-width: 6px;
+  width: 120px;
+  margin-bottom: 4%;
 }
 
 /* ===== Header Bar Section ===== */
@@ -67,6 +64,7 @@ body {
 }
 
 .contact-info {
+  color: #000000;
   font-size: .6rem;
   line-height: .5;
   position: absolute;
@@ -75,12 +73,8 @@ body {
   top: 55px;
 }
 
-.contact-info:hover {
-  cursor: pointer;
-  color: #ffcd32;
-}
-
 .hire-btn {
+  color: #000000;
   background-color: #ffcd32;
 }
 
@@ -124,10 +118,18 @@ body {
 /* ===== Home Section ===== */
 #home {
   text-align: center;
+  margin-bottom: 10%;
+}
+
+.g {
+  height: 100vh;
+  background-image:
+  linear-gradient(to bottom, rgba(255,205,50,0.5), rgba(0,0,0,1)),
+  url('https://mdn.mozillademos.org/files/7693/catfront.png');
 }
 
 .home-body {
-  margin: 400px auto;
+  padding-top: 310px;
 }
 
 .home-heading {
@@ -139,7 +141,6 @@ body {
 }
 
 /* Animation word rotating */
-
 .animate-career-heading {
   font-size: 5rem;
   display: block;
@@ -212,19 +213,6 @@ body {
 /* ===== About Section ===== */
 #about {
   margin-bottom: 10%;
-}
-
-.about-heading {
-  font-size: 3.5rem;
-}
-
-.head-hr {
-  border-color: #ffcd32;
-  border-style: none;
-  border-top-style: solid;
-  border-width: 6px;
-  width: 120px;
-  margin-bottom: 4%;
 }
 
 .mission-box {
@@ -357,10 +345,46 @@ body {
   font-size: 3.5rem;
   margin-bottom: 50px;
 }
+.team-desc p{
+  background-color: gray
+  opacity:50%;
 
-.team-img {
-  width: 300px;
-  height: 400px;
+}
+.zoom {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  display: inline-block;
+  margin:0 auto;
+}
+
+hr{
+  width:15%;
+  height:2px;
+  background-color: #f5c542; 
+}
+
+.zoom img { 
+   width: 100%; 
+   transition: 0.5s all ease-in-out; 
+} 
+      
+.zoom:hover img { 
+transform: scale(1.25);        
+}
+.view-all{
+  margin-left: 90%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.view-all a:hover{
+  opacity: 75%;
+  text-decoration: none;
+
+}
+.view-all a:visited{
+  color: #fff;
 }
 
 /* ===== CONTACT FORM PAGE =====  */
