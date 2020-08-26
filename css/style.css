@@ -1,11 +1,12 @@
 /* Entire Document */
 body {
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   font-family: Quicksand;
 }
 
 .head-font {
-  color: #000000;
+  color: #ffffff;
   font-family: Montserrat;
   font-weight: 700;
 }
@@ -26,18 +27,18 @@ body {
 
 .navbar.scrolled {
   /* NON-IE */
-  background: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 1);
   transform: translateY(-27px);
 }
 
 .navbar-brand {
   padding-left: 35px;
+  color: #ffcd32;
   transition: 0.5s;
 }
 
-/*add animate hover navbar-brand*/
 .navbar-brand:hover{
-  transform: scale(1.2);
+  transform: scale(1.03);
   transition-duration: 0.5s;
 }
 
@@ -60,8 +61,8 @@ body {
 }
 
 .navbar-toggler {
-  background-color: #ffffff;
-  border: 3px solid #ffcd32;
+  background-color: #000000;
+  color: #ffcd32;
 }
 
 .navbar-toggler:hover {
@@ -70,7 +71,7 @@ body {
 }
 
 #navbar-menus {
-  border: 0;
+  background-color: #000000;
   font-size: 2.5rem;
   line-height: 1.5;
   text-align: center;
@@ -78,29 +79,102 @@ body {
 }
 
 .nav-item a {
-  color: #000000;
+  color: #ffffff;
 }
 
 .home-a {
-  margin-top: 134px;
+  margin-top: 200px;
 }
 
 .contact-a {
-  margin-bottom: 134px;
+  margin-bottom: 200px;
 }
 
 /* Home Section */
+#home {
+  text-align: center;
+}
+
 .home-body {
-  padding: 300px 10% 20% 10%;
+  margin: 450px auto;
 }
 
 .home-heading {
   font-size: 3.5rem;
 }
 
-.home-bullet {
-  font-size: 2.5rem;
+
+
+/* Animation word rotating */
+.animate-career-heading {
+  font-size: 5rem;
+  display: block;
+  position:relative;
 }
+
+
+.animate-career-heading span{
+	animation:  fadeEffect 15s linear infinite 0s;
+	-ms-animation:   fadeEffect 15s linear infinite 0s;
+	-webkit-animation:   fadeEffect 15s linear infinite 0s;
+	color: #FFCD32;
+	opacity: 0;
+	overflow: hidden;
+  position: absolute;
+  width: 100%;
+  margin-left: -50%;
+}
+
+.animate-career-heading span:nth-child(2){
+	animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+}
+.animate-career-heading span:nth-child(3){
+	animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	-webkit-animation-delay: 6s;
+}
+.animate-career-heading span:nth-child(4){
+	animation-delay: 9s;
+	-ms-animation-delay: 9s;
+	-webkit-animation-delay: 9s;
+}
+.animate-career-heading span:nth-child(5){
+	animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	-webkit-animation-delay: 12s;
+}
+
+@-moz-keyframes fadeEffect{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(0px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes fadeEffect{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(0px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes fadeEffect{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(0px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
 
 /* About Section */
 #about {
@@ -129,14 +203,6 @@ body {
 
 .about-bullet {
   padding: 40px;
-}
-
-.about-bullet-heading {
-  color: #000000;
-}
-
-.about-bullet-desc {
-  color: #000000;
 }
 
 /* Works */
