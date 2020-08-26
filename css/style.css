@@ -1,4 +1,20 @@
-/* Entire Document */
+/* ===== Bootstrap's Styles ===== */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* ===== Entire Document ===== */
 body {
   background-color: #000000;
   color: #ffffff;
@@ -11,13 +27,20 @@ body {
   font-weight: 700;
 }
 
-/* Header Bar Section */
+/* ===== Header Bar Section ===== */
+/* For Script */
+.nav-toggler-black-navbar {
+  background: rgba(0, 0, 0, 1) !important;
+  transition: fadeIn
+}
+
 .navbar-custom-color {
   background-color: #ffffff;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .navbar {
+  padding: 0;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
@@ -47,7 +70,7 @@ body {
   font-size: .6rem;
   line-height: .5;
   position: absolute;
-  right: 280px;
+  right: 230px;
   text-align: right;
   top: 55px;
 }
@@ -57,11 +80,11 @@ body {
   color: #ffcd32;
 }
 
-.contact-btn {
+.hire-btn {
   background-color: #ffcd32;
 }
 
-.contact-btn:hover {
+.hire-btn:hover {
   background-color: #000000;
   color: #ffcd32;
 }
@@ -79,9 +102,7 @@ body {
 #navbar-menus {
   background-color: #000000;
   font-size: 2.5rem;
-  line-height: 1.5;
   text-align: center;
-  vertical-align: middle;
 }
 
 .navbar a:hover {
@@ -100,7 +121,7 @@ body {
   margin-bottom: 200px;
 }
 
-/* Home Section */
+/* ===== Home Section ===== */
 #home {
   text-align: center;
 }
@@ -117,36 +138,126 @@ body {
   font-size: 5rem;
 }
 
-/* About Section */
+/* ===== About Section ===== */
 #about {
-  margin-bottom: 50px;
+  margin-bottom: 10%;
 }
 
 .about-heading {
   font-size: 3.5rem;
 }
 
-.about-img {
-  padding-top: 90px;
-  padding-left: 83px;
+.head-hr {
+  border-color: #ffcd32;
+  border-style: none;
+  border-top-style: solid;
+  border-width: 6px;
+  width: 120px;
+  margin-bottom: 4%;
 }
 
-.btn-lg {
-  border-radius: 30px;
-  margin-right: 20px;
-  float: left;
+.mission-box {
+  margin-bottom: 5%;
+}
+
+.mission-head-box{
+  position: relative;
+}
+
+.mission-head {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 10%;
+}
+
+.mission-desc-box {
+  font-size: 1.15rem;
+  padding-right: 12%;
+}
+
+.wedo-box {
+  position: static;
+}
+
+.wedo-head {
+  margin-left: 28%;
+  font-size: 2.5rem;
+  margin-bottom: 6%;
+}
+
+.wedo-desc-box {
+  margin-left: 28%;
+  padding-right: 10%;
+  font-size: 1.15rem;
+  margin-bottom: 11%;
+}
+
+.wedo-box .hire-btn {
+  margin-left: 28%;
+  font-size: 2rem;
+}
+
+.bullet-box {
+  margin-bottom: 5%;
 }
 
 .about-bullet-container {
   text-align: left;
-  padding-top: 20px;
+  padding-left: 5%;
 }
 
-.about-bullet {
-  padding: 40px;
+.btn-xl {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
+  height: 60px;
+  width: 60px;
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 40px;
+  margin-right: 20px;
+  transition: all .6s ease-in-out;
 }
 
-/* Works */
+.btn-xl:hover {
+  background-color: #ffcd32;
+  border: #000000;
+}
+
+.btn-xl-rotate {
+  color: #000000;
+  background-color: #ffcd32;
+  transform: rotate(90deg);
+}
+
+.about-bullet-head {
+  font-size: 2.5rem;
+  padding-top: .7%;
+}
+
+.collapse-desc-box {
+  padding: 0 12% 0% 82px;
+  background-color: rgba(0, 0, 0, 0);
+  background-clip: border-box;
+  border: none;
+  border-radius: 0;
+}
+
+/* ===== Partner ===== */
+#partner {
+  margin-bottom: 10%;
+}
+.partner-logo img{
+  height: 60%;
+  width: 60%;
+  border-radius: 100%;
+}
+
+#partner .row {
+  text-align: center;
+}
+
+/* ===== Works ===== */
 #works {
   padding-left: 50px;
   padding-right: 70px;
@@ -164,7 +275,7 @@ body {
   height: 420px;
 }
 
-/* Team */
+/* ===== Team ===== */
 #team {
   padding-left: 50px;
   padding-right: 70px;
@@ -181,89 +292,7 @@ body {
   height: 400px;
 }
 
-/* Bootstrap's Styles */
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* CONTACT FORM PAGE  */
-#let{
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-.form-control {
-  /* give input boxes right angles */
-  border-radius: 0;
-
-  /* keep from horizontally resizing text area */
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.submit-btn {
-  /* Box-model */
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: lighter;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  /* Typography */
-  color: #fff;
-
-  /* Visual */
-  background-color: #0a53b3;
-  border: 0;
-}
-
-.submit-btn:hover {
-  opacity: .7;
-}
-
-/* END CONTACT FORM PAGE */
-/* BEGIN FOOTER */
-.footer {
-  /* Positioning */
-  position: absolute;
-  bottom: 0;
-
-  /* Box-model */
-  width: 100%;
-  height: 60px;
-
-  /* Visual */
-  background-color: #666;
-}
-
-.text-muted-footer {
-  /* Box-model */
-  margin-top: 15px;
-
-  /* Typography */
-  color: #fff;
-}
-
-.two-toned-footer-color {
-  /* Box-model */
-  height: 6px;
-  padding-top: 3px;
-
-  /* Visual */
-  background-color: #4aaaa5;
-}
-/* END FOOTER */
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
-/* CONTACT FORM PAGE  */
+/* ===== CONTACT FORM PAGE =====  */
 .contact-box {
   margin-bottom: 20px;
 }
@@ -295,7 +324,7 @@ body {
 }
 
 /* END CONTACT FORM PAGE */
-/* BEGIN FOOTER */
+/* ===== BEGIN FOOTER ===== */
 .footer {
   /* Positioning */
   position: absolute;
