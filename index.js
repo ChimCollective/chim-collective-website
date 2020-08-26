@@ -1,36 +1,43 @@
 // Header Section
 // navbar appear white when scroll up
 function checkScroll() {
-  let startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+  let startY = $(".navbar").height(); //The point where the navbar changes in px
 
   if ($(window).scrollTop() > startY) {
-    $('.navbar').addClass("scrolled");
+    $(".navbar").addClass("scrolled");
   } else {
-    $('.navbar').removeClass("scrolled");
+    $(".navbar").removeClass("scrolled");
   }
 }
 // navbar appear white when scroll up
-if ($('.navbar').length > 0) {
+if ($(".navbar").length > 0) {
   $(window).on("scroll load resize", function() {
     checkScroll();
   });
 }
+
+// navbar, while on Home, toggle black and transparent if click the menu btn
+$(".navbar-toggler").click(function(){
+  $("nav").toggleClass("nav-toggler-black-navbar");
+});
 
 // navbar collapse when click any menu list
 $(".navbar-nav>li>a").on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });
 
-// menu list change color when hover
-$(".navbar-nav>li>a").hover(function() {
-  $(this).css("color", "#ffcd32");
-}, function() {
-  $(this).css("color", "#000000");
+// navbar collapse when click any anywhere on the dropdown
+$("#navbar-menus").on("click", function() {
+  $(".navbar-collapse").collapse("hide");
 });
 
 // navbar-brand change color when hover
 $(".navbar-brand").hover(function() {
-  $(this).css("color", "#ffcd32");
+  $(this).css("color", "#ffffff");
 }, function() {
-  $(this).css("color", "#000000");
+  $(this).css("color", "#ffcd32");
+});
+
+$(".btn-xl").click(function(){
+  $(this).toggleClass("btn-xl-rotate");
 });
