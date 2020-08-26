@@ -116,12 +116,12 @@ body {
 
 
 .animate-career-heading span{
-	animation:  fadeEffect 15s linear infinite 0s;
-	-ms-animation:   fadeEffect 15s linear infinite 0s;
-	-webkit-animation:   fadeEffect 15s linear infinite 0s;
-	color: #FFCD32;
-	opacity: 0;
-	overflow: hidden;
+  animation:  fadeEffect 15s linear infinite 0s;
+  -ms-animation:   fadeEffect 15s linear infinite 0s;
+  -webkit-animation:   fadeEffect 15s linear infinite 0s;
+  color: #FFCD32;
+  opacity: 0;
+  overflow: hidden;
   position: absolute;
   width: 100%;
   margin-left: -50%;
