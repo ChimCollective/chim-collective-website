@@ -667,11 +667,11 @@ body {
   
   /* Toggle Nav Bar */
   .home-a {
-    margin-top: 10%;
+    margin-top: 20%;
   }
 
   .contact-a {
-    margin-bottom: 50%;
+    margin-bottom: 20%;
   }
 
   /* Home */
@@ -683,7 +683,7 @@ body {
     font-size: 2.3rem;
   }
 
-  /* About */
+    /* About */
   .mission-head {
     position: static;
     font-size: 1.75rem;
@@ -696,6 +696,7 @@ body {
     padding-right: 9%;
     padding-left: 9%;
     margin-bottom: 3%;
+    font-size: .9rem;
   }
 
   .wedo-head {
@@ -707,8 +708,8 @@ body {
 
   .wedo-desc-box {
     font-size: 1rem;
-    padding-right: 9%;
-    padding-left: 9%;
+    padding-right: 6%;
+    padding-left: 6%;
     margin-left: 0;
   }
 
@@ -719,7 +720,7 @@ body {
     margin-bottom: 11%;
   }
 
-  .bullet-box .row{
+  .bullet-box .row {
     margin: 0 !important;
   }
 
@@ -737,35 +738,47 @@ body {
     border-color: #fff;
     border-radius: 40px;
     margin-right: 0;
-    margin-left: 15px;
+    margin-left: 23px;
     transition: all .6s ease-in-out;
   }
 
-  .btn-xl:hover {
-    background-color: #ffcd32;
-    border: #000;
-  }
-
-  .btn-xl-rotate {
-    color: #000;
-    background-color: #ffcd32;
-    transform: rotate(90deg);
-  }
-
   .about-bullet-head {
-    font-size: 1.75rem;
-    padding-top: .7%;
+    font-size: 1.5rem;
+    padding-top: 2%;
   }
 
   .collapse-desc-box {
-    /* padding: 0 12% 0% 82px; */
-    background-color: rgba(0, 0, 0, 0);
-    background-clip: border-box;
-    border: none;
-    border-radius: 0;
+    padding: 0 9% 0 21.5%;
+    font-size: 1rem;
   }
 
   /* Work */
   /* Team */
+  .zoom {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .btn-group {
+    transform: translateY(286px);
+  }
+
+  #team .team-name {
+    font-size: 1.25rem;
+    margin-top: 4%;
+    margin-bottom: 0;
+  }
+
+  #team .team-position {
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+  .team-desc {
+    margin-bottom: 13% !important;
+  }
+
   /* Contact */
 }
