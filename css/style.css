@@ -606,11 +606,16 @@ body {
 /* END CONTACT FORM PAGE */
 
 @media (max-width: 700px){
-
+    /* Work page */
   .card {
     display: block;
   }
 
+  /* Home Page */
+   .g{
+    background-size: 100% 100%;
+  }
+  
   .contact-info{
     display:none;
   }
@@ -623,7 +628,9 @@ body {
     font-size: 3rem;
   }
 }/* Query Ends */
+
 @media (max-width: 375px) {
+  /* Home Page */
   .home-heading {
     font-size: .5rem;
   }
@@ -631,10 +638,9 @@ body {
     font-size: 2rem;
   }
   .navbar-brand {
-    font-size: 1rem;
     padding-left: 15px;
   }
   .d-flex {
     margin-right: 14%;
   }
-}
+}/* Query Ends */
