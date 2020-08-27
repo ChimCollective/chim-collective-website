@@ -554,7 +554,7 @@ body {
   background-color: #ffcd32;
 }
 
-.view-all {
+/* .view-all {
   font-size: 1.3rem;
   position: relative;
   color: #fff;
@@ -566,7 +566,7 @@ body {
   color: #ffcd32;
   text-decoration: none;
   transition-duration: 0.5s;
-}
+} */
 
 /* ===== CONTACT FORM PAGE =====  */
 .contact-box {
