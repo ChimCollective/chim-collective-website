@@ -631,9 +631,9 @@ body {
     font-size: 2rem;
   }
   .navbar-brand {
-    padding-left: 5px;
+    padding-left: 15px;
   }
   .d-flex {
-    margin-right: 12%;
+    margin-right: 14%;
   }
 }
