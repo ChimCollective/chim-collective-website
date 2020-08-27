@@ -37,7 +37,7 @@ $(".btn-xl").click(function() {
   $(this).toggleClass("btn-xl-rotate");
 });
 
-if ($(window).width() > 768) {
+if ($(window).width() > 750) {
   // navbar-brand change color when hover
   $(".navbar-brand").hover(function() {
     $(this).css("color", "#ffffff");
