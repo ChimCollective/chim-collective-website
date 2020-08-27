@@ -17,7 +17,7 @@ if ($(".navbar").length > 0) {
 }
 
 // navbar, while on Home, toggle black and transparent if click the menu btn
-$(".navbar-toggler").click(function(){
+$(".navbar-toggler").click(function() {
   $("nav").toggleClass("nav-toggler-black-navbar");
 });
 
@@ -31,30 +31,26 @@ $("#navbar-menus").on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });
 
-// navbar-brand change color when hover
-$(".navbar-brand").hover(function() {
-  $(this).css("color", "#ffffff");
-}, function() {
-  $(this).css("color", "#ffcd32");
-});
-
 //ABOUT SECTION
 //bullet rotate when hover
-$(".btn-xl").click(function(){
+$(".btn-xl").click(function() {
   $(this).toggleClass("btn-xl-rotate");
 });
 
-//TEAM SECTION
-$(".zoom").hover(function() {
-  $(".zoom-img", this).addClass("zoom-img-animate");
-  $(".btn-group", this).addClass("btn-group-animate");
-}, function() {
-  $(".zoom-img", this).removeClass("zoom-img-animate");
-  $(".btn-group", this).removeClass("btn-group-animate");
-});
+if ($(window).width() > 768) {
+  // navbar-brand change color when hover
+  $(".navbar-brand").hover(function() {
+    $(this).css("color", "#ffffff");
+  }, function() {
+    $(this).css("color", "#ffcd32");
+  });
 
-$(".view-all>a").hover(function() {
-  $(".next-icon", this).addClass("next-icon-animate");
-}, function() {
-  $(".next-icon", this).removeClass("next-icon-animate");
-});
+  //TEAM SECTION
+  $(".zoom").hover(function() {
+    $(".zoom-img", this).addClass("zoom-img-animate");
+    $(".btn-group", this).addClass("btn-group-animate");
+  }, function() {
+    $(".zoom-img", this).removeClass("zoom-img-animate");
+    $(".btn-group", this).removeClass("btn-group-animate");
+  });
+}
