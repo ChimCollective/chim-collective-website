@@ -1,6 +1,7 @@
 /* ===== Entire Document ===== */
 html, body {
   background-color: #000;
+  width:100%;
   color: #fff;
   font-family: Quicksand;
   overflow-x: hidden;
