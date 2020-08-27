@@ -740,6 +740,11 @@ html, body {
   }
 
   /* Work */
+  
+   #works .card img{
+     height: auto;
+   }
+  
   /* Team */
   .zoom {
     width: 100%;
