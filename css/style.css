@@ -629,7 +629,7 @@ body {
   }
 }/* Query Ends */
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   /* Entire Website */
   .heading-big {
     font-size: 2.5rem;
