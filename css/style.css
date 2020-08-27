@@ -289,8 +289,8 @@ body {
     opacity: 0;
   }
 }
+
 /* Animation Word Rotating End */
-  
 /* ===== About Section ===== */
 #about {
   margin-bottom: 10%;
@@ -400,13 +400,16 @@ body {
   width: 420px;
   height: 420px;
 }
+
 .container1 {
   margin: auto;
   overflow: auto;
 }
+
 .works1 {
   width: 100%;
 }
+
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -418,9 +421,11 @@ body {
 .card h3 {
   margin-bottom: 2rem;
 }
-.card > div {
+
+.card>div {
   padding: 2rem;
 }
+
 .card:nth-child(even) img {
   order: 2;
 }
@@ -437,7 +442,8 @@ body {
   margin-top: 2rem;
   cursor: pointer;
 }
-.works1-btn:hover{
+
+.works1-btn:hover {
   background-color: #000000;
   color: #ffcd32;
 }
@@ -567,7 +573,6 @@ body {
   text-decoration: none;
   transition-duration: 0.5s;
 } */
-
 /* ===== CONTACT FORM PAGE =====  */
 .contact-box {
   margin-bottom: 20px;
@@ -604,22 +609,15 @@ body {
 }
 
 /* END CONTACT FORM PAGE */
+/* iPad and smaller */
+@media (max-width: 768px) {
 
-@media (max-width: 700px){
-    /* Work page */
-  .card {
-    display: block;
+  /* Head Bar */
+  .contact-info {
+    display: none;
   }
 
-  /* Home Page */
-   .g{
-    background-size: 100% 100%;
-  }
-  
-  .contact-info{
-    display:none;
-  }
-
+  /* Home */
   .home-heading {
     font-size: 1.5rem;
   }
@@ -627,9 +625,20 @@ body {
   .animate-career-heading {
     font-size: 3rem;
   }
-}/* Query Ends */
 
-@media only screen and (max-width: 375px) {
+  /* About */
+  /* Work */
+  #works .card {
+    display: block;
+  }
+
+  /* Team */
+  /* Contact */
+}
+
+/* Query Ends */
+/* iPhone and smaller (? lol) */
+@media (max-width: 375px) {
   /* Entire Website */
   .heading-big {
     font-size: 2.5rem;
@@ -675,7 +684,7 @@ body {
   .mission-desc-box {
     font-size: 1rem;
     padding-right: 9%;
-    padding-left: 11%;
+    padding-left: 9%;
     margin-bottom: 3%;
   }
 
@@ -689,35 +698,36 @@ body {
   .wedo-desc-box {
     font-size: 1rem;
     padding-right: 9%;
-    padding-left: 11%;
+    padding-left: 9%;
     margin-left: 0;
   }
 
   .wedo-box .hire-btn {
     position: relative;
     left: 4%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 11%;
   }
 
-  .bullet-box {
-    margin-bottom: 5%;
+  .bullet-box .row{
+    margin: 0 !important;
   }
 
   .about-bullet-container {
     text-align: left;
-    padding-left: 5%;
   }
 
   .btn-xl {
     color: #fff;
     font-weight: 700;
-    font-size: 2rem;
-    height: 60px;
-    width: 60px;
+    font-size: 1rem;
+    height: 40px;
+    width: 40px;
     border: 1px solid;
     border-color: #fff;
     border-radius: 40px;
-    margin-right: 20px;
+    margin-right: 0;
+    margin-left: 15px;
     transition: all .6s ease-in-out;
   }
 
@@ -733,12 +743,12 @@ body {
   }
 
   .about-bullet-head {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     padding-top: .7%;
   }
 
   .collapse-desc-box {
-    padding: 0 12% 0% 82px;
+    /* padding: 0 12% 0% 82px; */
     background-color: rgba(0, 0, 0, 0);
     background-clip: border-box;
     border: none;
@@ -749,4 +759,3 @@ body {
   /* Team */
   /* Contact */
 }
-
