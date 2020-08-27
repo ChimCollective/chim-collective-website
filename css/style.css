@@ -1,12 +1,18 @@
 /* ===== Entire Document ===== */
-body {
-  background-color: #000000;
-  color: #ffffff;
+html, body {
+  background-color: #000;
+  width:100%;
+  color: #fff;
   font-family: Quicksand;
+  overflow-x: hidden;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 .head-font {
-  color: #ffffff;
+  color: #fff;
   font-family: Montserrat;
   font-weight: 700;
 }
@@ -32,7 +38,7 @@ body {
 }
 
 .navbar-custom-color {
-  background-color: #ffffff;
+  background-color: #fff;
   background: rgba(0, 0, 0, 0);
 }
 
@@ -64,8 +70,8 @@ body {
 }
 
 .contact-info {
-  color: #000000;
-  font-size: .6rem;
+  color: #000;
+  font-size: .7rem;
   line-height: .5;
   position: absolute;
   right: 230px;
@@ -74,27 +80,27 @@ body {
 }
 
 .hire-btn {
-  color: #000000;
+  color: #000;
   background-color: #ffcd32;
 }
 
 .hire-btn:hover {
-  background-color: #000000;
+  background-color: #000;
   color: #ffcd32;
 }
 
 .navbar-toggler {
-  background-color: #000000;
+  background-color: #000;
   color: #ffcd32;
 }
 
 .navbar-toggler:hover {
   background-color: #ffcd32;
-  color: #ffffff;
+  color: #fff;
 }
 
 #navbar-menus {
-  background-color: #000000;
+  background-color: #000;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -104,15 +110,15 @@ body {
 }
 
 .nav-item a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .home-a {
-  margin-top: 200px;
+  margin-top: 11%;
 }
 
 .contact-a {
-  margin-bottom: 200px;
+  margin-bottom: 11%;
 }
 
 /* ===== Home Section ===== */
@@ -124,8 +130,8 @@ body {
 .g {
   height: 100vh;
   background-image:
-  linear-gradient(to bottom, rgba(255,205,50,0.5), rgba(0,0,0,1)),
-  url('https://mdn.mozillademos.org/files/7693/catfront.png');
+    linear-gradient(to bottom, rgba(255, 205, 50, 0.5), rgba(0, 0, 0, 1)),
+    url('https://images7.alphacoders.com/924/thumb-1920-924637.jpg');
 }
 
 .home-body {
@@ -144,15 +150,14 @@ body {
 .animate-career-heading {
   font-size: 5rem;
   display: block;
-  position:relative;
-
+  position: relative;
 }
 
-.animate-career-heading span{
-  animation:  fadeEffect 15s linear infinite 0s;
-  -ms-animation:   fadeEffect 15s linear infinite 0s;
-  -webkit-animation:   fadeEffect 15s linear infinite 0s;
-  color: #FFCD32;
+.animate-career-heading span {
+  animation: fadeEffect 10s linear infinite 0s;
+  -ms-animation: fadeEffect 10s linear infinite 0s;
+  -webkit-animation: fadeEffect 10s linear infinite 0s;
+  color: #FFFFFF;
   opacity: 0;
   overflow: hidden;
   position: absolute;
@@ -160,57 +165,133 @@ body {
   margin-left: -50%;
 }
 
-.animate-career-heading span:nth-child(2){
-	animation-delay: 3s;
-	-ms-animation-delay: 3s;
-	-webkit-animation-delay: 3s;
-}
-.animate-career-heading span:nth-child(3){
-	animation-delay: 6s;
-	-ms-animation-delay: 6s;
-	-webkit-animation-delay: 6s;
-}
-.animate-career-heading span:nth-child(4){
-	animation-delay: 9s;
-	-ms-animation-delay: 9s;
-	-webkit-animation-delay: 9s;
-}
-.animate-career-heading span:nth-child(5){
-	animation-delay: 12s;
-	-ms-animation-delay: 12s;
-	-webkit-animation-delay: 12s;
+.animate-career-heading span:nth-child(2) {
+  animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
 }
 
-@-moz-keyframes fadeEffect{
-	0% { opacity: 0; }
-	5% { opacity: 1; -moz-transform: translateY(0px); }
-	10% { opacity: 1; -moz-transform: translateY(0px); }
-	20% { opacity: 0; -moz-transform: translateY(0px); }
-	30% { opacity: 0; -moz-transform: translateY(0px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+.animate-career-heading span:nth-child(3) {
+  animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
 }
-@-webkit-keyframes fadeEffect{
-	0% { opacity: 0; }
-	5% { opacity: 1; -webkit-transform: translateY(0px); }
-	10% { opacity: 1; -webkit-transform: translateY(0px); }
-	20% { opacity: 0; -webkit-transform: translateY(0px); }
-	30% { opacity: 0; -webkit-transform: translateY(0px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+
+.animate-career-heading span:nth-child(4) {
+  animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
 }
-@-ms-keyframes fadeEffect{
-	0% { opacity: 0; }
-	5% { opacity: 1; -ms-transform: translateY(0px); }
-	10% { opacity: 1; -ms-transform: translateY(0px); }
-	20% { opacity: 0; -ms-transform: translateY(0px); }
-	30% { opacity: 0; -ms-transform: translateY(0px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+
+.animate-career-heading span:nth-child(5) {
+  animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  -webkit-animation-delay: 8s;
 }
+
+@-moz-keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+
+  10% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -moz-transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    -moz-transform: translateY(0px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  10% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -ms-transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    -ms-transform: translateY(0px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 /* Animation Word Rotating End */
-
-
 /* ===== About Section ===== */
 #about {
   margin-bottom: 10%;
@@ -220,7 +301,7 @@ body {
   margin-bottom: 5%;
 }
 
-.mission-head-box{
+.mission-head-box {
   position: relative;
 }
 
@@ -267,13 +348,13 @@ body {
 }
 
 .btn-xl {
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   font-size: 2rem;
   height: 60px;
   width: 60px;
   border: 1px solid;
-  border-color: #ffffff;
+  border-color: #fff;
   border-radius: 40px;
   margin-right: 20px;
   transition: all .6s ease-in-out;
@@ -281,14 +362,11 @@ body {
 
 .btn-xl:hover {
   background-color: #ffcd32;
-  border: #000000;
+  border: #000;
 }
-.block-header {
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
+
 .btn-xl-rotate {
-  color: #000000;
+  color: #000;
   background-color: #ffcd32;
   transform: rotate(90deg);
 }
@@ -304,20 +382,6 @@ body {
   background-clip: border-box;
   border: none;
   border-radius: 0;
-}
-
-/* ===== Partner ===== */
-#partner {
-  margin-bottom: 10%;
-}
-.partner-logo img{
-  height: 60%;
-  width: 60%;
-  border-radius: 100%;
-}
-
-#partner .row {
-  text-align: center;
 }
 
 /* ===== Works ===== */
@@ -337,13 +401,16 @@ body {
   width: 420px;
   height: 420px;
 }
+
 .container1 {
   margin: auto;
   overflow: auto;
 }
+
 .works1 {
   width: 100%;
 }
+
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -355,10 +422,17 @@ body {
 .card h3 {
   margin-bottom: 2rem;
 }
-.card > div {
+
+.card>div {
   padding: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+.card:nth-child(even) img {
+  order: 2;
+}
+>>>>>>> 7b36305d3746f56524ee5a70beb80d47fad59399
 
 .card img {
   height: 400px;
@@ -372,65 +446,137 @@ body {
   margin-top: 2rem;
   cursor: pointer;
 }
-.works1-btn:hover{
+
+.works1-btn:hover {
   background-color: #000000;
   color: #ffcd32;
 }
 
+.container1 {
+  margin: auto;
+  overflow: auto;
+}
+
+.works1 {
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: black;
+  margin-bottom: 2rem;
+}
+
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+.card>div {
+  padding: 2rem;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+.card img {
+  height: 400px;
+}
+
+.works1-btn {
+  display: inline-block;
+  background: #ffcd32;
+  color: #000;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.works1-btn:hover {
+  background-color: #000;
+  color: #ffcd32;
+}
 
 /* ===== Team ===== */
 #team {
+  text-align: center;
   padding-left: 50px;
-  padding-right: 70px;
+  padding-right: 50px;
   margin-bottom: 100px;
 }
 
-.team-heading {
-  font-size: 3.5rem;
+#team .heading-hr {
   margin-bottom: 50px;
+  text-align: center;
 }
-.team-desc p{
-  background-color: gray
 
-
+.team-row {
+  margin-bottom: 3%;
 }
+
 .zoom {
   width: 100%;
-  height: 70%;
+  height: 330px;
   overflow: hidden;
-  display: inline-block;
-  margin:0 auto;
+  position: relative;
 }
 
-hr{
-  width:15%;
-  height:2px;
-  background-color: #f5c542; 
+.zoom-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)),
+    url("https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.1);
+  transition: all .6s;
 }
 
-.zoom img { 
-   width: 100%; 
-   transition: 0.5s all ease-in-out; 
-} 
-      
-.zoom:hover img { 
-transform: scale(1.25);        
+.zoom-img-animate {
+  transform: scale(1);
 }
-.view-all{
-  margin-left: 90%;
+
+.btn-group {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  position: relative;
+  z-index: 1;
+  transform: translateY(330px);
+  transition: all .6s;
+}
+
+.btn-group-animate {
+  transform: translateY(285px);
+}
+
+.btn-group .btn {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.zoom .btn:hover {
+  background-color: #ffcd32;
+}
+
+/* .view-all {
+  font-size: 1.3rem;
+  position: relative;
   color: #fff;
   text-decoration: none;
+  transition-duration: 0.5s;
 }
 
-.view-all a:hover{
-  opacity: 75%;
+.view-all:hover {
+  color: #ffcd32;
   text-decoration: none;
-
-}
-.view-all a:visited{
-  color: #fff;
-}
-
+  transition-duration: 0.5s;
+} */
 /* ===== CONTACT FORM PAGE =====  */
 .contact-box {
   margin-bottom: 20px;
@@ -451,26 +597,197 @@ transform: scale(1.25);
   border-radius: 8px;
   margin-bottom: 20px;
   /* Typography */
-  color: #000000;
+  color: #000;
   /* Visual */
   background-color: #ffcd32;
   border: 0;
 }
+
 .form-control {
-  background-color: #000000;
-  
+  background-color: #000;
 }
+
 .submit-btn:hover {
-  background-color: #000000;
+  background-color: #000;
   color: #ffcd32;
 }
 
 /* END CONTACT FORM PAGE */
+/* iPad and smaller */
+@media (max-width: 768px) {
 
-@media (max-width: 700px){
+  /* Head Bar */
+  .contact-info {
+    display: none;
+  }
 
-  .card {
+  /* Home */
+  .home-heading {
+    font-size: 2rem;
+  }
+
+  .animate-career-heading {
+    font-size: 3.5rem;
+  }
+
+  /* About */
+  /* Work */
+  #works .card {
     display: block;
   }
 
+<<<<<<< HEAD
 }
+=======
+  /* Team */
+  /* Contact */
+}
+
+/* Query Ends */
+/* iPhone and smaller (? lol) */
+@media (max-width: 375px) {
+  /* Entire Website */
+  .heading-big {
+    font-size: 2.5rem;
+  }
+
+  .heading-hr {
+    border-color: #ffcd32;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 6px;
+    width: 120px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+  }
+
+  /* Head Bar */
+  .navbar-brand {
+    margin-top: -3%;
+    padding-left: 2%;
+    font-size: 1rem;
+  }
+  
+  nav .d-flex{
+    margin-right: -12%;
+    margin-top: -3%;
+  }
+  
+  /* Toggle Nav Bar */
+  .home-a {
+    margin-top: 20%;
+  }
+
+  .contact-a {
+    margin-bottom: 20%;
+  }
+
+  /* Home */
+  .home-heading {
+    font-size: 1.5rem;
+  }
+
+  .animate-career-heading {
+    font-size: 2.3rem;
+  }
+
+    /* About */
+  .mission-head {
+    position: static;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .mission-desc-box {
+    font-size: 1rem;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin-bottom: 3%;
+    font-size: .9rem;
+  }
+
+  .wedo-head {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .wedo-desc-box {
+    font-size: 1rem;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin-left: 0;
+  }
+
+  .wedo-box .hire-btn {
+    position: relative;
+    left: 4%;
+    font-size: 1.25rem;
+    margin-bottom: 11%;
+  }
+
+  .bullet-box .row {
+    margin: 0 !important;
+  }
+
+  .about-bullet-container {
+    text-align: left;
+  }
+
+  .btn-xl {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 40px;
+    margin-right: 0;
+    margin-left: 23px;
+    transition: all .6s ease-in-out;
+  }
+
+  .about-bullet-head {
+    font-size: 1.5rem;
+    padding-top: 2%;
+  }
+
+  .collapse-desc-box {
+    padding: 0 9% 0 21.5%;
+    font-size: 1rem;
+  }
+
+  /* Work */
+  /* Team */
+  .zoom {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .btn-group {
+    transform: translateY(286px);
+  }
+
+  #team .team-name {
+    font-size: 1.25rem;
+    margin-top: 4%;
+    margin-bottom: 0;
+  }
+
+  #team .team-position {
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+  .team-desc {
+    margin-bottom: 13% !important;
+  }
+
+  /* Contact */
+}
+>>>>>>> 7b36305d3746f56524ee5a70beb80d47fad59399
