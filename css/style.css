@@ -654,10 +654,15 @@ body {
     margin-top: 5px;
   }
 
-  /* Head Bar */
+   /* Head Bar */
   .navbar-brand {
-    padding-left: 4%;
+    margin-top: 0;
+    padding-left: 2%;
     font-size: 1rem;
+  }
+
+  *, ::after, ::before{
+    box-sizing: content-box;
   }
   
   /* Toggle Nav Bar */
