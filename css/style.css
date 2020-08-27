@@ -70,7 +70,7 @@ html, body {
 }
 
 .contact-info {
-  color: #000;
+  color: #000 !important;
   font-size: .7rem;
   line-height: .5;
   position: absolute;
@@ -499,19 +499,19 @@ html, body {
   background-color: #ffcd32;
 }
 
-/* .view-all {
+.view-all, a:visited  {
   font-size: 1.3rem;
   position: relative;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   transition-duration: 0.5s;
 }
 
-.view-all:hover {
+.view-all a:hover, a:visited:hover {
   color: #ffcd32;
   text-decoration: none;
   transition-duration: 0.5s;
-} */
+}
 /* ===== CONTACT FORM PAGE =====  */
 .contact-box {
   margin-bottom: 20px;
