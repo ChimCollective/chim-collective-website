@@ -1,23 +1,49 @@
-/* Entire Document */
-body {
-  background-color: #000000;
-  color: #ffffff;
+/* ===== Entire Document ===== */
+html, body {
+  background-color: #000;
+  width: 100%;
+  color: #fff;
   font-family: Quicksand;
+  overflow-x: hidden;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 .head-font {
-  color: #ffffff;
+  color: #fff;
   font-family: Montserrat;
   font-weight: 700;
 }
 
-/* Header Bar Section */
+.heading-big {
+  font-size: 3.5rem;
+}
+
+.heading-hr {
+  border-color: #ffcd32;
+  border-style: none;
+  border-top-style: solid;
+  border-width: 6px;
+  width: 120px;
+  margin-bottom: 4%;
+}
+
+/* ===== Header Bar Section ===== */
+/* For Script */
+.nav-toggler-black-navbar {
+  background: rgba(0, 0, 0, 1) !important;
+  transition: fadeIn
+}
+
 .navbar-custom-color {
-  background-color: #ffffff;
-  background: rgba(255, 255, 255, 0);
+  background-color: #fff;
+  background: rgba(0, 0, 0, 0);
 }
 
 .navbar {
+  padding: 0;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
@@ -44,44 +70,39 @@ body {
 }
 
 .contact-info {
-  font-size: .6rem;
+  color: #000;
+  font-size: .7rem;
   line-height: .5;
   position: absolute;
-  right: 280px;
+  right: 230px;
   text-align: right;
   top: 55px;
 }
 
-.contact-info:hover {
-  cursor: pointer;
-  color: #ffcd32;
-}
-
-.contact-btn {
+.hire-btn {
+  color: #000;
   background-color: #ffcd32;
 }
 
-.contact-btn:hover {
-  background-color: #000000;
+.hire-btn:hover {
+  background-color: #000;
   color: #ffcd32;
 }
 
 .navbar-toggler {
-  background-color: #000000;
+  background-color: #000;
   color: #ffcd32;
 }
 
 .navbar-toggler:hover {
   background-color: #ffcd32;
-  color: #ffffff;
+  color: #fff;
 }
 
 #navbar-menus {
-  background-color: #000000;
+  background-color: #000;
   font-size: 2.5rem;
-  line-height: 1.5;
   text-align: center;
-  vertical-align: middle;
 }
 
 .navbar a:hover {
@@ -89,24 +110,32 @@ body {
 }
 
 .nav-item a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .home-a {
-  margin-top: 200px;
+  margin-top: 11%;
 }
 
 .contact-a {
-  margin-bottom: 200px;
+  margin-bottom: 11%;
 }
 
-/* Home Section */
+/* ===== Home Section ===== */
 #home {
   text-align: center;
+  margin-bottom: 10%;
+}
+
+.g {
+  height: 100vh;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 205, 50, 0.5), rgba(0, 0, 0, 1)),
+    url('https://images7.alphacoders.com/924/thumb-1920-924637.jpg');
 }
 
 .home-body {
-  margin: 400px auto;
+  padding-top: 310px;
 }
 
 .home-heading {
@@ -117,36 +146,245 @@ body {
   font-size: 5rem;
 }
 
-/* About Section */
+/* Animation word rotating */
+.animate-career-heading {
+  font-size: 5rem;
+  display: block;
+  position: relative;
+}
+
+.animate-career-heading span {
+  animation: fadeEffect 10s linear infinite 0s;
+  -ms-animation: fadeEffect 10s linear infinite 0s;
+  -webkit-animation: fadeEffect 10s linear infinite 0s;
+  color: #fff;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  margin-left: -50%;
+}
+
+.animate-career-heading span:nth-child(2) {
+  animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+
+.animate-career-heading span:nth-child(3) {
+  animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+.animate-career-heading span:nth-child(4) {
+  animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+}
+
+.animate-career-heading span:nth-child(5) {
+  animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+}
+
+@-moz-keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+
+  10% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -moz-transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    -moz-transform: translateY(0px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  10% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 0;
+    -ms-transform: translateY(0px);
+  }
+
+  30% {
+    opacity: 0;
+    -ms-transform: translateY(0px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation Word Rotating End */
+/* ===== About Section ===== */
 #about {
-  margin-bottom: 50px;
+  margin-bottom: 10%;
 }
 
-.about-heading {
-  font-size: 3.5rem;
+.mission-box {
+  margin-bottom: 5%;
 }
 
-.about-img {
-  padding-top: 90px;
-  padding-left: 83px;
+.mission-head-box {
+  position: relative;
 }
 
-.btn-lg {
-  border-radius: 30px;
-  margin-right: 20px;
-  float: left;
+.mission-head {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 10%;
+}
+
+.mission-desc-box {
+  font-size: 1.15rem;
+  padding-right: 12%;
+}
+
+.wedo-box {
+  position: static;
+}
+
+.wedo-head {
+  margin-left: 28%;
+  font-size: 2.5rem;
+  margin-bottom: 6%;
+}
+
+.wedo-desc-box {
+  margin-left: 28%;
+  padding-right: 10%;
+  font-size: 1.15rem;
+  margin-bottom: 11%;
+}
+
+.wedo-box .hire-btn {
+  margin-left: 28%;
+  font-size: 2rem;
+}
+
+.bullet-box {
+  margin-bottom: 5%;
 }
 
 .about-bullet-container {
   text-align: left;
-  padding-top: 20px;
+  padding-left: 5%;
 }
 
-.about-bullet {
-  padding: 40px;
+.btn-xl {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  height: 60px;
+  width: 60px;
+  border: 1px solid;
+  border-color: #fff;
+  border-radius: 40px;
+  margin-right: 20px;
+  transition: all .6s ease-in-out;
 }
 
-/* Works */
+.btn-xl:hover {
+  background-color: #ffcd32;
+  border-color: #ffcd32;
+}
+
+.btn-xl-rotate {
+  color: #000;
+  background-color: #ffcd32;
+  transform: rotate(90deg);
+}
+
+.about-bullet-head {
+  font-size: 2.5rem;
+  padding-top: .7%;
+}
+
+.collapse-desc-box {
+  padding: 0 12% 0% 82px;
+  background-color: rgba(0, 0, 0, 0);
+  background-clip: border-box;
+  border: none;
+  border-radius: 0;
+}
+
+/* ===== Works ===== */
 #works {
   padding-left: 50px;
   padding-right: 70px;
@@ -164,106 +402,183 @@ body {
   height: 420px;
 }
 
-/* Team */
-#team {
-  padding-left: 50px;
-  padding-right: 70px;
-  margin-bottom: 100px;
+.container1 {
+  margin: auto;
+  overflow: auto;
 }
 
-.team-heading {
-  font-size: 3.5rem;
-  margin-bottom: 50px;
+.works1 {
+  width: 100%;
 }
 
-.team-img {
-  width: 300px;
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: black;
+  margin-bottom: 2rem;
+}
+
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+.card>div {
+  padding: 2rem;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+.card img {
   height: 400px;
 }
 
-/* Bootstrap's Styles */
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.works1-btn {
+  display: inline-block;
+  background: #ffcd32;
+  color: #000000;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
-/* CONTACT FORM PAGE  */
-#let{
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-.form-control {
-  /* give input boxes right angles */
-  border-radius: 0;
-
-  /* keep from horizontally resizing text area */
-  min-width: 100%;
-  max-width: 100%;
+.works1-btn:hover {
+  background-color: #000000;
+  color: #ffcd32;
 }
 
-.submit-btn {
-  /* Box-model */
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: lighter;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  /* Typography */
-  color: #fff;
-
-  /* Visual */
-  background-color: #0a53b3;
-  border: 0;
+.container1 {
+  margin: auto;
+  overflow: auto;
 }
 
-.submit-btn:hover {
-  opacity: .7;
-}
-
-/* END CONTACT FORM PAGE */
-/* BEGIN FOOTER */
-.footer {
-  /* Positioning */
-  position: absolute;
-  bottom: 0;
-
-  /* Box-model */
+.works1 {
   width: 100%;
-  height: 60px;
-
-  /* Visual */
-  background-color: #666;
 }
 
-.text-muted-footer {
-  /* Box-model */
-  margin-top: 15px;
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: black;
+  margin-bottom: 2rem;
+}
 
-  /* Typography */
+.card h3 {
+  margin-bottom: 2rem;
+}
+
+.card>div {
+  padding: 2rem;
+}
+
+.card:nth-child(even) img {
+  order: 2;
+}
+
+.card img {
+  height: 400px;
+}
+
+.works1-btn {
+  display: inline-block;
+  background: #ffcd32;
+  color: #000;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.works1-btn:hover {
+  background-color: #000;
+  color: #ffcd32;
+}
+
+/* ===== Team ===== */
+#team {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px;
+}
+
+#team .heading-hr {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-row {
+  margin-bottom: 3%;
+}
+
+.zoom {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)),
+    url("https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.1);
+  transition: all .6s;
+}
+
+.zoom-img-animate {
+  transform: scale(1);
+}
+
+.btn-group {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  position: relative;
+  z-index: 1;
+  transform: translateY(330px);
+  transition: all .6s;
+}
+
+.btn-group-animate {
+  transform: translateY(285px);
+}
+
+.btn-group .btn {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.3rem;
   color: #fff;
 }
 
-.two-toned-footer-color {
-  /* Box-model */
-  height: 6px;
-  padding-top: 3px;
-
-  /* Visual */
-  background-color: #4aaaa5;
-}
-/* END FOOTER */
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+.zoom .btn:hover {
+  background-color: #ffcd32;
 }
 
-/* CONTACT FORM PAGE  */
+.view-all, .view-all a:visited  {
+  font-size: 1.3rem;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.view-all a:hover, .view-all a:visited:hover {
+  color: #ffcd32;
+  text-decoration: none;
+  transition-duration: 0.5s;
+} 
+
+    /*===Teanm gallery page==*/
+
+
+/* ===== CONTACT FORM PAGE =====  */
 .contact-box {
   margin-bottom: 20px;
 }
@@ -283,43 +598,237 @@ body {
   border-radius: 8px;
   margin-bottom: 20px;
   /* Typography */
-  color: #000000;
+  color: #000;
   /* Visual */
   background-color: #ffcd32;
   border: 0;
 }
 
+.form-control {
+  background-color: #000;
+}
+
 .submit-btn:hover {
-  background-color: #000000;
+  background-color: #000;
   color: #ffcd32;
 }
 
 /* END CONTACT FORM PAGE */
-/* BEGIN FOOTER */
-.footer {
-  /* Positioning */
-  position: absolute;
-  bottom: 0;
-  /* Box-model */
-  width: 100%;
-  height: 60px;
-  /* Visual */
-  background-color: #000000;
+/* iPad and smaller */
+@media (max-width: 991px) {
+
+  /* Head Bar */
+  .contact-info {
+    display: none;
+  }
+
+  /* Home */
+  .home-heading {
+    font-size: 2rem;
+  }
+
+  .animate-career-heading {
+    font-size: 3.5rem;
+  }
+
+  /* About */
+  /* Work */
+  #works .card {
+    display: block;
+  }
+   /*About*/
+  .mission-head {
+    position: static;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .mission-desc-box {
+    font-size: 1.5rem;
+    padding-right: 9%;
+    padding-left: 10%;
+   
+  }
+  .wedo-head {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .wedo-desc-box {
+    font-size: 1.5rem;
+    padding-right: 9%;
+    padding-left: 10%;
+    margin-left: 0;
+    margin-bottom: 3%;
+  }
+
+  .about-bullet-container {
+  margin-top: 3%;
+  text-align: left;
+  padding-left: 15%;
+  font-size: 2rem
 }
 
-.text-muted-footer {
-  /* Box-model */
-  margin-top: 15px;
-  /* Typography */
-  color: #ffffff;
+  .wedo-box .hire-btn {
+  margin-left: 40%;
+  margin-bottom: 5%;
+  font-size: 2rem;
+
 }
 
-.two-toned-footer-color {
-  /* Box-model */
-  height: 6px;
-  padding-top: 3px;
-  /* Visual */
-  background-color: #ffcd32;
+  /* Team */
+  /* Contact */
 }
 
-/* END FOOTER */
+/* Query Ends */
+/* iPhone and smaller (? lol) */
+@media (max-width: 450px) {
+
+  /* Entire Website */
+  body {
+    font-size: .9rem;
+  }
+
+  .heading-big {
+    font-size: 2.5rem;
+  }
+
+  /* Head Bar */
+  .navbar-brand {
+    margin-top: -3%;
+    padding-left: 2%;
+    font-size: 1rem;
+  }
+
+  nav .d-flex {
+    margin-right: -12%;
+    margin-top: -3%;
+  }
+
+  /* Toggle Nav Bar */
+  #navbar-menus {
+    line-height: 2;
+  }
+
+  .home-a {
+    margin-top: 18%;
+  }
+
+  .contact-a {
+    margin-bottom: 17%;
+  }
+
+  /* Home */
+  .home-heading {
+    font-size: 1.5rem;
+  }
+
+  .animate-career-heading {
+    font-size: 2.3rem;
+  }
+
+  /* About */
+  .mission-head {
+    position: static;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .mission-desc-box {
+    font-size: 1rem;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin-bottom: 3%;
+    font-size: .9rem;
+  }
+
+  .wedo-head {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .wedo-desc-box {
+    font-size: 1rem;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin-left: 0;
+  }
+
+  .wedo-box .hire-btn {
+    position: relative;
+    left: 4%;
+    font-size: 1.25rem;
+    margin-bottom: 11%;
+  }
+
+  .bullet-box .row {
+    margin: 0 !important;
+  }
+
+  .about-bullet-container {
+    text-align: left;
+  }
+
+  .btn-xl {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 40px;
+    width: 40px;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 40px;
+    margin-right: 0;
+    margin-left: 23px;
+    transition: all .6s ease-in-out;
+  }
+
+  .about-bullet-head {
+    font-size: 1.5rem;
+    padding-top: 2%;
+  }
+
+  .collapse-desc-box {
+    padding: 0 9% 0 21.5%;
+    font-size: 1rem;
+  }
+
+  /* Work */
+  /* Team */
+  .zoom {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .btn-group {
+    transform: translateY(286px);
+  }
+
+  #team .team-name {
+    font-size: 1.25rem;
+    margin-top: 4%;
+    margin-bottom: 0;
+  }
+
+  #team .team-position {
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+  .team-desc {
+    margin-bottom: 13% !important;
+  }
+
+  /* Contact */
+}
+
+
+
