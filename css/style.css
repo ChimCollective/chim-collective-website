@@ -659,14 +659,19 @@ body {
     padding-left: 4%;
     font-size: 1rem;
   }
+  
+  /* Toggle Nav Bar */
+  .home-a {
+    margin-top: 10%;
+  }
 
-  .navbar .d-flex {
-    margin-right: 13%;
+  .contact-a {
+    margin-bottom: 50%;
   }
 
   /* Home */
   .home-heading {
-    font-size: .5rem;
+    font-size: .9rem;
   }
 
   .animate-career-heading {
