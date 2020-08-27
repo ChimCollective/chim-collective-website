@@ -630,17 +630,123 @@ body {
 }/* Query Ends */
 
 @media (max-width: 375px) {
-  /* Home Page */
+  /* Entire Website */
+  .heading-big {
+    font-size: 2.5rem;
+  }
+
+  .heading-hr {
+    border-color: #ffcd32;
+    border-style: none;
+    border-top-style: solid;
+    border-width: 6px;
+    width: 120px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+  }
+
+  /* Head Bar */
+  .navbar-brand {
+    padding-left: 4%;
+    font-size: 1rem;
+  }
+
+  .navbar .d-flex {
+    margin-right: 13%;
+  }
+
+  /* Home */
   .home-heading {
     font-size: .5rem;
   }
+
   .animate-career-heading {
     font-size: 2rem;
   }
-  .navbar-brand {
-    padding-left: 15px;
+
+  /* About */
+  .mission-head {
+    position: static;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0;
   }
-  .d-flex {
-    margin-right: 14%;
+
+  .mission-desc-box {
+    font-size: 1rem;
+    padding-right: 9%;
+    padding-left: 11%;
+    margin-bottom: 3%;
   }
-}/* Query Ends */
+
+  .wedo-head {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .wedo-desc-box {
+    font-size: 1rem;
+    padding-right: 9%;
+    padding-left: 11%;
+    margin-left: 0;
+  }
+
+  .wedo-box .hire-btn {
+    position: relative;
+    left: 4%;
+    font-size: 1.5rem;
+  }
+
+  .bullet-box {
+    margin-bottom: 5%;
+  }
+
+  .about-bullet-container {
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .btn-xl {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    height: 60px;
+    width: 60px;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 40px;
+    margin-right: 20px;
+    transition: all .6s ease-in-out;
+  }
+
+  .btn-xl:hover {
+    background-color: #ffcd32;
+    border: #000;
+  }
+
+  .btn-xl-rotate {
+    color: #000;
+    background-color: #ffcd32;
+    transform: rotate(90deg);
+  }
+
+  .about-bullet-head {
+    font-size: 2.5rem;
+    padding-top: .7%;
+  }
+
+  .collapse-desc-box {
+    padding: 0 12% 0% 82px;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+  }
+
+  /* Work */
+  /* Team */
+  /* Contact */
+}
+
