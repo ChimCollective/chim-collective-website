@@ -38,6 +38,23 @@ $(".navbar-brand").hover(function() {
   $(this).css("color", "#ffcd32");
 });
 
+//ABOUT SECTION
+//bullet rotate when hover
 $(".btn-xl").click(function(){
   $(this).toggleClass("btn-xl-rotate");
+});
+
+//TEAM SECTION
+$(".zoom").hover(function() {
+  $(".zoom-img", this).addClass("zoom-img-animate");
+  $(".btn-group", this).addClass("btn-group-animate");
+}, function() {
+  $(".zoom-img", this).removeClass("zoom-img-animate");
+  $(".btn-group", this).removeClass("btn-group-animate");
+});
+
+$(".view-all>a").hover(function() {
+  $(".next-icon", this).addClass("next-icon-animate");
+}, function() {
+  $(".next-icon", this).removeClass("next-icon-animate");
 });
