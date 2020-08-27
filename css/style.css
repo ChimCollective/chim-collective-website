@@ -358,9 +358,7 @@ body {
 .card > div {
   padding: 2rem;
 }
-.card:nth-child(even) img {
-  order: 2;
-}
+
 
 .card img {
   height: 400px;
@@ -474,4 +472,5 @@ transform: scale(1.25);
   .card {
     display: block;
   }
+
 }
