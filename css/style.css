@@ -519,11 +519,24 @@ html, body {
 }
 
 .form-control {
-  /* give input boxes right angles */
-  border-radius: 0;
+ 
+  background:transparent;
+  border: 0;
+  border-bottom-color: #ffcd32;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;  
+  border-radius: 0px;  
+  
+  
   /* keep from horizontally resizing text area */
   min-width: 100%;
   max-width: 100%;
+}
+::-webkit-input-placeholder{
+  color: white;
+}
+::-ms-input-placeholder{
+  color: white;
 }
 
 .submit-btn {
@@ -539,9 +552,7 @@ html, body {
   border: 0;
 }
 
-.form-control {
-  background-color: #000;
-}
+
 
 .submit-btn:hover {
   background-color: #000;
@@ -573,7 +584,26 @@ html, body {
   }
 
   /* Team */
-  /* Contact */
+  
+/* CONTACT   */
+.form-control {
+  /* give input boxes right angles */
+  border-radius: 0;
+
+  /* keep from horizontally resizing text area */
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.submit-btn {
+  /* Box-model */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+
+
 }
 
 /* Query Ends */
@@ -722,4 +752,5 @@ html, body {
   }
 
   /* Contact */
+
 }
