@@ -403,8 +403,10 @@ html, body {
 }
 
 .container1 {
+  max-width: 1100;
   margin: auto;
   overflow: auto;
+  padding: 0 2rem;
 }
 
 .works1 {
@@ -580,10 +582,14 @@ html, body {
 
   /* About */
   /* Work */
+  
   #works .card {
     display: block;
   }
-
+  
+  #works .card>div {
+    padding: 1rem;
+  }
   /* Team */
   /* CONTACT   */
   .form-control {
@@ -719,6 +725,12 @@ html, body {
   }
 
   /* Work */
+  #works{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  
   /* Team */
   .zoom {
     width: 100%;
