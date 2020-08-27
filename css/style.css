@@ -132,6 +132,9 @@ html, body {
   background-image:
     linear-gradient(to bottom, rgba(255, 205, 50, 0.5), rgba(0, 0, 0, 1)),
     url('https://images7.alphacoders.com/924/thumb-1920-924637.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-body {
