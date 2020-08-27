@@ -1,5 +1,5 @@
 /* ===== Entire Document ===== */
-body {
+html, body {
   background-color: #000;
   color: #fff;
   font-family: Quicksand;
@@ -654,15 +654,16 @@ body {
     margin-top: 5px;
   }
 
-   /* Head Bar */
+  /* Head Bar */
   .navbar-brand {
-    margin-top: 0;
+    margin-top: -10%;
     padding-left: 2%;
     font-size: 1rem;
   }
-
-  *, ::after, ::before{
-    box-sizing: content-box;
+  
+  nav .d-flex{
+    margin-right: -12%;
+    margin-top: -10%;
   }
   
   /* Toggle Nav Bar */
