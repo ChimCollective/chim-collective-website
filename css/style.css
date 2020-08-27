@@ -516,10 +516,18 @@ html, body {
 .contact-box {
   margin-bottom: 20px;
 }
-
+.form-control:focus {
+  
+  color: #fff !important;
+  font-weight: 500 !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline-color: rgba(0, 0, 0, 0) !important;
+}
 .form-control {
-  background: transparent;
-  border: 0;
+
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none ;
   border-bottom-color: #ffcd32;
   border-bottom-width: 2px;
   border-bottom-style: solid;
@@ -529,12 +537,9 @@ html, body {
   max-width: 100%;
 }
 
-::-webkit-input-placeholder {
-  color: white;
-}
-
-::-ms-input-placeholder {
-  color: white;
+::placeholder {
+  color: #fff !important;
+  font-weight: 500 !important;
 }
 
 .submit-btn {
