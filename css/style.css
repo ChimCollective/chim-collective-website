@@ -615,6 +615,20 @@ html, body {
     margin-left: 0;
   }
   
+    .bullet-box .row {
+    margin: 0 !important;
+  }
+
+  .about-bullet-container {
+    padding-left: 17%;
+    padding-top: 3%;
+  }
+
+  .wedo-box .hire-btn {
+    margin-left: 42%;
+    font-size: 1.5rem;
+    margin-top: -15%;
+  }
   
   /* Work */
   #works .card {
