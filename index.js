@@ -5,8 +5,12 @@ function checkScroll() {
 
   if ($(window).scrollTop() > startY) {
     $(".navbar").addClass("scrolled");
+    $(".navbar-brand").addClass("yellow");
+    $(".contact-info").addClass("yellow");
   } else {
     $(".navbar").removeClass("scrolled");
+    $(".navbar-brand").removeClass("yellow");
+    $(".contact-info").removeClass("yellow");
   }
 }
 // navbar appear white when scroll up
@@ -54,3 +58,4 @@ if ($(window).width() > 768) {
     $(".btn-group", this).removeClass("btn-group-animate");
   });
 }
+
