@@ -587,6 +587,35 @@ html, body {
   }
 
   /* About */
+    .mission-head {
+    position: static;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .mission-desc-box {
+    font-size: 1.15rem;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin-bottom: 3%;
+  }
+
+  .wedo-head {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .wedo-desc-box {
+    font-size: 1.15rem;
+    padding-right: 7%;
+    padding-left: 7%;
+    margin-left: 0;
+  }
+  
+  
   /* Work */
   #works .card {
     display: block;
