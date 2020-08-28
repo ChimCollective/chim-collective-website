@@ -30,6 +30,10 @@ html, body {
   margin-bottom: 4%;
 }
 
+.btn {
+  border-radius: 0;
+}
+
 /* ===== Header Bar Section ===== */
 /* For Script */
 .nav-toggler-black-navbar {
@@ -510,14 +514,47 @@ html, body {
 }
 
 .view-all a:hover, a:visited:hover {
-  color: #ffcd32;
+  color: #ffcd32 !important;
   text-decoration: none;
   transition-duration: 0.5s;
 }
 
 /* ===== CONTACT FORM PAGE =====  */
 .contact-box {
-  margin-bottom: 20px;
+  border: 1px solid;
+  margin: auto 50px 5%;
+  padding: 3% 4%;
+}
+
+#contact .data-box {
+  margin-top: 5%;
+}
+
+#contact .heading-hr {
+  position: absolute;
+  width: 183px;
+  margin-top: 10px;
+}
+
+.lets-box {
+  text-align: left;
+  position: relative;
+}
+
+.lets-desc-box {
+  line-height: 1;
+  font-size: 1.5rem;
+  margin: 6.5% 0 0;
+  padding: .4%;
+}
+
+.col-sm-10 {
+  max-width: 100%;
+}
+
+.info-desc-box {
+  padding-left: 7%;
+  padding-right: 15%;
 }
 
 ::placeholder {
@@ -526,20 +563,30 @@ html, body {
 }
 
 .form-control:focus {
+  color: #fff !important;
+  font-weight: 500 !important;
+  border-bottom-color: #ffcd32;
   box-shadow: none !important;
+  outline-color: rgba(0, 0, 0, 0) !important;
 }
 
 .form-control {
   /* background: transparent; */
   background-color: rgba(0, 0, 0, 0) !important;
-  border: 0;
-  border-bottom-color: #ffcd32 !important;
+  border: none;
+  border-bottom-color: #ffcd32;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-radius: 0px;
   /* keep from horizontally resizing text area */
   min-width: 100%;
   max-width: 100%;
+}
+
+textarea.form-control {
+  margin-top: 6%;
+  border: 2px solid;
+  border-color: #ffcd32;
 }
 
 ::-webkit-input-placeholder {
@@ -551,6 +598,7 @@ html, body {
 }
 
 .submit-btn {
+  margin: 2.75%;
   /* Box-model */
   padding: 15px 30px;
   font-size: 16px;
@@ -560,7 +608,7 @@ html, body {
   color: #000;
   /* Visual */
   background-color: #ffcd32;
-  border: 0;
+  border-radius: 0;
 }
 
 .submit-btn:hover {
@@ -568,15 +616,17 @@ html, body {
   color: #ffcd32;
 }
 
+.menu-list {
+  text-align: center;
+}
+
+.menu-list a {
+  margin: 2%;
+}
+
 /* END CONTACT FORM PAGE */
-/* iPad and smaller */
-@media (max-width: 768px) {
-
-  /* Head Bar */
-  .contact-info {
-    display: none;
-  }
-
+/* Responsive screen width 991px, iPad, and smaller */
+@media (max-width: 991px) {
   /* Home */
   .home-heading {
     font-size: 2rem;
@@ -586,8 +636,8 @@ html, body {
     font-size: 3.5rem;
   }
 
-  /* About */
-    .mission-head {
+  /*About*/
+  .mission-head {
     position: static;
     font-size: 2.5rem;
     text-align: center;
@@ -597,7 +647,7 @@ html, body {
   .mission-desc-box {
     font-size: 1.15rem;
     padding-right: 9%;
-    padding-left: 9%;
+    padding-left: 10%;
     margin-bottom: 3%;
   }
 
@@ -610,26 +660,30 @@ html, body {
 
   .wedo-desc-box {
     font-size: 1.15rem;
-    padding-right: 7%;
-    padding-left: 7%;
+    padding-right: 9%;
+    padding-left: 10%;
     margin-left: 0;
+    margin-bottom: 3%;
   }
-  
-    .bullet-box .row {
+
+  .bullet-box .row {
     margin: 0 !important;
   }
 
   .about-bullet-container {
-    padding-left: 17%;
-    padding-top: 3%;
+    margin-top: 3%;
+    text-align: left;
+    padding-left: 15%;
+    font-size: 2rem
   }
 
   .wedo-box .hire-btn {
-    margin-left: 42%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    font-size: 2rem;
     font-size: 1.5rem;
-    margin-top: -15%;
   }
-  
+
   /* Work */
   #works .card {
     display: block;
@@ -653,9 +707,17 @@ html, body {
   }
 }
 
+/* Responsive screen width 610px */
+@media (max-width: 610px) {
+  /* Head Bar */
+  .navbar .contact-info {
+    display: none;
+  }
+}
+
 /* Query Ends */
-/* iPhone and smaller (? lol) */
-@media (max-width: 375px) {
+/* Responsive screen width 420px, iPhone and smaller*/
+@media (max-width: 420px) {
 
   /* Entire Website */
   body {
@@ -666,7 +728,7 @@ html, body {
     font-size: 2.5rem;
   }
 
-    /* Head Bar */
+  /* Head Bar */
   .navbar-brand {
     margin-top: -8%;
     padding-left: 2%;
@@ -678,18 +740,17 @@ html, body {
     margin-top: -8%;
   }
 
-  .navbar.scrolled{
+  .navbar.scrolled {
     transform: translateY(0px);
   }
 
-  .pt-5{
-    padding-top: 2.5rem!important;
+  .navbar.pt-5 {
+    padding-top: 2.5rem !important;
   }
 
-  .pb-3{
-    padding-bottom: .5rem!important;
+  .navbar.pb-3 {
+    padding-bottom: .5rem !important;
   }
-
 
   /* Toggle Nav Bar */
   #navbar-menus {
@@ -783,11 +844,27 @@ html, body {
   }
 
   /* Work */
-  
-   #works .card img{
-     height: auto;
-   }
-  
+  #works .card img {
+    height: auto;
+  }
+
+  #works {
+    padding: 0;
+  }
+
+  #works .card {
+    margin-bottom: 0;
+  }
+
+  #works .card h3 {
+    margin-top: .25rem;
+    margin-bottom: 0.3rem;
+  }
+
+  #works .card>div {
+    padding: 1rem
+  }
+
   /* Team */
   .zoom {
     width: 100%;
