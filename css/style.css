@@ -720,7 +720,7 @@ footer {
   }
 
   .mission-desc-box {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     padding-right: 9%;
     padding-left: 10%;
     margin-bottom: 3%;
@@ -734,7 +734,7 @@ footer {
   }
 
   .wedo-desc-box {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     padding-right: 9%;
     padding-left: 10%;
     margin-left: 0;
@@ -753,10 +753,19 @@ footer {
   }
 
   .wedo-box .hire-btn {
-    margin-left: 40%;
+    margin-left: 42%;
     margin-bottom: 5%;
-    font-size: 2rem;
     font-size: 1.5rem;
+  }
+
+  .about-bullet-head {
+    font-size: 2rem;
+    padding-top: 2%;
+  }
+
+  .collapse-desc-box {
+    padding-left: 15%;
+    font-size: 1.25rem;
   }
 
   /* Work */
@@ -850,7 +859,7 @@ footer {
     font-size: 2.3rem;
   }
 
-  /* About */
+ /* About */
   .mission-head {
     position: static;
     font-size: 1.75rem;
@@ -881,10 +890,9 @@ footer {
   }
 
   .wedo-box .hire-btn {
-    position: relative;
-    left: 4%;
-    font-size: 1.25rem;
-    margin-bottom: 11%;
+    margin-left:37%;
+    font-size: 1rem;
+    margin-bottom: 5%;
   }
 
   .bullet-box .row {
