@@ -424,8 +424,7 @@ html, body {
 
 /* ===== Works ===== */
 #works {
-  padding-left: 50px;
-  padding-right: 70px;
+  padding: 0;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -437,7 +436,7 @@ html, body {
 
 .works-img {
   width: 420px;
-  height: 420px;
+  height: 400px;
 }
 
 .container1 {
@@ -967,6 +966,7 @@ footer {
   /* Work */
   #works .card img {
     height: auto;
+    
   }
 
   #works {
