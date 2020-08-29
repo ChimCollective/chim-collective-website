@@ -552,11 +552,7 @@ html, body {
   transition-duration: 0.5s;
 }
 
-.team-container{
-    margin-left: 150px;
-    margin-right: 150px;
 
-  }
 
 
 /* ===== CONTACT FORM PAGE =====  */
@@ -805,6 +801,10 @@ footer {
   .navbar .contact-info {
     display: none;
   }
+
+  /*our team page*/
+
+
 }
 
 /* Query Ends */
@@ -983,7 +983,7 @@ footer {
     margin-bottom: 13% !important;
   }
   /*our team page*/
-  
+ 
 
   /* Contact */
 }
