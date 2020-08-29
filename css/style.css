@@ -784,6 +784,11 @@ footer {
   .contact-menu-list{
     text-align: left;
     margin-left: 6%;
+    font-size: .9rem;
+  }
+
+  .contact-menu-list a{
+    margin: 0.5%;
   }
 
   .lets-desc-box {
