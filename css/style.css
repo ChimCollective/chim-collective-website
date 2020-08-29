@@ -326,6 +326,7 @@ html, body {
 /* Animation Word Rotating End */
 /* ===== About Section ===== */
 #about {
+  padding: 20px;
   margin-bottom: 10%;
 }
 
@@ -439,11 +440,11 @@ html, body {
   height: 400px;
 }
 
-.container1 {
+.container {
   max-width: 1100;
   margin: auto;
   overflow: auto;
-  padding: 0 2rem;
+ 
 }
 
 .works1 {
