@@ -555,7 +555,7 @@ html, body {
 /* ===== CONTACT FORM PAGE =====  */
 .contact-box {
   border: 1px solid;
-  margin: auto 50px 3%;
+  margin: auto 230px 3%;
   padding: 3% 4%;
 }
 
@@ -775,6 +775,30 @@ footer {
 
   /* Team */
   /* CONTACT   */
+  .contact-box {
+    border: 1px solid;
+    margin: auto 50px 3%;
+    padding: 3% 4%;
+  }
+
+  .contact-menu-list{
+    text-align: left;
+    margin-left: 6%;
+    font-size: .9rem;
+  }
+
+  .contact-menu-list a{
+    margin: 0.5%;
+  }
+
+  .lets-desc-box {
+      font-size: 1.25rem;
+  }
+
+  .input-box{
+    padding-top: 15px;
+  }
+
   .form-control {
     /* give input boxes right angles */
     border-radius: 0;
