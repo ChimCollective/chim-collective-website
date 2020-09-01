@@ -153,7 +153,7 @@ html, body {
 /* ===== Home Section ===== */
 #home {
   text-align: center;
-  margin-bottom: 10%;
+  
 }
 
 .g {
@@ -168,6 +168,7 @@ html, body {
 
 .home-body {
   padding-top: 310px;
+  padding-bottom: 20px;
 }
 
 .home-heading {
@@ -328,6 +329,7 @@ html, body {
 #about {
   padding: 20px;
   margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .mission-box {
