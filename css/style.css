@@ -121,7 +121,7 @@ html, body {
 
 .navbar-toggler:hover {
   background-color: #ffcd32;
-  border-color: #ffcd32;
+  border-color: ##ffcd32;
   color: #000;
   transition: 0.7s;
 }
@@ -326,7 +326,6 @@ html, body {
 /* Animation Word Rotating End */
 /* ===== About Section ===== */
 #about {
-  padding: 20px;
   margin-bottom: 10%;
 }
 
@@ -425,7 +424,8 @@ html, body {
 
 /* ===== Works ===== */
 #works {
-  padding: 0;
+  padding-left: 50px;
+  padding-right: 70px;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -437,14 +437,12 @@ html, body {
 
 .works-img {
   width: 420px;
-  height: 400px;
+  height: 420px;
 }
 
-.container {
-  max-width: 1100;
+.container1 {
   margin: auto;
   overflow: auto;
- 
 }
 
 .works1 {
@@ -557,7 +555,7 @@ html, body {
 /* ===== CONTACT FORM PAGE =====  */
 .contact-box {
   border: 1px solid;
-  margin: auto 230px 3%;
+  margin: auto 50px 3%;
   padding: 3% 4%;
 }
 
@@ -599,14 +597,7 @@ html, body {
   box-shadow: none !important;
   outline-color: rgba(0, 0, 0, 0) !important;
 }
-.form-control:focus {
-  
-  color: #fff !important;
-  font-weight: 500 !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline-color: rgba(0, 0, 0, 0) !important;
-}
+
 .form-control {
   /* background: transparent; */
   background-color: rgba(0, 0, 0, 0) !important;
@@ -778,40 +769,12 @@ footer {
   }
 
   /* Work */
-  
   #works .card {
     display: block;
   }
-  
-  #works .card>div {
-    padding: 1rem;
-  }
+
   /* Team */
   /* CONTACT   */
-  .contact-box {
-    border: 1px solid;
-    margin: auto 50px 3%;
-    padding: 3% 4%;
-  }
-
-  .contact-menu-list{
-    text-align: left;
-    margin-left: 6%;
-    font-size: .9rem;
-  }
-
-  .contact-menu-list a{
-    margin: 0.5%;
-  }
-
-  .lets-desc-box {
-      font-size: 1.25rem;
-  }
-
-  .input-box{
-    padding-top: 15px;
-  }
-
   .form-control {
     /* give input boxes right angles */
     border-radius: 0;
@@ -967,7 +930,6 @@ footer {
   /* Work */
   #works .card img {
     height: auto;
-    
   }
 
   #works {
