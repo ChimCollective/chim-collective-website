@@ -5,8 +5,12 @@ function checkScroll() {
 
   if ($(window).scrollTop() > startY) {
     $(".navbar").addClass("scrolled");
+    $(".navbar-brand").addClass("yellow");
+    $(".contact-info").addClass("yellow");
   } else {
     $(".navbar").removeClass("scrolled");
+    $(".navbar-brand").removeClass("yellow");
+    $(".contact-info").removeClass("yellow");
   }
 }
 // navbar appear white when scroll up
@@ -17,7 +21,7 @@ if ($(".navbar").length > 0) {
 }
 
 // navbar, while on Home, toggle black and transparent if click the menu btn
-$(".navbar-toggler").click(function(){
+$(".navbar-toggler").click(function() {
   $("nav").toggleClass("nav-toggler-black-navbar");
 });
 
@@ -31,13 +35,26 @@ $("#navbar-menus").on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });
 
-// navbar-brand change color when hover
-$(".navbar-brand").hover(function() {
-  $(this).css("color", "#ffffff");
-}, function() {
-  $(this).css("color", "#ffcd32");
-});
-
-$(".btn-xl").click(function(){
+//ABOUT SECTION
+//bullet rotate when hover
+$(".btn-xl").click(function() {
   $(this).toggleClass("btn-xl-rotate");
 });
+
+if ($(window).width() > 768) {
+  // navbar-brand change color when hover
+  $(".navbar-brand").hover(function() {
+    $(this).css("color", "#ffffff");
+  }, function() {
+    $(this).css("color", "#ffcd32");
+  });
+
+  //TEAM SECTION
+  $(".zoom").hover(function() {
+    $(".zoom-img", this).addClass("zoom-img-animate");
+    $(".btn-group", this).addClass("btn-group-animate");
+  }, function() {
+    $(".zoom-img", this).removeClass("zoom-img-animate");
+    $(".btn-group", this).removeClass("btn-group-animate");
+  });
+}
