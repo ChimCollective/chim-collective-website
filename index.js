@@ -1,39 +1,8 @@
-// Header Section
-// navbar appear white when scroll up
-function checkScroll() {
-  let startY = $(".navbar").height(); //The point where the navbar changes in px
-
-  if ($(window).scrollTop() > startY) {
-    $(".navbar").addClass("scrolled");
-    $(".navbar-brand").addClass("yellow");
-    $(".contact-info").addClass("yellow");
-  } else {
-    $(".navbar").removeClass("scrolled");
-    $(".navbar-brand").removeClass("yellow");
-    $(".contact-info").removeClass("yellow");
-  }
-}
-// navbar appear white when scroll up
-if ($(".navbar").length > 0) {
-  $(window).on("scroll load resize", function() {
-    checkScroll();
-  });
-}
-
-// navbar, while on Home, toggle black and transparent if click the menu btn
-$(".navbar-toggler").click(function() {
-  $("nav").toggleClass("nav-toggler-black-navbar");
-});
-
-// navbar collapse when click any menu list
-$(".navbar-nav>li>a").on("click", function() {
-  $(".navbar-collapse").collapse("hide");
-});
-
-// navbar collapse when click any anywhere on the dropdown
-$("#navbar-menus").on("click", function() {
-  $(".navbar-collapse").collapse("hide");
-});
+// Navigation Bar Section
+$(".menu-btn").click(function() {
+  $(this).toggleClass("menu-btn-rotate");
+  $(".menu-list").toggleClass("menu-list-slide");
+})
 
 //ABOUT SECTION
 //bullet rotate when hover
@@ -58,3 +27,23 @@ if ($(window).width() > 768) {
     $(".btn-group", this).removeClass("btn-group-animate");
   });
 }
+
+//CONTACT SECTION
+$('.input-submit').click(function() {
+  var name = $('.input-name').val();
+  var email = $('.input-email').val();
+  var phone = $('.input-phone').val();
+  var msg = $('.input-msg').val();
+
+  if (name.length <= 0) {
+    alert("Please enter your name");
+  }
+
+  if (phone.length < 8) {
+    alert("Please enter a valid phone number");
+  }
+
+  if (msg.length <= 0) {
+    alert("Please leave a message");
+  }
+});
