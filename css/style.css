@@ -108,6 +108,11 @@ html, body {
   transition: 0.7s;
 }
 
+.menu-btn-white {
+  background-image: url("../assets/graphic/icon-menu-white.png");
+  transition: 0.7s;
+}
+
 .menu-btn-rotate {
   transform: rotate(-45deg);
   transition: 0.7s;
@@ -136,21 +141,24 @@ html, body {
   text-decoration: none;
   color: #000;
   font-size: 2rem;
-  line-height: 2.5;
+  line-height: 2;
 }
 
-#teamList {
-  line-height: 1.75;
+.menu-list a:hover{
+  color: #fff;
 }
 
-#teamList a {
+.panel-body {
+  line-height: 1.5;
+}
+
+.panel-body a {
   font-size: 1.4rem;
   padding-left: 5%;
 }
 
-#teamList .card {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
+.panel-body a:hover{
+  color: #fff;
 }
 
 /* ===== Home Section ===== */
@@ -498,6 +506,8 @@ html, body {
 /* ===== CONTACT FORM PAGE =====  */
 #contact {
   position: relative;
+  color: #000;
+  transform: translateX(15%);
 }
 
 .contact-box {
@@ -506,11 +516,13 @@ html, body {
 
 #contact .hire-box {
   background-color: #ffcd32;
-  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  padding: 10% 0 5% 5%;
 }
 
 #contact .data-box {
   margin-top: 5%;
+  padding-top: 10%;
 }
 
 #contact .heading-hr {
@@ -519,8 +531,14 @@ html, body {
   margin-top: 10px;
 }
 
+.info-box img{
+  width: 35px;
+  margin-right: 10px;
+}
+
 .input-box {
   background: #fff;
+  padding: 10% 0 5% 5%;
 }
 
 ::placeholder {
@@ -531,23 +549,22 @@ html, body {
 .form-control:focus {
   color: #000 !important;
   font-weight: 500 !important;
-  border-bottom-color: #ffcd32;
+  border-color: #999;
   box-shadow: none !important;
   outline-color: rgba(0, 0, 0, 0) !important;
 }
 
 .form-control {
   color: #000;
+  margin-bottom: 8%;
   /* background: transparent; */
   background-color: rgba(0, 0, 0, 0) !important;
-  border: none;
-  border-bottom-color: #ffcd32;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
+  border: 2px solid;
+  border-color: #999;
   border-radius: 0px;
   /* keep from horizontally resizing text area */
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 80%;
+  max-width: 80%;
 }
 
 #msg {
@@ -591,11 +608,6 @@ footer {
   font-size: .8rem;
   text-align: center;
   height: 5rem;
-}
-
-.foot-nav {
-  margin-top: 5%;
-  padding: 3%;
 }
 
 footer a {

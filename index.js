@@ -2,22 +2,27 @@
 $(".menu-btn").click(function() {
   $(this).toggleClass("menu-btn-rotate");
   $(".menu-list").toggleClass("menu-list-slide");
-})
+});
 
-//ABOUT SECTION
-//bullet rotate when hover
-$(".btn-xl").click(function() {
-  $(this).toggleClass("btn-xl-rotate");
+$(".panel-heading").parent('.panel').hover(function() {
+  $(this).children(".collapse").collapse("show");
+}, function() {
+  $(this).children(".collapse").collapse("hide");
+});
+
+$(".team-a").hover(function() {
+  $(".team-a").css("color", "white");
+}, function() {
+  $(".team-a").css("color", "black");
+});
+
+$(".panel-body").children('a').hover(function() {
+  $(".team-a").css("color", "white");
+}, function() {
+  $(".team-a").css("color", "black");
 });
 
 if ($(window).width() > 768) {
-  // navbar-brand change color when hover
-  $(".navbar-brand").hover(function() {
-    $(this).css("color", "#ffffff");
-  }, function() {
-    $(this).css("color", "#ffcd32");
-  });
-
   //TEAM SECTION
   $(".zoom").hover(function() {
     $(".zoom-img", this).addClass("zoom-img-animate");

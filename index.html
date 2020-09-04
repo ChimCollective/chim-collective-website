@@ -29,16 +29,24 @@
     </button>
     <div class="head-font menu-list">
       <a href="#home">HOME</a>
-      <a href="#about">ABOUT US</a>
-      <a href="#work">OUR WORKS</a>
-      <a id="teamSub" href="#team" type="button" data-toggle="collapse" data-target="#teamList" aria-expanded="false" aria-controls="teamList">MEET OUR TEAMS</a>
-      <div class="collapse" id="teamList" aria-labelledby="teamSub">
-        <div class="card">
-          <a href="#operations">OPERATIONS</a>
-          <a href="#marketing">MARKETING</a>
-          <a href="#software">SOFTWARE</a>
-          <a href="#media">MEDIA</a>
-          <a href="#food">FOOD</a>
+      <a href="#about">ABOUT</a>
+      <a href="#work">WORK</a>
+      <div class="panel panel-default team-panel">
+        <div class="panel-heading" role="tab" id="headingTeam">
+          <h4 class="panel-title">
+            <a class="team-a" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTeamList" aria-expanded="true" aria-controls="collapseTeamList">
+              TEAM
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTeamList" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTeam">
+          <div class="panel-body">
+            <a class="ops-a" href="#operations">OPERATIONS</a>
+            <a href="#marketing">MARKETING</a>
+            <a href="#software">SOFTWARE</a>
+            <a href="#media">MEDIA</a>
+            <a href="#food">FOOD</a>
+          </div>
         </div>
       </div>
       <a class="head-font" href="#contact">CONTACT US</a>
@@ -90,7 +98,7 @@
 
       <div class="work-middle">
         <hr class="heading-hr">
-        <h1 class="head-font">Our works</h1>
+        <h1 class="head-font">WORK</h1>
 
         <div class="work-desc-box">
           <h2 class="head-font"><span>01</span>ChimNYC.com</h2>
@@ -98,7 +106,6 @@
           <label>Currently, we are working on ChimNYC.com, which is a marketplace for Thai food in New York City. We will embrace
             crowdsourcing and facilitate co-creation for new food products and services – to become a playground for chefs,
             scientists, artists, designers, and engineers to collaborate and manipulate food+tech as their medium.</label>
-          <button class="see-more-btn btn" type="button" name="button"></button>
         </div>
       </div>
 
@@ -106,14 +113,14 @@
         <div class="work-ver-line yellow first"></div>
         <a class="head-font" style="color: #ffcd32;">ChimNYC.com</a>
         <div class="work-ver-line yellow"></div>
-        <a class="head-font">PROJECT 02</a>
+        <!-- <a class="head-font">PROJECT 02</a>
         <div class="work-ver-line"></div>
         <a class="head-font">PROJECT 03</a>
         <div class="work-ver-line"></div>
         <a class="head-font">PROJECT 04</a>
         <div class="work-ver-line"></div>
         <a class="head-font">PROJECT 05</a>
-        <div class="work-ver-line"></div>
+        <div class="work-ver-line"></div> -->
       </div>
     </div>
   </section>
@@ -122,7 +129,7 @@
   <section id="team">
     <div class="row">
       <div class="col">
-        <h1 class="text-center heading-big head-font">Meet Our Team</h1>
+        <h1 class="text-center heading-big head-font">TEAM</h1>
         <hr class="heading-hr">
       </div>
     </div>
@@ -212,8 +219,41 @@
   <section id="contact">
     <div class="contact-box">
       <div class="row data-box">
-        <div class="input-box col-md-7">
 
+        <div class="hire-box col-md-5">
+          <form class="block form-horizontal">
+            <div class="col-sm-10">
+              <div class="">
+                <h2>Hire us,</h2>
+                <h2>Join us,</h2>
+                <h2>or Collaboration!</h2>
+              </div>
+
+              <div class="info-box">
+                <p>
+                  <img src="assets/graphic/icon-mail-black.png" alt="">
+                  <label>hi@chimcollective.com</label>
+                </p>
+
+                <p>
+                  <img src="assets/graphic/icon-phone-black.png" alt="">
+                  <label>(987) 654 3210</label>
+                </p>
+              </div>
+
+              <div class="">
+                <p>
+                  <button class="tw-icon social-btn btn" type="button" name="button"></button>
+                  <button class="ig-icon social-btn btn" type="button" name="button"></button>
+                  <button class="fb-icon social-btn btn" type="button" name="button"></button>
+                  <button class="li-icon social-btn btn" type="button" name="button"></button>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="input-box col-md-7">
           <form action="https://formspree.io/mooyong135@gmail.com" method="POST">
             <div class="form-group">
               <div class="col-sm-10">
@@ -236,39 +276,6 @@
               </div>
             </div>
             <input type="submit" class="btn input-submit submit-btn head-font" value="Submit">
-          </form>
-        </div>
-
-        <div class="hire-box col-md-5">
-          <form class="block form-horizontal">
-            <div class="col-sm-10">
-              <div class="">
-                <h2>Hire us,</h2>
-                <h2>Join us,</h2>
-                <h2>or Collaboration!</h2>
-              </div>
-
-              <div class="">
-                <p>
-                  <img src="assets/graphic/icon-mail-black.png" alt="">
-                  <label>hi@chimcollective.com</label>
-                </p>
-
-                <p>
-                  <img src="assets/graphic/icon-phone-black.png" alt="">
-                  <label>(987) 654 3210</label>
-                </p>
-              </div>
-
-              <div class="">
-                <p>
-                  <button class="tw-icon social-btn btn" type="button" name="button"></button>
-                  <button class="ig-icon social-btn btn" type="button" name="button"></button>
-                  <button class="fb-icon social-btn btn" type="button" name="button"></button>
-                  <button class="li-icon social-btn btn" type="button" name="button"></button>
-                </p>
-              </div>
-            </div>
           </form>
         </div>
 
