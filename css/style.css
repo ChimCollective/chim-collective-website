@@ -529,6 +529,7 @@ html, body {
   position: absolute;
   width: 183px;
   margin-top: 10px;
+ 
 }
 
 .info-box img{
@@ -549,6 +550,7 @@ html, body {
 .form-control:focus {
   color: #000 !important;
   font-weight: 500 !important;
+  
   border-color: #999;
   box-shadow: none !important;
   outline-color: rgba(0, 0, 0, 0) !important;
@@ -559,8 +561,8 @@ html, body {
   margin-bottom: 8%;
   /* background: transparent; */
   background-color: rgba(0, 0, 0, 0) !important;
-  border: 2px solid;
-  border-color: #999;
+  border: none;
+  border-bottom: 2px solid #999;
   border-radius: 0px;
   /* keep from horizontally resizing text area */
   min-width: 80%;
@@ -570,7 +572,13 @@ html, body {
 #msg {
   margin-top: 6%;
   border: 2px solid;
-  border-color: #ffcd32 !important;
+  border-color: #999 !important;
+}
+.social  {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  
 }
 
 ::-webkit-input-placeholder {
@@ -628,8 +636,17 @@ footer p {
 
 /* END CONTACT FORM PAGE */
 /* Responsive screen width 991px, iPad, and smaller */
-@media (max-width: 991px) {
-
+@media (max-width: 1024px) {
+ 
+ /*contact*/
+ #contact .hire-box {
+ 
+  border-bottom-left-radius: 0%;
+ 
+}
+h2{
+  font-size: 1.5rem;
+}
 }
 
 /* Query Ends */
