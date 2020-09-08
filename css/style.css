@@ -52,7 +52,6 @@ html, body {
   border-color: #ffcd32;
   transition: 0.7s;
 }
-
 .social-btn {
   background-repeat: no-repeat;
   width: 50px;
@@ -79,6 +78,7 @@ html, body {
   background-image: url("../assets/graphic/icon-li-black.png");
   background-size: 75%;
 }
+
 
 /* ===== Nevigation Bar Section ===== */
 #navigation-bar {
@@ -704,6 +704,11 @@ html, body {
   color: #000;
   transform: translateX(15%);
 }
+#contact .head-font{
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #fff;
+}
 
 .contact-box {
   width: 70%;
@@ -711,31 +716,53 @@ html, body {
 
 #contact .hire-box {
   background-color: #ffcd32;
-  border-bottom-left-radius: 30%;
-  padding: 10% 0 5% 5%;
+ 
+  padding: 75px 0 10px 35px;
 }
 
 #contact .data-box {
   margin-top: 5%;
   padding-top: 10%;
 }
-
 #contact .heading-hr {
-  position: absolute;
-  width: 183px;
-  margin-top: 10px;
+  border-color: #ffcd32;
+  border-style: none;
+  border-top-style: solid;
+  border-width: 4px;
+  width: 120px;
+  margin: 0 0 20px 0;
 }
 
+.info-box{
+  padding-top: 50px;
+}
+.info-box label{
+  font-size: 25px;
+}
 .info-box img{
   width: 35px;
-  margin-right: 10px;
+  
 }
-
+.social-box{
+  padding-top: 50px;
+}
+.social-box .social{
+  padding-left: 15px;
+  padding-right: 20px;
+}
 .input-box {
   background: #fff;
-  padding: 10% 0 5% 5%;
+  padding-top: 75px;
+  padding-left: 75px;
+ 
 }
-
+#contact .dot-decor {
+  width: 40px;
+  left: 2%;
+  top: 2%;
+  position: absolute;
+  
+}
 ::placeholder {
   color: #999 !important;
   font-weight: 500 !important;
@@ -744,6 +771,7 @@ html, body {
 .form-control:focus {
   color: #000 !important;
   font-weight: 500 !important;
+  
   border-color: #999;
   box-shadow: none !important;
   outline-color: rgba(0, 0, 0, 0) !important;
@@ -751,21 +779,22 @@ html, body {
 
 .form-control {
   color: #000;
-  margin-bottom: 8%;
+  margin-bottom: 5%;
   /* background: transparent; */
   background-color: rgba(0, 0, 0, 0) !important;
-  border: 2px solid;
-  border-color: #999;
+  border: none;
+  border-bottom: 2px solid #999;
   border-radius: 0px;
   /* keep from horizontally resizing text area */
   min-width: 80%;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 #msg {
+  height: 272px;
   margin-top: 6%;
   border: 2px solid;
-  border-color: #ffcd32 !important;
+  border-color: #999 !important;
 }
 
 ::-webkit-input-placeholder {
@@ -777,9 +806,10 @@ html, body {
 }
 
 .submit-btn {
+  float: right;
   position: relative;
-  right: 4px;
-  margin: 2.75%;
+  margin-bottom: 25px;
+  margin-right: 75px;
   padding: 15px 30px;
   font-size: 16px;
   color: #000;
@@ -796,6 +826,8 @@ html, body {
 
 /* FOOTER */
 footer {
+  margin-top: 200px;
+  padding-top: 25px;
   position: relative;
   bottom: 0;
   background-color: #ffcd32;
@@ -823,11 +855,54 @@ footer p {
 
 /* END CONTACT FORM PAGE */
 /* Responsive screen width 991px, iPad, and smaller */
-@media (max-width: 991px) {
-
+@media (max-width: 1024px) {
+ 
+ /*contact*/
+ .info-box label{
+  font-size: 20px;
+}
+.info-box img{
+  width: 30px;
+  
+}
+ #contact .hire-box {
+ 
+  border-bottom-left-radius: 0%;
+ 
+}
+.social-box .social{
+  padding:5px;
+}
 }
 
 /* Query Ends */
 /* Responsive screen width 420px, iPhone and smaller*/
 @media (max-width: 420px) {
-}
+  .info-box label{
+    font-size: 20px;
+  }
+  .info-box img{
+    width: 25px;
+  }
+  .input-box{
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+  .form-control {
+    width: 100%;
+    margin: 0px;
+  }
+  .social-box .social{
+    padding:0px;
+  }
+  .submit-btn {
+    margin-right:25px ;
+    }
+  footer a {
+      font-size: 15px;
+      padding: 0;
+      margin: 5px;
+    }
+  }
+
+
