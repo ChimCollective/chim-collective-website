@@ -1,3 +1,4 @@
+
 /* ===== Entire Document ===== */
 html, body {
   background-color: #000;
@@ -701,27 +702,33 @@ html, body {
 /* ===== CONTACT FORM PAGE =====  */
 #contact {
   position: relative;
-  color: #000;
-  transform: translateX(15%);
+  background-image: url("../assets/images/contact-bg.png");
+  background-repeat: no-repeat;
+  
 }
 #contact .head-font{
   font-family: Montserrat;
   font-weight: 700;
-  color: #fff;
+  color:#fff;
 }
 
 .contact-box {
-  width: 70%;
+  margin-left: 150px;
+  
+  width: 80%;
 }
 
+#contact h3 {
+  color: #000;
+}
 #contact .hire-box {
   background-color: #ffcd32;
- 
+  
   padding: 75px 0 10px 35px;
 }
 
 #contact .data-box {
-  margin-top: 5%;
+  margin-left: 5%;
   padding-top: 10%;
 }
 #contact .heading-hr {
@@ -730,13 +737,15 @@ html, body {
   border-top-style: solid;
   border-width: 4px;
   width: 120px;
-  margin: 0 0 20px 0;
+   
 }
 
 .info-box{
   padding-top: 50px;
+  
 }
 .info-box label{
+  color: #000;
   font-size: 25px;
 }
 .info-box img{
@@ -876,8 +885,30 @@ footer p {
 }
 
 /* Query Ends */
+@media (max-width: 768px) {
+  #contact .data-box {
+    margin-left: 0;
+    padding-top: 10%;
+  }
+  .contact-box {
+    margin-left: 75px;
+    
+    width: 80%;
+  }
+}
+ 
 /* Responsive screen width 420px, iPhone and smaller*/
 @media (max-width: 420px) {
+  .contact-box {
+    margin-left: 25px;
+    
+    width: 85%;
+  }
+
+  #contact .data-box {
+    margin-left: 0;
+    padding-top: 10px;
+  }
   .info-box label{
     font-size: 20px;
   }
@@ -904,5 +935,4 @@ footer p {
       margin: 5px;
     }
   }
-
 
