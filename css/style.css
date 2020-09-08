@@ -706,6 +706,16 @@ html, body {
   background-repeat: no-repeat;
   
 }
+.contact-top {
+  
+  border-color: #ffcd32;
+  border-style: none;
+  border-top-style: solid;
+  border-width: 35px;
+  width: 65%;
+  margin: 0;
+}
+
 #contact .head-font{
   font-family: Montserrat;
   font-weight: 700;
@@ -713,8 +723,7 @@ html, body {
 }
 
 .contact-box {
-  margin-left: 150px;
-  
+
   width: 80%;
 }
 
@@ -728,8 +737,8 @@ html, body {
 }
 
 #contact .data-box {
-  margin-left: 5%;
-  padding-top: 10%;
+  margin-left: 12%;
+  padding-top: 8%;
 }
 #contact .heading-hr {
   border-color: #ffcd32;
@@ -739,7 +748,11 @@ html, body {
   width: 120px;
    
 }
-
+.contact-head{
+  position: relative;
+  left: 8.5%;
+  padding-top: 7%;
+  }
 .info-box{
   padding-top: 50px;
   
@@ -867,6 +880,15 @@ footer p {
 @media (max-width: 1024px) {
  
  /*contact*/
+ .contact-box {
+  margin-left: 0px;
+  
+  width: 90%;
+}
+#contact .data-box {
+  margin-left: 10%;
+  padding-top: 8%;
+}
  .info-box label{
   font-size: 20px;
 }
@@ -880,7 +902,7 @@ footer p {
  
 }
 .social-box .social{
-  padding:5px;
+  padding-left: 0px;
 }
 }
 
@@ -891,24 +913,30 @@ footer p {
     padding-top: 10%;
   }
   .contact-box {
-    margin-left: 75px;
+    margin-left: 0px;
     
-    width: 80%;
+    width: 95%;
   }
+  #contact .data-box {
+    margin-left: 5%;
+    padding-top: 8%;
+  }
+  
 }
  
 /* Responsive screen width 420px, iPhone and smaller*/
 @media (max-width: 420px) {
   .contact-box {
-    margin-left: 25px;
     
-    width: 85%;
+    
+    width: 95%;
   }
 
   #contact .data-box {
-    margin-left: 0;
-    padding-top: 10px;
+    margin-left: 3%;
+    padding-top: 5%;
   }
+  
   .info-box label{
     font-size: 20px;
   }
@@ -922,9 +950,6 @@ footer p {
   .form-control {
     width: 100%;
     margin: 0px;
-  }
-  .social-box .social{
-    padding:0px;
   }
   .submit-btn {
     margin-right:25px ;
