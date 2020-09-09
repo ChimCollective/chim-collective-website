@@ -880,6 +880,16 @@ footer p {
 /* END CONTACT FORM PAGE */
 /* Responsive screen width 991px, iPad, and smaller */
 @media (max-width: 1024px) {
+   /*work*/
+  .work-desc-box {
+    width: 60%;
+   }
+  .work-desc-box h2 {
+    font-size: 1.4rem;
+  }
+  .work-top {
+  
+  }
 
   /*contact*/
   .info-box label {
@@ -901,6 +911,15 @@ footer p {
 
 /* Query Ends */
 @media (max-width: 768px) {
+  /*work*/
+  .work-desc-box {
+   width: 70%;
+  }
+  .work-desc-box h2 {
+    font-size: 1.2rem;
+  }
+
+  /*contact*/ 
   #contact .data-box {
     margin-left: 0;
     padding-top: 10%;
@@ -919,6 +938,19 @@ footer p {
  
 /* Responsive screen width 420px, iPhone and smaller*/
 @media (max-width: 420px) {
+
+ /*work*/
+ .work-desc-box {
+  width: 85%;
+  
+  
+ }
+
+
+ /*contact*/ 
+
+
+
   .info-box label {
     font-size: 20px;
   }
