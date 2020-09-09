@@ -469,6 +469,10 @@ html, body {
 #work {
   position: relative;
   height: 43.85rem;
+  background-image: url("assets/images/work-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: middle center;
 }
 
 .work-top {
@@ -483,10 +487,7 @@ html, body {
 
 .work-box {
   position: relative;
-  background-image: url("assets/images/work-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform-origin: middle center;
+
 }
 
 .work-middle {
