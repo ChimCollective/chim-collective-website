@@ -888,7 +888,7 @@ footer p {
     font-size: 1.4rem;
   }
   .work-top {
-  
+    transform: translateX(300px);
   }
 
   /*contact*/
@@ -942,9 +942,10 @@ footer p {
  /*work*/
  .work-desc-box {
   width: 85%;
-  
-  
- }
+  }
+  .work-top {
+    transform: translateX(200px);
+  }
 
 
  /*contact*/ 
