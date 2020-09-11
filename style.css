@@ -885,15 +885,33 @@ footer p {
   .work-desc-box {
     width: 60%;
    }
+   #work h1{
+    font-size: 30px;
+   
+  }
   .work-desc-box h2 {
     font-size: 1.4rem;
   }
   .work-top {
     transform: translateX(300px);
+    width: 100%;
+    border-width: 25px;
+  }
+  .work-desc-box h2 {
+    
+    padding-top: 25px;
+  
+  }
+  #work .heading-hr {
+    margin-top: 75px; 
   }
   .work-bottom {
-    margin-top: 22%;
-    
+    margin-top: 14%;
+  }
+  .work-desc-box label {
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-right: 20px;
   }
   
   /*contact*/
@@ -917,6 +935,10 @@ footer p {
 /* Query Ends */
 @media (max-width: 768px) {
   /*work*/
+  #work h1{
+    font-size: 30px;
+   
+  }
   .work-desc-box {
    width: 70%;
   }
@@ -928,10 +950,20 @@ footer p {
     width: 100%;
     border-width: 25px;
   }
+  
   .work-bottom {
-    margin-top: 35%;
-    
+    margin-top: 15%;  
   }
+  .work-desc-box hr {
+    width: 50%;
+    transform: translateX(60px);
+  }
+  .work-desc-box h2 {
+    
+    padding-top: 25px;
+  
+  }
+  
   
   /*contact*/ 
   #contact .data-box {
@@ -981,8 +1013,8 @@ footer p {
   }
   
   .work-desc-box hr {
-    
-    transform: translateX(60px);
+    width: 60%;
+    transform: translateX(80px);
   }
   
   .work-desc-box label {
