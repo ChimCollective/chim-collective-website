@@ -1,54 +1,27 @@
-// Header Section
-// navbar appear white when scroll up
-function checkScroll() {
-  let startY = $(".navbar").height(); //The point where the navbar changes in px
+setInterval(function() {
+  let pic1 = "images/" + (Math.floor(Math.random() * 10) + 1) + ".jpg";
+  let pic6 = "images/" + (Math.floor(Math.random() * 10) + 1) + ".jpg";
+  let pic8 = "images/" + (Math.floor(Math.random() * 10) + 1) + ".jpg";
+  let pic9 = "images/" + (Math.floor(Math.random() * 10) + 1) + ".jpg";
+  let pic15 = "images/" + (Math.floor(Math.random() * 10) + 1) + ".jpg";
 
-  if ($(window).scrollTop() > startY) {
-    $(".navbar").addClass("scrolled");
-    $(".navbar-brand").addClass("yellow");
-    $(".contact-info").addClass("yellow");
-  } else {
-    $(".navbar").removeClass("scrolled");
-    $(".navbar-brand").removeClass("yellow");
-    $(".contact-info").removeClass("yellow");
-  }
-}
-// navbar appear white when scroll up
-if ($(".navbar").length > 0) {
-  $(window).on("scroll load resize", function() {
-    checkScroll();
-  });
-}
+	$("#pic1").fadeTo(400, 0).attr("src", pic1).fadeTo(400, 1).delay(1000).fadeTo(400, 0);
+  $("#pic6").fadeTo(400, 0).attr("src", pic6).fadeTo(400, 1).delay(1000).fadeTo(400, 0);
+	$("#pic8").fadeTo(400, 0).attr("src", pic8).fadeTo(400, 1).delay(1000).fadeTo(400, 0);
+	$("#pic9").fadeTo(400, 0).attr("src", pic9).fadeTo(400, 1).delay(1000).fadeTo(400, 0);
+	$("#pic15").fadeTo(400, 0).attr("src", pic15).fadeTo(400, 1).delay(1000).fadeTo(400, 0);
+},2300);
 
-// navbar, while on Home, toggle black and transparent if click the menu btn
-$(".navbar-toggler").click(function() {
-  $("nav").toggleClass("nav-toggler-black-navbar");
-});
-
-// navbar collapse when click any menu list
-$(".navbar-nav>li>a").on("click", function() {
-  $(".navbar-collapse").collapse("hide");
-});
-
-// navbar collapse when click any anywhere on the dropdown
-$("#navbar-menus").on("click", function() {
-  $(".navbar-collapse").collapse("hide");
-});
-
-//ABOUT SECTION
-//bullet rotate when hover
-$(".btn-xl").click(function() {
-  $(this).toggleClass("btn-xl-rotate");
+// Navigation Bar Section
+$(".menu-btn, .menu-list").hover(function() {
+  $(".menu-list").addClass("slide");
+  $(".feather-plus").addClass("rotate");
+}, function() {
+  $(".menu-list").removeClass("slide");
+  $(".feather-plus").removeClass("rotate");
 });
 
 if ($(window).width() > 768) {
-  // navbar-brand change color when hover
-  $(".navbar-brand").hover(function() {
-    $(this).css("color", "#ffffff");
-  }, function() {
-    $(this).css("color", "#ffcd32");
-  });
-
   //TEAM SECTION
   $(".zoom").hover(function() {
     $(".zoom-img", this).addClass("zoom-img-animate");
@@ -59,3 +32,22 @@ if ($(window).width() > 768) {
   });
 }
 
+//CONTACT SECTION
+$('.input-submit').click(function() {
+  var name = $('.input-name').val();
+  var email = $('.input-email').val();
+  var phone = $('.input-phone').val();
+  var msg = $('.input-msg').val();
+
+  if (name.length <= 0) {
+    alert("Please enter your name");
+  }
+
+  if (phone.length < 8) {
+    alert("Please enter a valid phone number");
+  }
+
+  if (msg.length <= 0) {
+    alert("Please leave a message");
+  }
+});

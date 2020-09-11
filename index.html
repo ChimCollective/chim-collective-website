@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
@@ -9,423 +9,288 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- Fontawesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- Feather Font -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
 
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="container-fluid no-padding">
-
   <!-- Header Bar -->
-  <nav class="navbar navbar-custom-color pt-5 pb-3 fixed-top">
-    <a class="navbar-brand head-font" href="#home"><strong>Chim Collective</strong></a>
-    <div class="d-flex justify-content-end">
-      <button class="hire-btn btn mr-3 head-font" type="button" name="button">HIRE US</button>
-      <button class="navbar-toggler btn mr-5" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="contact-info head-font">
-        <p>Email: email@chim.com</p>
-        <p>Phone: +1 987 654-3210</p>
+  <section id="navigation-bar">
+
+    <img src="./assets/graphic/logo-chim-collective.png" class="top-logo" alt="Chim Collective Logo">
+    <label class="menu-btn"><i data-feather="plus"></i></label>
+
+    <div class="head-font menu-list">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#work">WORK</a>
+      <a href="#team">TEAM</a>
+      <div class="team-list">
+        <a href="#operations">OPERATIONS</a>
+        <a href="#marketing">MARKETING</a>
+        <a href="#software">SOFTWARE</a>
+        <a href="#media">MEDIA</a>
+        <a href="#food">FOOD</a>
       </div>
+      <a href="#contact">CONTACT US</a>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbar-menus">
-      <ul class="navbar-nav mr-auto head-font" id="navbar-menu-list">
-        <li class="nav-item active"><a class="nav-link home-a" href="#home">HOME</a></li>
-        <li class="nav-item active"><a class="nav-link about-a" href="#about">ABOUT</a></li>
-        <li class="nav-item active"><a class="nav-link works-a" href="#works">WORKS</a></li>
-        <li class="nav-item active"><a class="nav-link team-a" href="#team">TEAM</a></li>
-        <li class="nav-item active"><a class="nav-link contact-a" href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </nav>
+  </section>
 
   <!-- Home -->
   <section id="home">
-    <div class="g">
-      <div class="container home-body">
-        <h1 class="home-heading head-font">WE ARE</h1>
-        <h1 class="animate-career-heading head-font">
-          <span>INNOVATORS</span>
-          <span>DEVELOPERS</span>
-          <span>PRODUCERS</span>
-          <span>PROGRAMMERS</span>
-          <span>CREATORS</span>
-        </h1>
-      </div>
-    </div>
+    <div class="home-container">
 
+      <div class="home-quote">
+        <img class="blank-circle" src="assets\graphic\circle-decor-03.png" alt="">
+        <img class="yellow-circle" src="assets\graphic\circle-decor-01.png" alt="">
+
+        <img class="eggs" src="assets\images\home-pic-08.png" alt="">
+        <img class="chilli" src="assets\images\home-pic-10.png" alt="">
+
+
+        <img class="small-blank-circle" src="assets\graphic\circle-decor-03.png" alt="">
+        <img class="small-yellow-circle" src="assets\graphic\circle-decor-01.png" alt="">
+        <img class="lime" src="assets\images\home-pic-09.png" alt="">
+
+        <h1>"The discovery of a new dish does more for human happiness than the discovery of a new star."</h1>
+        <p><b> ──────────────── Anthelme Brillat-Savarin</b></p>
+      </div>
+
+      <div class="home-quote">
+        <img class="blank-circle2" src="assets\graphic\circle-decor-03.png" alt="">
+        <img class="line-circle" src="assets\graphic\circle-decor-02.png" alt="">
+        <img class="green-curry" src="assets\images\home-pic-03.png" alt="">
+        <img class="padthai" src="assets\images\home-pic-07.png" alt="">
+        <img class="moostae" src="assets\images\home-pic-06.png" alt="">
+
+        <img class="small-yellow-circle2" src="assets\graphic\circle-decor-01.png" alt="">
+        <img class="red-chilli" src="assets\images\home-pic-05.png" alt="">
+
+        <h1>"We accelerate innovation with the power of crowdsourcing and co-creation.</h1>
+      </div>
+
+      <div class="home-quote">
+        <img class="yellow-circle2" src="assets\graphic\circle-decor-01.png" alt="">
+        <img class="line-circle2" src="assets\graphic\circle-decor-02.png" alt="">
+        <img class="mai-roo" src="assets\images\home-pic-01.png" alt="">
+
+        <img class="seasoning" src="assets\images\home-pic-02.png" alt="">
+
+
+        <img class="small-blank-circle3" src="assets\graphic\circle-decor-03.png" alt="">
+        <img class="small-yellow-circle3" src="assets\graphic\circle-decor-01.png" alt="">
+        <img class="onion" src="assets\images\home-pic-04.png" alt="">
+
+        <h1>"We investigate the future of food through media and technology.</h1>
+      </div>
+
+    </div>
   </section>
 
   <!-- About -->
   <section id="about">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-center heading-big head-font">About Us</h1>
-        <hr class="heading-hr">
+    <div class="row" data-aos="fade-up">
+
+      <div class="col-lg-6">
+        <img class="dot-decor" src="assets/graphic/dot-yellow-3-7.png" alt="">
+        <div class="about-decs-box">
+          <hr class="heading-hr">
+          <h1 class="head-font">ABOUT</h1>
+          <label>Chim Collective is a collaborative program run by visionaries in food, media, and technology, facilitated
+            by Chim Media Inc. With the spirit of constant experimentation and open innovation, we investigate the
+            future of food through virtual platforms. As media, we promote knowledge and innovation in the food biz
+            ecosystem. As a marketing agency, we help connect everyone in the food value chain through the power of
+            creativity.</label>
+        </div>
       </div>
+
+      <div class="about-img-box col-lg-6">
+        <img src="assets/graphic/circle-decor-04.png" alt="About Image">
+      </div>
+
     </div>
 
-    <div class="mission-box row" data-aos="fade-left">
-      <div class="mission-head-box col-lg-5">
-        <h3 class="mission-head head-font">Our Mission</h3>
-      </div>
-      <div class="mission-desc-box col-lg-7">
-        <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</label>
-      </div>
-    </div>
-
-    <div class="wedo-box row">
-      <div class="wedo-section col-lg-5">
-        <h3 class="wedo-head head-font" data-aos="fade-right">What Can We Do</h3>
-        <div class="wedo-desc-box" data-aos="fade-right">
-          <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</label>
-        </div>
-        <button class="hire-btn btn btn-lg mr-3 head-font" href="#contact" type="button" name="button" data-aos="fade-right">HIRE US</button>
-      </div>
-
-      <div class="about-bullet-container col-lg-7">
-
-        <!-- branding -->
-        <div class="bullet-box" data-aos="fade-left">
-          <div class="row">
-            <div class="col-1.5">
-              <button class="btn btn-xl" data-toggle="collapse" href="#branding-desc" role="button" aria-expanded="false" aria-controls="branding-desc">
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
-            <div class="col">
-              <h3 class="about-bullet-head head-font">Branding & Identity</h3>
-            </div>
-          </div>
-
-          <div class="collapse" id="branding-desc">
-            <div class="collapse-desc-box">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-
-        <!-- seo -->
-        <div class="bullet-box" data-aos="fade-left">
-          <div class="row">
-            <div class="col-1.5">
-              <button class="btn btn-xl" data-toggle="collapse" href="#seo-desc" role="button" aria-expanded="false" aria-controls="seo-desc">
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
-            <div class="col">
-              <h3 class="about-bullet-head head-font">SEO & Marketing</h3>
-            </div>
-          </div>
-
-          <div class="collapse" id="seo-desc">
-            <div class="collapse-desc-box">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-
-        <!-- ui/ux -->
-        <div class="bullet-box" data-aos="fade-left">
-          <div class="row">
-            <div class="col-1.5">
-              <button class="btn btn-xl" data-toggle="collapse" href="#uiux-desc" role="button" aria-expanded="false" aria-controls="uiux-desc">
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
-            <div class="col">
-              <h3 class="about-bullet-head head-font">UI & UX Design</h3>
-            </div>
-          </div>
-
-          <div class="collapse" id="uiux-desc">
-            <div class="collapse-desc-box">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-
-        <!-- full support -->
-        <div class="bullet-box" data-aos="fade-left">
-          <div class="row">
-            <div class="col-1.5">
-              <button class="btn btn-xl" data-toggle="collapse" href="#fusup-desc" role="button" aria-expanded="false" aria-controls="fusup-desc">
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
-            <div class="col">
-              <h3 class="about-bullet-head head-font">Full Support</h3>
-            </div>
-          </div>
-
-          <div class="collapse" id="fusup-desc">
-            <div class="collapse-desc-box">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
   </section>
 
   <!-- Works -->
-  <section id="works">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="heading-big head-font">Our Work</h1>
-          <hr class="heading-hr">
+  <section id="work">
+    <div class="work-box">
+
+      <hr class="work-top">
+
+      <div class="work-middle">
+        <hr class="heading-hr">
+        <h1 class="head-font">WORK</h1>
+
+        <div class="work-desc-box">
+          <h2 class="head-font"><span>01</span>ChimNYC.com</h2>
+          <hr>
+          <label>Currently, we are working on ChimNYC.com, which is a marketplace for Thai food in New York City. We will embrace
+            crowdsourcing and facilitate co-creation for new food products and services – to become a playground for chefs,
+            scientists, artists, designers, and engineers to collaborate and manipulate food+tech as their medium.</label>
         </div>
       </div>
-      <main class="container1">
-        <section class="card" data-aos="fade-left">
-          <img class="works1" src="https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/05/1140-655-sba-loan-jobs.imgcache.rev7b9bde413aca6aa0a942cb94abb341aa.jpg" alt="Card image cap">
-          <div>
-            <h3>Web Design</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. porro adipisci quisquam!,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus totam explicabo iusto,
-              voluptas dicta ducimus similique consequatur
-              enim facilis quasi perspiciatis quae error est consectetur cum id ipsam nam.
-              Ipsam recusandae officia facilis ullam. </p>
 
-          </div>
-        </section>
-
-        <section class="card" data-aos="fade-left">
-          <img class="works1" src="https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/05/1140-655-sba-loan-jobs.imgcache.rev7b9bde413aca6aa0a942cb94abb341aa.jpg" alt="Card image cap">
-          <div>
-            <h3>Web Design</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. porro adipisci quisquam!,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus totam explicabo iusto,
-              voluptas dicta ducimus similique consequatur
-              enim facilis quasi perspiciatis quae error est consectetur cum id ipsam nam.
-              Ipsam recusandae officia facilis ullam. </p>
-
-          </div>
-        </section>
-
-        <section class="card" data-aos="fade-left">
-          <img class="works1" src="https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/05/1140-655-sba-loan-jobs.imgcache.rev7b9bde413aca6aa0a942cb94abb341aa.jpg" alt="Card image cap">
-          <div>
-            <h3>Web Design</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. porro adipisci quisquam!,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus totam explicabo iusto,
-              voluptas dicta ducimus similique consequatur
-              enim facilis quasi perspiciatis quae error est consectetur cum id ipsam nam.
-              Ipsam recusandae officia facilis ullam. </p>
-
-          </div>
-        </section>
-
-        <section class="card" data-aos="fade-left">
-          <img class="works1" src="https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/05/1140-655-sba-loan-jobs.imgcache.rev7b9bde413aca6aa0a942cb94abb341aa.jpg" alt="Card image cap">
-          <div>
-            <h3>Web Design</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. porro adipisci quisquam!,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus totam explicabo iusto,
-              voluptas dicta ducimus similique consequatur
-              enim facilis quasi perspiciatis quae error est consectetur cum id ipsam nam.
-              Ipsam recusandae officia facilis ullam. </p>
-
-          </div>
-        </section>
-      </main>
+      <div class="work-bottom">
+        <div class="work-ver-line yellow first"></div>
+        <a class="head-font" style="color: #ffcd32;">ChimNYC.com</a>
+        <div class="work-ver-line yellow"></div>
+        <!-- <a class="head-font">PROJECT 02</a>
+        <div class="work-ver-line"></div>
+        <a class="head-font">PROJECT 03</a>
+        <div class="work-ver-line"></div>
+        <a class="head-font">PROJECT 04</a>
+        <div class="work-ver-line"></div>
+        <a class="head-font">PROJECT 05</a>
+        <div class="work-ver-line"></div> -->
+      </div>
     </div>
   </section>
 
   <!-- Team -->
   <section id="team">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-center heading-big head-font">Meet Our Team</h1>
-        <hr class="heading-hr">
-      </div>
+    <div class="team-pic-box">
+      <p>
+        <img id="pic1" src="images/1.jpg">
+        <button class="btn team-circle-pic pic2 head-font">OPERATIONS</button>
+        <button class="btn team-circle-pic pic3"></button>
+        <button class="btn team-circle-pic pic4 head-font">MARKETING</button>
+      </p>
+
+      <p>
+        <button class="btn team-circle-pic pic5"></button>
+        <img id="pic6" src="images/1.jpg">
+        <button class="btn team-circle-pic pic7 head-font">MEDIA</button>
+        <img id="pic8" src="images/1.jpg">
+      </p>
+
+      <p>
+        <img id="pic9" src="images/1.jpg">
+        <button class="btn team-circle-pic pic10 head-font">FOOD</button>
+        <button class="btn team-circle-pic pic11"></button>
+        <button class="btn team-circle-pic pic12"></button>
+      </p>
+
+      <p>
+        <button class="btn team-circle-pic pic13 head-font">SOFTWARE</button>
+        <button class="btn team-circle-pic pic14"></button>
+        <img id="pic15" src="images/1.jpg">
+        <button class="btn team-circle-pic pic16">
+          <img src="assets/graphic/team-arrow.png" alt="">
+          <h5>See more</h3>
+        </button>
+      </p>
     </div>
 
-    <div class="row team-row">
-      <div class="col-lg col-md-6">
-        <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
-          <div class="btn-group">
-            <button class="btn l-btn" typr="button"><i class="fab fa-linkedin-in"></i></button>
-            <button class="btn h-btn" type="button"><i class="fas fa-home"></i></button>
-          </div>
-        </div>
-        <div class="team-desc mt-2 mb-5">
-          <h4 class="team-name head-font">Jay Chorpaka</h4>
-          <h5 class="team-position">Creative Producer</h5>
-        </div>
-      </div>
-
-      <div class="col-lg col-md-6">
-        <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
-          <div class="btn-group">
-            <button class="btn l-btn" typr="button"><i class="fab fa-linkedin-in"></i></button>
-            <button class="btn h-btn" type="button"><i class="fas fa-home"></i></button>
-          </div>
-        </div>
-        <div class="team-desc mt-2 mb-5">
-          <h4 class="team-name head-font">Jay Chorpaka</h4>
-          <h5 class="team-position">Creative Producer</h5>
-        </div>
-      </div>
-
-      <div class="col-lg col-md-6">
-        <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
-          <div class="btn-group">
-            <button class="btn l-btn" typr="button"><i class="fab fa-linkedin-in"></i></button>
-            <button class="btn h-btn" type="button"><i class="fas fa-home"></i></button>
-          </div>
-        </div>
-        <div class="team-desc mt-2 mb-5">
-          <h4 class="team-name head-font">Jay Chorpaka</h4>
-          <h5 class="team-position">Creative Producer</h5>
-        </div>
-      </div>
-
-      <div class="col-lg col-md-6">
-        <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
-          <div class="btn-group">
-            <button class="btn l-btn" typr="button"><i class="fab fa-linkedin-in"></i></button>
-            <button class="btn h-btn" type="button"><i class="fas fa-home"></i></button>
-          </div>
-        </div>
-        <div class="team-desc mt-2 mb-5">
-          <h4 class="team-name head-font">Jay Chorpaka</h4>
-          <h5 class="team-position">Creative Producer</h5>
-        </div>
-      </div>
-
-      <div class="col-lg col-md-6">
-        <div class="zoom" data-aos="fade-up">
-          <div class="zoom-img" style="background-image: url('https://www.kindpng.com/picc/m/7-71145_person-cartoon-group-people-clever-girl-cartoon-character.png')"></div>
-          <div class="btn-group">
-            <button class="btn l-btn" typr="button"><i class="fab fa-linkedin-in"></i></button>
-            <button class="btn h-btn" type="button"><i class="fas fa-home"></i></button>
-          </div>
-        </div>
-        <div class="team-desc mt-2 mb-5">
-          <h4 class="team-name head-font">Jay Chorpaka</h4>
-          <h5 class="team-position">Creative Producer</h5>
-        </div>
-      </div>
-
+    <div class="team-head">
+      <hr class="heading-hr">
+      <h1 class="head-font">TEAM</h1>
     </div>
-    <!--View All-->
-    <div class="view-all head-font" data-aos="fade-right">
-      <a href="ourteam.html">View All <i class="fas fa-chevron-right next-icon"></i></a>
     </div>
+
   </section>
 
   <!-- Contact -->
   <section id="contact">
+    <hr class="contact-top">
+
+    <div class="contact-head">
+      <hr class="heading-hr">
+      <h1 class="head-font">CONTACT</h1>
+    </div>
+
     <div class="contact-box">
-      <div class="lets-box">
-        <h1 class="block-header head-font heading-big">Let's Get In Touch</h1>
-        <hr class="heading-hr">
-      </div>
-
       <div class="row data-box">
-        <div class="lets-desc-box col-md-5">
+
+        <div class="hire-box col-md-5">
           <form class="block form-horizontal">
-            <div class="col-sm-10">
-              <p><strong>Email:</strong> chim@chim.com</p>
-              <p><strong>Phone:</strong> (987) 654 3210</p>
-              <p><strong>Address:</strong> 11 Chim Street, Chim, CH, 11111</p>
+
+            <div class="head-font">
+              <h3>Hire us,</h3>
+              <h3>Join us,</h3>
+              <h3>or collaborate</h3>
+              <h3>with us!</h3>
             </div>
+
+            <div class="info-box">
+              <p>
+                <i data-feather="mail"></i>
+                <label>hi@chimcollective.com</label>
+              </p>
+
+              <p>
+                <i data-feather="phone"></i>
+                <label>(987) 654 3210</label>
+              </p>
+
+              <div class="social-box">
+                <p>
+                  <a href="#"><i data-feather="facebook"></i></a>
+                  <a href="#"><i data-feather="linkedin"></i></a>
+                  <a href="#"><i data-feather="instagram"></i></a>
+                  <a href="#"><i data-feather="twitter"></i></a>
+                </p>
+              </div>
+            </div>
+          </form>
         </div>
 
-      <div class="input-box col-md-7">
-        <div class="form-group">
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="name" placeholder="Name">
-          </div>
+        <div class="input-box col-md-7">
+          <img class="dot-decor" src="assets/graphic/dot-yellow-2-10.png" alt="">
+          <form action="https://formspree.io/mooyong135@gmail.com" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="input-name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="input-email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="input-phone" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="msg" name="input-msg" rows="3" placeholder="Message"></textarea>
+            </div>
+            <input type="submit" class="btn input-submit submit-btn head-font" value="Submit">
+          </form>
         </div>
-        <div class="form-group">
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="email" placeholder="Email">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-10">
-            <input type="phoneNumber" class="form-control" id="Phone" placeholder="Contact Phone">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-10">
-            <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
-          </div>
-        </div>
-        <button class="btn submit-btn head-font">Submit Message</button>
-        </form>
+
       </div>
     </div>
-    </div>
-
-    <div class="row contact-buttom">
-      <div class="col-lg-6 contact-menu-list head-font">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#work">WORK</a>
-        <a href="#team">TEAM</a>
-        <a href="#contact">CONTACT</a>
-      </div>
-
-      <div class="col-lg-4 contact-buttom-info">
-        <p><strong>Email:</strong> chim@chim.com</p>
-        <p><strong>Phone:</strong> (987) 654 3210</p>
-        <p><strong>Address:</strong> 11 Chim Street, Chim, CH, 11111</p>
-        <h2 class="block-header head-font">Let's Get In Touch</h2>
-        <hr class="heading-hr">
-      </div>
-
-      <div class="col-lg-2 contact-social">
-        <p><button type="button" name="button"><i class="fab fa-facebook-f"></i></button></p>
-        <p><button type="button" name="button"><i class="fab fa-twitter"></i></button></p>
-        <p><button type="button" name="button"><i class="fab fa-instagram"></i></button></p>
-        <p><button type="button" name="button"><i class="fab fa-linkedin-in"></i></button></p>
-      </div>
-    </div>
-
   </section>
 
-  <footer>
-    <p><i class="far fa-copyright"></i> 2020 Chim Collective</p>
-  </footer>
-
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-  <!-- Our Javascript -->
-  <script src="index.js" charset="utf-8"></script>
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false,
+      duration: 1100
+    });
+  </script>
 
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-  <!-- AOS Scripts -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Feather Font -->
   <script>
-    AOS.init({
-      once: true,
-      duration: 600
-    });
+    feather.replace()
   </script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <!-- Our Javascript -->
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
