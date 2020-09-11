@@ -549,6 +549,7 @@ html, body {
   align-items: center;
   padding-left: 6.7%;
   padding-bottom: 3%;
+  margin-top: 10%;
 }
 
 .work-ver-line {
@@ -890,7 +891,11 @@ footer p {
   .work-top {
     transform: translateX(300px);
   }
-
+  .work-bottom {
+    margin-top: 22%;
+    
+  }
+  
   /*contact*/
   .info-box label {
     font-size: 20px;
@@ -916,9 +921,18 @@ footer p {
    width: 70%;
   }
   .work-desc-box h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-
+  .work-top {
+    transform: translateX(300px);
+    width: 100%;
+    border-width: 25px;
+  }
+  .work-bottom {
+    margin-top: 35%;
+    
+  }
+  
   /*contact*/ 
   #contact .data-box {
     margin-left: 0;
@@ -937,16 +951,49 @@ footer p {
 }
  
 /* Responsive screen width 420px, iPhone and smaller*/
-@media (max-width: 420px) {
+@media (max-width: 490px) {
 
  /*work*/
  .work-desc-box {
   width: 85%;
   }
   .work-top {
-    transform: translateX(200px);
+    transform: translateX(30px);
+    border-width: 20px;
   }
-
+  #work .heading-hr {
+   margin-top: 50px; 
+   width: 75px;
+   margin-bottom: 10px;
+  }
+  #work h1{
+    font-size: 25px;
+    
+  }
+  .work-desc-box {
+   margin-top: 60px;
+  }
+  
+  .work-desc-box h2 {
+    font-size: 1rem;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+  
+  .work-desc-box hr {
+    
+    transform: translateX(60px);
+  }
+  
+  .work-desc-box label {
+    font-size: 15px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+  }
+  .work-bottom {
+    margin-top: 50%;
+    
+  }
 
  /*contact*/ 
 
