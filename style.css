@@ -917,8 +917,26 @@ footer p {
   }
   
   /*contact*/
+  .feather-mail {
+    width: 20px;
+    height: 20px;
+    
+    stroke-width: 1px;
+  }
+  
+  .feather-phone {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1px;
+  }
   #contact h1{
     font-size: 30px;
+  }
+  #contact h3  {
+    font-size: 30px;
+  }
+  #contact p{
+    margin: 0px;
   }
   .info-box label {
     font-size: 20px;
@@ -930,27 +948,31 @@ footer p {
 
   #contact .hire-box {
     border-bottom-left-radius: 0;
+    padding-right: 0px;
   }
 
   
 }
 @media (max-width: 812px) {
 
-  #contact h3  {
-    font-size: 30px;
-  }
+  
   .contact-head{
     margin-top: 75px;
     margin-left: 3%;
   }
-  #contact .hire-box {
-   
-    padding: 50px 40px 0 30px;
+  #contact .hire-box{
+    padding-left: 35px;
   }
   .contact-top{
     border-width: 25px;
     width: 70%;
     transform: translateX(-150px);
+  }
+  #contact h3  {
+    font-size: 25px;
+  }
+  .info-box label {
+    font-size: 15px;
   }
 }
 /* Query Ends */
@@ -988,11 +1010,12 @@ footer p {
   
   /*contact*/ 
   #contact {
-   
-    height: 80rem;
+  
     margin-bottom: 50px;
   }
-  
+  .info-box label {
+    font-size: 20px;
+  }
   .contact-top{
     border-width: 25px;
     transform: translateX(-150px);
@@ -1003,15 +1026,18 @@ footer p {
   }
 
   #contact .data-box{
-    height: 1500px;
     padding: 0%;
     display: block;
   }
  #contact .hire-box{
   max-width: 100%;
   margin-bottom: 0;
-  padding: 50px 40px 25px 70px;
+  padding: 35px 35px 25px 70px;
     }
+  #contact .info-box{
+      padding-top: 25px;
+      margin-bottom: 0;
+   }
   #contact .input-box.col-md-7{
     max-width: 100%; 
     height: 625px;
@@ -1071,6 +1097,7 @@ footer p {
   
   transform: translateX(-75px);
 }
+
 #contact .heading-hr {
   margin-top: 50px; 
   width: 75px;
@@ -1078,20 +1105,21 @@ footer p {
  }
  #contact h1{
    font-size: 25px;
-   
- }
-#contact .hire-box{
-  padding-left: 50px;
-    }
-
-  .info-box label {
+  }
+  #contact h3{
     font-size: 20px;
-  }
-
-  .img.dot-decor{
-    width: 25;
-  }
-
+   }
+  #contact .hire-box{
+  padding-left: 35px;
+  padding-bottom: 10px;
+    }
+  #contact .info-box{
+    padding-top: 25px;
+    margin-bottom: 0;
+ }
+ .info-box label {
+  font-size: 15px;
+}
   .input-box {
     padding-left: 30px;
     padding-right: 0;
