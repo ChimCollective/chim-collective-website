@@ -719,6 +719,7 @@ html, body {
   position: relative;
   color: #000;
   height: 39rem;
+  margin-bottom: 50px;
 }
 
 .contact-top {
@@ -882,6 +883,11 @@ footer p {
 /* Responsive screen width 991px, iPad, and smaller */
 @media (max-width: 1024px) {
    /*work*/
+   .work-top {
+    transform: translateX(350px) ;
+    width: 100%;
+    border-width: 25px;
+  }
   .work-desc-box {
     width: 60%;
    }
@@ -892,11 +898,7 @@ footer p {
   .work-desc-box h2 {
     font-size: 1.4rem;
   }
-  .work-top {
-    transform: translateX(300px);
-    width: 100%;
-    border-width: 25px;
-  }
+  
   .work-desc-box h2 {
     
     padding-top: 25px;
@@ -906,7 +908,7 @@ footer p {
     margin-top: 75px; 
   }
   .work-bottom {
-    margin-top: 14%;
+    margin-top: 12%;
   }
   .work-desc-box label {
     font-size: 20px;
@@ -915,6 +917,9 @@ footer p {
   }
   
   /*contact*/
+  #contact h1{
+    font-size: 30px;
+  }
   .info-box label {
     font-size: 20px;
   }
@@ -927,11 +932,27 @@ footer p {
     border-bottom-left-radius: 0;
   }
 
-  .social-box .social {
-    padding: 5px;
+  
+}
+@media (max-width: 812px) {
+
+  #contact h3  {
+    font-size: 30px;
+  }
+  .contact-head{
+    margin-top: 75px;
+    margin-left: 3%;
+  }
+  #contact .hire-box {
+   
+    padding: 50px 40px 0 30px;
+  }
+  .contact-top{
+    border-width: 25px;
+    width: 70%;
+    transform: translateX(-150px);
   }
 }
-
 /* Query Ends */
 @media (max-width: 768px) {
   /*work*/
@@ -952,7 +973,7 @@ footer p {
   }
   
   .work-bottom {
-    margin-top: 15%;  
+    margin-top: 17%;  
   }
   .work-desc-box hr {
     width: 50%;
@@ -966,22 +987,36 @@ footer p {
   
   
   /*contact*/ 
-  #contact .data-box {
-    margin-left: 0;
-    padding-top: 10%;
-  }
-  .contact-box {
-    margin-left: 0px;
-    
-    width: 95%;
-  }
-  #contact .data-box {
-    margin-left: 5%;
-    padding-top: 8%;
+  #contact {
+   
+    height: 80rem;
+    margin-bottom: 50px;
   }
   
+  .contact-top{
+    border-width: 25px;
+    transform: translateX(-150px);
+  }
+  .contact-head{
+    margin-top: 75px;
+    margin-left: 3%;
+  }
+
+  #contact .data-box{
+    height: 1500px;
+    padding: 0%;
+    display: block;
+  }
+ #contact .hire-box{
+  max-width: 100%;
+  margin-bottom: 0;
+  padding: 50px 40px 25px 70px;
+    }
+  #contact .input-box.col-md-7{
+    max-width: 100%; 
+    height: 625px;
+  }
 }
- 
 /* Responsive screen width 420px, iPhone and smaller*/
 @media (max-width: 490px) {
 
@@ -990,7 +1025,7 @@ footer p {
   width: 85%;
   }
   .work-top {
-    transform: translateX(30px);
+    transform: translateX(100px);
     border-width: 20px;
   }
   #work .heading-hr {
@@ -1028,25 +1063,45 @@ footer p {
   }
 
  /*contact*/ 
-
-
+#contact{
+  margin-top: 25px;
+}
+.contact-top{
+  border-width: 25px;
+  
+  transform: translateX(-75px);
+}
+#contact .heading-hr {
+  margin-top: 50px; 
+  width: 75px;
+  margin-bottom: 10px;
+ }
+ #contact h1{
+   font-size: 25px;
+   
+ }
+#contact .hire-box{
+  padding-left: 50px;
+    }
 
   .info-box label {
     font-size: 20px;
   }
 
-  .info-box img {
-    width: 25px;
+  .img.dot-decor{
+    width: 25;
   }
 
   .input-box {
     padding-left: 30px;
     padding-right: 0;
   }
-
-  .form-control {
-    width: 100%;
-    margin: 0;
+  #contact .input-box.col-md-7{
+    height: 550px;
+  }
+  #contact .dot-decor {
+   opacity: 0;
+   
   }
 
   .submit-btn {
