@@ -21,90 +21,47 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container-fluid no-padding">
-  <!-- Header Bar -->
+<body>
+  <!-- Nevigation Bar Section -->
   <section id="navigation-bar">
 
-    <img src="./assets/graphic/logo-chim-collective.png" class="top-logo" alt="Chim Collective Logo">
-    <label class="menu-btn"><i data-feather="plus"></i></label>
-
-    <div class="head-font menu-list">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#work">WORK</a>
-      <a href="#team">TEAM</a>
-      <div class="team-list">
-        <a href="#operations">OPERATIONS</a>
-        <a href="#marketing">MARKETING</a>
-        <a href="#software">SOFTWARE</a>
-        <a href="#media">MEDIA</a>
-        <a href="#food">FOOD</a>
+    <div class="">
+      <div class="">
+        <img src="./assets/graphic/logo-chim-collective.png" class="top-logo" alt="Chim Collective Logo">
+        <label class="menu-btn"><i data-feather="plus"></i></label>
       </div>
-      <a href="#contact">CONTACT US</a>
+
+      <div class="head-font menu-list">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a class="team-a" href="#team">TEAM</a>
+        <div class="team-list">
+          <a href="ourteam.html#operation">OPERATIONS</a>
+          <a href="ourteam.html#marketing">MARKETING</a>
+          <a href="ourteam.html#software">SOFTWARE</a>
+          <a href="ourteam.html#media">MEDIA</a>
+          <a href="ourteam.html#food">FOOD</a>
+        </div>
+        <a class="contact-a" href="#contact">CONTACT US</a>
+      </div>
     </div>
 
   </section>
 
   <!-- Home -->
-  <section id="home">
-    <div class="home-container">
-
-      <div class="home-quote">
-        <img class="blank-circle" src="assets\graphic\circle-decor-03.png" alt="">
-        <img class="yellow-circle" src="assets\graphic\circle-decor-01.png" alt="">
-
-        <img class="eggs" src="assets\images\home-pic-08.png" alt="">
-        <img class="chilli" src="assets\images\home-pic-10.png" alt="">
-
-
-        <img class="small-blank-circle" src="assets\graphic\circle-decor-03.png" alt="">
-        <img class="small-yellow-circle" src="assets\graphic\circle-decor-01.png" alt="">
-        <img class="lime" src="assets\images\home-pic-09.png" alt="">
-
-        <h1>"The discovery of a new dish does more for human happiness than the discovery of a new star."</h1>
-        <p><b> ──────────────── Anthelme Brillat-Savarin</b></p>
-      </div>
-
-      <div class="home-quote">
-        <img class="blank-circle2" src="assets\graphic\circle-decor-03.png" alt="">
-        <img class="line-circle" src="assets\graphic\circle-decor-02.png" alt="">
-        <img class="green-curry" src="assets\images\home-pic-03.png" alt="">
-        <img class="padthai" src="assets\images\home-pic-07.png" alt="">
-        <img class="moostae" src="assets\images\home-pic-06.png" alt="">
-
-        <img class="small-yellow-circle2" src="assets\graphic\circle-decor-01.png" alt="">
-        <img class="red-chilli" src="assets\images\home-pic-05.png" alt="">
-
-        <h1>"We accelerate innovation with the power of crowdsourcing and co-creation.</h1>
-      </div>
-
-      <div class="home-quote">
-        <img class="yellow-circle2" src="assets\graphic\circle-decor-01.png" alt="">
-        <img class="line-circle2" src="assets\graphic\circle-decor-02.png" alt="">
-        <img class="mai-roo" src="assets\images\home-pic-01.png" alt="">
-
-        <img class="seasoning" src="assets\images\home-pic-02.png" alt="">
-
-
-        <img class="small-blank-circle3" src="assets\graphic\circle-decor-03.png" alt="">
-        <img class="small-yellow-circle3" src="assets\graphic\circle-decor-01.png" alt="">
-        <img class="onion" src="assets\images\home-pic-04.png" alt="">
-
-        <h1>"We investigate the future of food through media and technology.</h1>
-      </div>
-
-    </div>
-  </section>
+  <div class="home">
+  </div>
 
   <!-- About -->
   <section id="about">
-    <div class="row" data-aos="fade-up">
+    <div class="row section-black" data-aos="fade-up">
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 about-text">
         <img class="dot-decor" src="assets/graphic/dot-yellow-3-7.png" alt="">
         <div class="about-decs-box">
           <hr class="heading-hr">
-          <h1 class="head-font">ABOUT</h1>
+          <h1 class="big-head">ABOUT</h1>
           <label>Chim Collective is a collaborative program run by visionaries in food, media, and technology, facilitated
             by Chim Media Inc. With the spirit of constant experimentation and open innovation, we investigate the
             future of food through virtual platforms. As media, we promote knowledge and innovation in the food biz
@@ -114,7 +71,8 @@
       </div>
 
       <div class="about-img-box col-lg-6">
-        <img src="assets/graphic/circle-decor-04.png" alt="About Image">
+        <img class="about-pic-basket" src="assets/images/about-pic.png" alt="About Image">
+        <img class="about-pic-circle" src="assets/graphic/circle-decor-04.png" alt="About Image">
       </div>
 
     </div>
@@ -123,13 +81,13 @@
 
   <!-- Works -->
   <section id="work">
-    <div class="work-box">
+    <div class="work-box container-fluid">
 
       <hr class="work-top">
 
       <div class="work-middle">
         <hr class="heading-hr">
-        <h1 class="head-font">WORK</h1>
+        <h1 class="big-head">WORK</h1>
 
         <div class="work-desc-box">
           <h2 class="head-font"><span>01</span>ChimNYC.com</h2>
@@ -158,114 +116,117 @@
 
   <!-- Team -->
   <section id="team">
-    <div class="team-pic-box">
-      <p>
-        <img id="pic1" src="images/1.jpg">
-        <button class="btn team-circle-pic pic2 head-font">OPERATIONS</button>
-        <button class="btn team-circle-pic pic3"></button>
-        <button class="btn team-circle-pic pic4 head-font">MARKETING</button>
-      </p>
 
-      <p>
-        <button class="btn team-circle-pic pic5"></button>
-        <img id="pic6" src="images/1.jpg">
-        <button class="btn team-circle-pic pic7 head-font">MEDIA</button>
-        <img id="pic8" src="images/1.jpg">
-      </p>
+    <div class="team-box">
 
-      <p>
-        <img id="pic9" src="images/1.jpg">
-        <button class="btn team-circle-pic pic10 head-font">FOOD</button>
-        <button class="btn team-circle-pic pic11"></button>
-        <button class="btn team-circle-pic pic12"></button>
-      </p>
+      <div class="team-pic-box">
+        <p>
+          <img id="pic1" src="./assets/graphic/logo-chim-collective.png">
+          <button onclick="window.location.href='ourteam.html#operation'" class="btn team-circle-pic pic2 head-font">OPERATIONS</button>
+          <button class="btn team-circle-pic pic3"></button>
+          <button onclick="window.location.href='ourteam.html#marketing'" class="btn team-circle-pic pic4 head-font">MARKETING</button>
+        </p>
 
-      <p>
-        <button class="btn team-circle-pic pic13 head-font">SOFTWARE</button>
-        <button class="btn team-circle-pic pic14"></button>
-        <img id="pic15" src="images/1.jpg">
-        <button class="btn team-circle-pic pic16">
-          <img src="assets/graphic/team-arrow.png" alt="">
-          <h5>See more</h3>
-        </button>
-      </p>
-    </div>
+        <p>
+          <button class="btn team-circle-pic pic5"></button>
+          <img id="pic6" src="./assets/graphic/logo-chim-collective.png">
+          <button onclick="window.location.href='ourteam.html#media'" class="btn team-circle-pic pic7 head-font">MEDIA</button>
+          <img id="pic8" src="./assets/graphic/logo-chim-collective.png">
+        </p>
 
-    <div class="team-head">
-      <hr class="heading-hr">
-      <h1 class="head-font">TEAM</h1>
-    </div>
+        <p>
+          <img id="pic9" src="./assets/graphic/logo-chim-collective.png">
+          <button onclick="window.location.href='ourteam.html#food'" class="btn team-circle-pic pic10 head-font">FOOD</button>
+          <button class="btn team-circle-pic pic11"></button>
+          <button class="btn team-circle-pic pic12"></button>
+        </p>
+
+        <p>
+          <button onclick="window.location.href='ourteam.html#software'" class="btn team-circle-pic pic13 head-font">SOFTWARE</button>
+          <button class="btn team-circle-pic pic14"></button>
+          <img id="pic15" src="./assets/graphic/logo-chim-collective.png">
+          <button onclick="window.location.href='ourteam.html'" class="btn team-circle-pic pic16">
+            <img src="assets/graphic/team-arrow.png" alt="">
+            <h5>See more</h3>
+          </button>
+        </p>
+      </div>
+
+      <div class="team-head">
+        <hr class="heading-hr">
+        <h1 class="head-font big-head">TEAM</h1>
+      </div>
+
     </div>
 
   </section>
 
   <!-- Contact -->
-  <section id="contact">
-    <hr class="contact-top">
+  <section id="contact" class="section-height">
+    <div class="section-height">
+      <hr class="contact-top">
 
-    <div class="contact-head">
-      <hr class="heading-hr">
-      <h1 class="head-font">CONTACT</h1>
-    </div>
+      <div class="contact-head">
+        <hr class="heading-hr">
+        <h1 class="head-font">CONTACT</h1>
+      </div>
 
-    <div class="contact-box">
-      <div class="row data-box">
+      <div class="contact-box">
+        <div class="row data-box">
 
-        <div class="hire-box col-md-5">
-          <form class="block form-horizontal">
+          <div class="hire-box col-md-5">
+            <form class="block form-horizontal">
 
-            <div class="head-font">
-              <h3>Hire us,</h3>
-              <h3>Join us,</h3>
-              <h3>or collaborate</h3>
-              <h3>with us!</h3>
-            </div>
+              <div class="head-font">
+                <h3>Hire us,</h3>
+                <h3>Join us,</h3>
+                <h3>or collaborate</h3>
+                <h3>with us!</h3>
+              </div>
 
-            <div class="info-box">
-              <p>
-                <i data-feather="mail"></i>
-                <label>hi@chimcollective.com</label>
-              </p>
-
-              <p>
-                <i data-feather="phone"></i>
-                <label>(987) 654 3210</label>
-              </p>
-
-              <div class="social-box">
+              <div class="info-box">
                 <p>
-                  <a href="#"><i data-feather="facebook"></i></a>
-                  <a href="#"><i data-feather="linkedin"></i></a>
-                  <a href="#"><i data-feather="instagram"></i></a>
-                  <a href="#"><i data-feather="twitter"></i></a>
+                  <i data-feather="mail"></i>
+                  <label>hi@chimcollective.com</label>
+                </p>
+
+                <p>
+                  <i data-feather="phone"></i>
+                  <label>(987) 654 3210</label>
                 </p>
               </div>
-            </div>
-          </form>
-        </div>
 
-        <div class="input-box col-md-7">
-          <img class="dot-decor" src="assets/graphic/dot-yellow-2-10.png" alt="">
-          <form action="https://formspree.io/mooyong135@gmail.com" method="POST">
-            <div class="form-group">
-              <input type="text" class="form-control" name="input-name" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="input-email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="input-phone" placeholder="Phone Number">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" id="msg" name="input-msg" rows="3" placeholder="Message"></textarea>
-            </div>
-            <input type="submit" class="btn input-submit submit-btn head-font" value="Submit">
-          </form>
-        </div>
+            </form>
+          </div>
 
+          <div class="input-box col-md-7">
+            <img class="dot-decor" src="assets/graphic/dot-yellow-2-10.png" alt="">
+            <form action="https://formspree.io/mooyong135@gmail.com" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control" name="input-name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="input-email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="input-phone" placeholder="Phone Number">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="msg" name="input-msg" rows="3" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" class="btn input-submit submit-btn head-font" value="Submit">
+            </form>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Buttom Bar -->
+  <div id="buttom-bar">
+    <a href="#">HOME</a>
+  </div>
 
   <!-- AOS Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
