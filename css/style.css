@@ -763,21 +763,21 @@ footer p {
 
   .small-blank-circle{
     width: 25%;
-    position: fixed;
+    position: absolute;
     left: 78%;
     top: 65%;
   }
 
   .small-yellow-circle2{
     width: 25%;
-    position: fixed;
+    position: absolute;
     left: 83%;
     top: 68%;
   }
 
   .takrai{
     width: 28%;
-    position: fixed;
+    position: absolute;
     left: 75%;
     top: 62%;
   }
@@ -873,21 +873,21 @@ footer p {
 
   .small-blank-circle{
     width: 35%;
-    position: fixed;
+    position: absolute;
     left: 78%;
     top: 68%;
   }
 
   .small-yellow-circle2{
     width: 35%;
-    position: fixed;
+    position: absolute;
     left: 83%;
     top: 71%;
   }
 
   .takrai{
     width: 38%;
-    position: fixed;
+    position: absolute;
     left: 72%;
     top: 68%;
   }
