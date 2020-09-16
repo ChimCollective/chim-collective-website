@@ -55,14 +55,17 @@
 
   <!-- About -->
   <section id="about">
-    <div class="row section-black" data-aos="fade-up">
+    <div class="row section-black">
 
       <div class="col-lg-6 about-text">
         <img class="dot-decor" src="assets/graphic/dot-yellow-3-7.png" alt="">
         <div class="about-decs-box">
-          <hr class="heading-hr">
-          <h1 class="big-head">ABOUT</h1>
-          <label>Chim Collective is a collaborative program run by visionaries in food, media, and technology, facilitated
+          <div class="reveal-holder" data-aos="reveal-item">
+            <hr class="heading-hr">
+            <div class="reveal-block left" data-aos="reveal-left"></div>
+            <h1 class="head-font big-head">ABOUT</h1>
+          </div>
+          <label data-aos="fade-up">Chim Collective is a collaborative program run by visionaries in food, media, and technology, facilitated
             by Chim Media Inc. With the spirit of constant experimentation and open innovation, we investigate the
             future of food through virtual platforms. As media, we promote knowledge and innovation in the food biz
             ecosystem. As a marketing agency, we help connect everyone in the food value chain through the power of
@@ -71,8 +74,8 @@
       </div>
 
       <div class="about-img-box col-lg-6">
-        <img class="about-pic-basket" src="assets/images/about-pic.png" alt="About Image">
-        <img class="about-pic-circle" src="assets/graphic/circle-decor-04.png" alt="About Image">
+        <img class="about-pic-basket" src="assets/images/about-pic.png" alt="About Image" data-aos="fade-up">
+        <img class="about-pic-circle" src="assets/graphic/circle-decor-04.png" alt="About Image" data-aos="fade-up">
       </div>
 
     </div>
@@ -120,28 +123,28 @@
     <div class="team-box">
 
       <div class="team-pic-box">
-        <div>
+        <div data-aos="fade-up">
           <img id="pic1" src="./assets/graphic/logo-chim-collective.png">
           <button onclick="window.location.href='ourteam.html#operation'" class="btn team-circle-pic pic2 head-font">OPERATION</button>
           <button class="btn team-circle-pic pic3"></button>
           <button onclick="window.location.href='ourteam.html#marketing'" class="btn team-circle-pic pic4 head-font">MARKETING</button>
         </div>
 
-        <div>
+        <div data-aos="fade-up">
           <button class="btn team-circle-pic pic5"></button>
           <img id="pic6" src="./assets/graphic/logo-chim-collective.png">
           <button onclick="window.location.href='ourteam.html#media'" class="btn team-circle-pic pic7 head-font">MEDIA</button>
           <img id="pic8" src="./assets/graphic/logo-chim-collective.png">
         </div>
 
-        <div>
+        <div data-aos="fade-up">
           <img id="pic9" src="./assets/graphic/logo-chim-collective.png">
           <button onclick="window.location.href='ourteam.html#food'" class="btn team-circle-pic pic10 head-font">FOOD</button>
           <button class="btn team-circle-pic pic11"></button>
           <button class="btn team-circle-pic pic12"></button>
         </div>
 
-        <div>
+        <div data-aos="fade-up">
           <button onclick="window.location.href='ourteam.html#software'" class="btn team-circle-pic pic13 head-font">SOFTWARE</button>
           <button class="btn team-circle-pic pic14"></button>
           <img id="pic15" src="./assets/graphic/logo-chim-collective.png">
@@ -153,8 +156,11 @@
       </div>
 
       <div class="team-head">
-        <hr class="heading-hr">
-        <h1 class="head-font big-head">TEAM</h1>
+        <div class="reveal-holder" data-aos="reveal-item">
+          <hr class="heading-hr">
+          <div class="reveal-block left" data-aos="reveal-left"></div>
+          <h1 class="head-font big-head">TEAM</h1>
+        </div>
       </div>
 
     </div>
@@ -233,7 +239,7 @@
   <script>
     AOS.init({
       once: false,
-      duration: 1100
+      duration: 900
     });
   </script>
 

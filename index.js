@@ -1,3 +1,8 @@
+// Yellow Head Box
+$(".yellow-head-box").on("click", function() {
+  $(this).css("scaleX", "140px");
+});
+
 // Team Section
 var rand1 = Math.floor(Math.random() * 10) + 1;
 var rand6 = Math.floor(Math.random() * 10) + 1;
