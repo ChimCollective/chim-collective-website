@@ -116,11 +116,156 @@ body {
   font-size: 1rem;
 }
 
-/* HOME */
-.home {
+
+/* ===== Home Section ===== */
+#home {
   height: 770px;
-  background-color: gray;
+  animation: fadein 3s;
+  }
+
+  @keyframes fadein {
+     from {
+      opacity: 0;
+     }
+     to {
+      opacity: 1;
+     }
+  }
+
+
+/* Page 1 */
+.blank-circle {
+  width: 53%;
+  position: absolute;
+  left: 5%;
+  top: -4%;
+  z-index: 1;
+  animation: sfx1 3s;
+
+ }
+ @keyframes sfx1 {
+     from {
+         left: 1%;
+         top: 0%;
+     }
+     to {
+         left: 5%;
+         top: -4%;
+     }
+ }
+
+.pineapplecurry{
+  width: 35%;
+  position: absolute;
+  left: 13%;
+  top: 13%;
+  z-index: 2;
+ }
+
+
+.small-yellow-circle{
+  width: 25%;
+  position: absolute;
+  left: 55.5%;
+  top: -23%;
+  z-index: 1;
+  animation: sfx3 3s;
+  }
+
+  @keyframes sfx3 {
+     from {
+         width: 20%;
+     }
+     to {
+         width: 25%;
+     }
+  }
+
+
+.humanhappiness{
+  width: 22%;
+  position: absolute;
+  left: 57%;
+  top: -2.3%;
+  z-index: 2;
 }
+
+.small-blank-circle{
+  width: 25%;
+  position: absolute;
+  left: 80%;
+  top: 45%;
+  z-index: 2;
+  animation: sfx2 3s;
+
+  }
+  @keyframes sfx2 {
+     from {
+         left: 85%;
+         top: 50%;
+     }
+     to {
+         left: 80%;
+         top: 45%;
+     }
+  }
+
+.small-yellow-circle2{
+  width: 25%;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  z-index: 1;
+}
+
+.takrai{
+  width: 28%;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  z-index: 3;
+}
+
+.home-quote h1 {
+  font-size: 1.5rem;
+  text-align: left;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  padding-right: 5%;
+  animation: sfx4 3s;
+  }
+
+  @keyframes sfx4 {
+     from {
+       left: 56%;
+       top: 40%;
+     }
+     to {
+       left: 55%;
+       top: 40%;
+     }
+  }
+
+.home-quote p {
+  font-size: 20px;
+  text-align: left;
+  position: absolute;
+  left: 55%;
+  top: 64%;
+  animation: sfx5 3s;
+  }
+
+  @keyframes sfx5 {
+     from {
+       left: 57%;
+       top: 64%;
+     }
+     to {
+       left: 55%;
+       top: 64%;
+     }
+  }
 
 /* ===== About Section ===== */
 .about-box {
