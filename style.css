@@ -62,7 +62,7 @@ body {
   position: fixed;
   top: 35px;
   right: 50px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .feather-plus.rotate {
@@ -73,7 +73,7 @@ body {
   background-color: #ffcd32;
   padding-top: 5%;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   right: -26%;
   transition: 0.7s;
@@ -116,156 +116,11 @@ body {
   font-size: 1rem;
 }
 
-
-/* ===== Home Section ===== */
-#home {
+/* HOME */
+.home {
   height: 770px;
-  animation: fadein 3s;
-  }
-
-  @keyframes fadein {
-     from {
-      opacity: 0;
-     }
-     to {
-      opacity: 1;
-     }
-  }
-
-
-/* Page 1 */
-.blank-circle {
-  width: 53%;
-  position: absolute;
-  left: 5%;
-  top: -4%;
-  z-index: 1;
-  animation: sfx1 3s;
-
- }
- @keyframes sfx1 {
-     from {
-         left: 1%;
-         top: 0%;
-     }
-     to {
-         left: 5%;
-         top: -4%;
-     }
- }
-
-.pineapplecurry{
-  width: 35%;
-  position: absolute;
-  left: 13%;
-  top: 13%;
-  z-index: 2;
- }
-
-
-.small-yellow-circle{
-  width: 25%;
-  position: absolute;
-  left: 55.5%;
-  top: -23%;
-  z-index: 1;
-  animation: sfx3 3s;
-  }
-
-  @keyframes sfx3 {
-     from {
-         width: 20%;
-     }
-     to {
-         width: 25%;
-     }
-  }
-
-
-.humanhappiness{
-  width: 22%;
-  position: absolute;
-  left: 57%;
-  top: -2.3%;
-  z-index: 2;
+  background-color: gray;
 }
-
-.small-blank-circle{
-  width: 25%;
-  position: absolute;
-  left: 80%;
-  top: 45%;
-  z-index: 2;
-  animation: sfx2 3s;
-
-  }
-  @keyframes sfx2 {
-     from {
-         left: 85%;
-         top: 50%;
-     }
-     to {
-         left: 80%;
-         top: 45%;
-     }
-  }
-
-.small-yellow-circle2{
-  width: 25%;
-  position: absolute;
-  left: 85%;
-  top: 50%;
-  z-index: 1;
-}
-
-.takrai{
-  width: 28%;
-  position: absolute;
-  left: 80%;
-  top: 50%;
-  z-index: 3;
-}
-
-.home-quote h1 {
-  font-size: 1.5rem;
-  text-align: left;
-  position: absolute;
-  left: 55%;
-  top: 40%;
-  padding-right: 5%;
-  animation: sfx4 3s;
-  }
-
-  @keyframes sfx4 {
-     from {
-       left: 56%;
-       top: 40%;
-     }
-     to {
-       left: 55%;
-       top: 40%;
-     }
-  }
-
-.home-quote p {
-  font-size: 20px;
-  text-align: left;
-  position: absolute;
-  left: 55%;
-  top: 64%;
-  animation: sfx5 3s;
-  }
-
-  @keyframes sfx5 {
-     from {
-       left: 57%;
-       top: 64%;
-     }
-     to {
-       left: 55%;
-       top: 64%;
-     }
-  }
 
 /* ===== About Section ===== */
 .about-box {
@@ -297,18 +152,18 @@ body {
 }
 
 .about-pic-basket {
-  width: 430px;
+  width: 60%;
   position: absolute;
-  right: 110px;
-  top: 30px;
+  right: 20%;
+  top: 2%;
   z-index: 1;
 }
 
 .about-pic-circle {
-  width: 800px;
+  width: 113%;
   position: relative;
-  top: 30px;
-  right: -100px;
+  top: 4%;
+  right: -15%;
 }
 
 /* ===== Works ===== */
@@ -324,10 +179,10 @@ body {
 
 .work-box {
   position: relative;
-  background-image: url("assets/images/work-bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/work-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  transform-origin: middle center !important;
+  transform-origin: top center !important;
   height: 780px;
 }
 
@@ -529,7 +384,7 @@ body {
 .team-head {
   position: relative;
   top: -400px;
-  left: 1100px;
+  left: 75%;
 }
 
 .team-head .heading-hr {
@@ -539,33 +394,52 @@ body {
 
 /* ===== CONTACT FORM PAGE =====  */
 .contact-top {
-  transform: translateX(-300px);
+  transform: translateX(-200px);
   border-color: #ffcd32;
   border-style: none;
   border-top-style: solid;
-  border-width: 35px;
-  width: 65%;
+  border-width: 25px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 5%;
 }
 
 .contact-head {
   color: #fff;
-  padding-left: 10%;
   margin-bottom: 4%;
+  position: relative;
+  left: 9%;
 }
 
 .contact-box {
   margin: 0 15%;
 }
 
+#contact .block p {
+  padding: 0;
+}
+
+#contact .block {
+  width: 100%;
+}
+
+#contact h3 {
+  color: #000;
+  font-size: 2.25rem;
+}
+
 #contact .hire-box {
   background-color: #ffcd32;
-  padding: 75px 60px 0 60px;
+  padding: 6% 6% 0 6%;
 }
 
 .info-box {
-  padding-top: 50px;
+  color: #000;
+  margin-top: 10%;
+}
+
+.info-box label {
+  font-size: 1.3rem;
 }
 
 .feather-mail {
@@ -594,15 +468,10 @@ body {
   margin: 0 5%;
 }
 
-.social-box .social {
-  padding-left: 15px;
-  padding-right: 20px;
-}
-
 .input-box {
   background: #fff;
-  padding-top: 75px;
-  padding-left: 75px;
+  padding-top: 7%;
+  padding-left: 10%;
 }
 
 #contact .dot-decor {
@@ -649,10 +518,9 @@ body {
 }
 
 .submit-btn {
-  float: right;
   position: relative;
-  margin-bottom: 25px;
-  margin-right: 75px;
+  left: 64%;
+  margin: 5% 0 8%;
   padding: 15px 30px;
   font-size: 16px;
   color: #000;
@@ -791,6 +659,44 @@ body {
     overflow-x: hidden;
   }
 
+  /* ===== About Section ===== */
+  #about .dot-decor {
+    width: 80px;
+    top: 60%;
+  }
+
+  .about-decs-box {
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    z-index: 1;
+  }
+
+  .about-decs-box label {
+    font-size: 1.3rem;
+    text-indent: 2.2rem;
+    margin-top: 6%;
+  }
+
+  .about-img-box {
+    position: relative;
+  }
+
+  .about-pic-basket {
+    width: 60%;
+    position: absolute;
+    right: 20%;
+    top: 2%;
+    z-index: 1;
+  }
+
+  .about-pic-circle {
+    width: 113%;
+    position: relative;
+    top: 4%;
+    right: -15%;
+  }
+
   /* ===== Team ===== */
   .team-box {
     margin: 2% 0;
@@ -833,6 +739,72 @@ body {
     font-size: .9rem;
   }
 
+  /* ===== About Section ===== */
+  #about .dot-decor {
+    width: 90px;
+    top: 200%;
+  }
+
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-decs-box {
+    top: 10%;
+    left: 15%;
+    padding-right: 15%;
+  }
+
+  .about-pic-basket {
+    width: 450px;
+    left: 100%;
+    top: 23%;
+  }
+
+  .about-pic-circle {
+    width: 900px;
+    top: 10%;
+    right: -60%;
+  }
+
+  /* ===== Work ===== */
+  .work-top {
+    transform: translateX(350px);
+    width: 100%;
+    border-width: 25px;
+  }
+
+  .work-desc-box {
+    width: 60%;
+  }
+
+  #work h1 {
+    font-size: 30px;
+  }
+
+  .work-desc-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .work-desc-box h2 {
+    padding-top: 25px;
+  }
+
+  #work .heading-hr {
+    margin-top: 75px;
+  }
+
+  .work-bottom {
+    margin-top: 12%;
+  }
+
+  .work-desc-box label {
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+  }
+
   /* ===== Team ===== */
   .team-box {
     margin: 30% 0 15%;
@@ -853,20 +825,42 @@ body {
   }
 
   /* ===== Contact ===== */
-  .info-box label {
-    font-size: 20px;
-  }
-
-  .info-box img {
-    width: 30px;
+  .submit-btn {
+    left: 54.5%;
+    margin-bottom: 12%;
   }
 
   #contact .hire-box {
-    border-bottom-left-radius: 0;
+    padding: 5% 5% 0 5%;
   }
 
-  .social-box .social {
-    padding: 5px;
+  #contact h3 {
+    font-size: 1.75rem;
+  }
+
+  .feather-mail, .feather-phone {
+    width: 26px;
+    height: 26px;
+  }
+
+  .info-box label {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 991px) {
+
+  /* ===== About Section ===== */
+  .about-pic-basket {
+    width: 450px;
+    left: 45%;
+    top: 15%;
+  }
+
+  .about-pic-circle {
+    width: 900px;
+    top: 7%;
+    right: -25%;
   }
 }
 
@@ -874,6 +868,77 @@ body {
 @media (max-width: 823px) {
   .big-head {
     font-size: 1.25rem;
+  }
+
+  .heading-hr {
+    border-width: 3px;
+    width: 60px;
+    margin: 0 0 5px;
+  }
+
+  /* ===== Nevigation Bar Section ===== */
+  .menu-list {
+    padding-top: 5%;
+    line-height: 1.8;
+  }
+
+  .menu-list a {
+    font-size: 1.5rem;
+  }
+
+  .team-a {
+    padding-top: 5px;
+    line-height: 1;
+  }
+
+  .contact-a {
+    padding-top: 5px;
+  }
+
+  .team-list a {
+    font-size: .9rem;
+  }
+
+  /* ===== About Section ===== */
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-div {
+    height: 600px;
+  }
+
+  #about .dot-decor {
+    width: 8%;
+    top: 100%;
+    left: 3%;
+  }
+
+  .about-decs-box {
+    left: 16%;
+  }
+
+  .about-decs-box label {
+    font-size: 1rem;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .about-img-box {
+    margin-top: -9%;
+  }
+
+  .about-pic-basket {
+    width: 30%;
+    left: 58%;
+    top: 23%;
+  }
+
+  .about-pic-circle {
+    width: 70%;
+    top: 5%;
+    right: -40%;
   }
 
   /* ===== Team ===== */
@@ -919,6 +984,29 @@ body {
 
 /* Responsive screen width 768px, iPad, and smaller */
 @media (max-width: 812px) {
+
+  /* ===== Nevigation Bar Section ===== */
+  .menu-list {
+    padding-top: 4%;
+    line-height: 1.7;
+  }
+
+  .menu-list a {
+    font-size: 1.4rem;
+  }
+
+  .team-a {
+    padding-top: 5px;
+    line-height: 1;
+  }
+
+  .contact-a {
+    padding-top: 3px;
+  }
+
+  .team-list a {
+    font-size: .9rem;
+  }
 
   /* ===== Team ===== */
   .team-box {
@@ -971,6 +1059,59 @@ body {
     width: 35%;
   }
 
+  /* ===== About ===== */
+  #about .dot-decor {
+    width: 80px;
+  }
+
+  .about-div {
+    height: 1000px;
+  }
+
+  .about-pic-basket {
+    width: 40%;
+    left: 55%;
+    top: 38%;
+  }
+
+  .about-pic-circle {
+    width: 95%;
+    top: 20%;
+    right: -30%;
+  }
+
+  /* ===== Work ===== */
+  #work h1 {
+    font-size: 30px;
+  }
+
+  .work-desc-box {
+    width: 70%;
+  }
+
+  .work-desc-box h2 {
+    font-size: 1rem;
+  }
+
+  .work-top {
+    transform: translateX(300px);
+    width: 100%;
+    border-width: 25px;
+  }
+
+  .work-bottom {
+    margin-top: 17%;
+  }
+
+  .work-desc-box hr {
+    width: 50%;
+    transform: translateX(60px);
+  }
+
+  .work-desc-box h2 {
+    padding-top: 25px;
+  }
+
   /* ===== Team ===== */
   .team-box {
     margin: 33% 0 20%;
@@ -1012,12 +1153,97 @@ body {
     border-width: 3px;
     width: 100px;
   }
+
+  /* ===== Contact ===== */
+  .hire-box, .input-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #contact .hire-box .block {
+    padding-bottom: 0;
+    height: 210px;
+  }
+
+  .info-box {
+    margin-top: 0;
+    position: relative;
+    top: -70px;
+    right: -270px;
+  }
+
+  .info-box p {
+    margin: 0;
+  }
+
+  #contact .dot-decor {
+    transform: rotate(90deg);
+    top: -14%;
+    left: 20%;
+    margin-bottom: 10%;
+  }
+
+  #contact .submit-btn {
+    left: 65%;
+  }
+
+  .form-control {
+    margin-top: 7%;
+  }
 }
 
 /* Responsive screen width 736px, iPad, and smaller */
 @media (max-width: 736px) {
   .big-head {
     font-size: 1.2rem;
+  }
+
+  .heading-hr {
+    border-width: 3px;
+    width: 60px;
+    margin: 0 0 5px;
+  }
+
+  /* ===== About Section ===== */
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-div {
+    height: 600px;
+  }
+
+  #about .dot-decor {
+    width: 8%;
+    top: 150%;
+    left: 3%;
+  }
+
+  .about-decs-box {
+    left: 16%;
+  }
+
+  .about-decs-box label {
+    font-size: 1rem;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .about-img-box {
+    margin-top: -5%;
+  }
+
+  .about-pic-basket {
+    width: 30%;
+    left: 58%;
+    top: 23%;
+  }
+
+  .about-pic-circle {
+    width: 70%;
+    top: 5%;
+    right: -40%;
   }
 
   /* ===== Team ===== */
@@ -1055,12 +1281,116 @@ body {
     border-width: 2px;
     width: 50px;
   }
+
+  /* ===== Contact ===== */
+  #contact h3 {
+    font-size: 1.2rem;
+  }
+
+  #contact .hire-box {
+    height: 190px;
+  }
+
+  .info-box {
+    top: -64px;
+    right: -270px;
+  }
+
+  .feather-mail, .feather-phone {
+    width: 20px;
+    height: 20px;
+  }
+
+  .info-box label {
+    font-size: 1rem;
+  }
+
+  #contact .dot-decor {
+    width: 30px;
+    top: -11%;
+    left: 14.5%;
+  }
+
+  #contact .submit-btn {
+    left: 64%;
+  }
 }
 
 /* Responsive screen width 667px, iPad, and smaller */
 @media (max-width: 667px) {
   .big-head {
+    font-size: 1.25rem;
+  }
+
+  .heading-hr {
+    border-width: 3px;
+    width: 60px;
+    margin: 0 0 5px;
+  }
+
+  /* ===== Nevigation Bar Section ===== */
+  .menu-list {
+    padding-top: 5%;
+    line-height: 1.8;
+  }
+
+  .menu-list a {
+    font-size: 1.3rem;
+  }
+
+  .team-a {
+    padding-top: 5px;
+    line-height: 1;
+  }
+
+  .contact-a {
+    padding-top: 5px;
+  }
+
+  .team-list a {
+    font-size: .8rem;
+  }
+
+  /* ===== About Section ===== */
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-div {
+    height: 580px;
+  }
+
+  #about .dot-decor {
+    width: 8%;
+    top: 150%;
+    left: 3%;
+  }
+
+  .about-decs-box {
+    left: 16%;
+  }
+
+  .about-decs-box label {
     font-size: 1rem;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .about-img-box {
+    margin-top: 3%;
+  }
+
+  .about-pic-basket {
+    width: 30%;
+    left: 58%;
+    top: 23%;
+  }
+
+  .about-pic-circle {
+    width: 70%;
+    top: 5%;
+    right: -40%;
   }
 
   /* ===== Team ===== */
@@ -1094,9 +1424,126 @@ body {
   }
 }
 
+@media (max-width: 568px) {
+  .big-head {
+    font-size: 1.25rem;
+  }
+
+  .heading-hr {
+    border-width: 3px;
+    width: 60px;
+    margin: 0 0 5px;
+  }
+
+  /* ===== Nevigation Bar Section ===== */
+  .menu-list a {
+    font-size: 1rem;
+  }
+
+  .team-list a {
+    font-size: .7rem;
+  }
+
+  /* ===== About Section ===== */
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-div {
+    height: 540px;
+  }
+
+  #about .dot-decor {
+    width: 8%;
+    top: 150%;
+    left: 3%;
+  }
+
+  .about-decs-box {
+    left: 16%;
+  }
+
+  .about-decs-box label {
+    font-size: .9rem;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .about-img-box {
+    margin-top: 6%;
+  }
+
+  .about-pic-basket {
+    width: 30%;
+    left: 58%;
+    top: 23%;
+  }
+
+  .about-pic-circle {
+    width: 70%;
+    top: 5%;
+    right: -40%;
+  }
+}
+
 @media (max-width: 540px) {
   .big-head {
     font-size: 1.25rem;
+  }
+
+  .heading-hr {
+    border-width: 3px;
+    width: 60px;
+    margin: 0 0 5px;
+  }
+
+  /* ===== Nevigation Bar Section ===== */
+  .menu-list {
+    padding-top: 15%;
+    line-height: 1.8;
+  }
+
+  /* ===== About Section ===== */
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-div {
+    height: 700px;
+  }
+
+  #about .dot-decor {
+    width: 8%;
+    top: 200%;
+    left: 3%;
+  }
+
+  .about-decs-box {
+    left: 16%;
+  }
+
+  .about-decs-box label {
+    font-size: 1rem;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .about-img-box {
+    margin-top: 3%;
+  }
+
+  .about-pic-basket {
+    width: 38%;
+    right: 20%;
+    top: 35%;
+  }
+
+  .about-pic-circle {
+    width: 100%;
+    top: 15%;
+    right: -25%;
   }
 
   /* ===== Team ===== */
@@ -1132,6 +1579,54 @@ body {
     left: 0;
     margin-bottom: 0.6%;
     width: 50px;
+  }
+}
+
+@media (max-width: 490px) {
+
+  /* ===== Work ===== */
+  .work-desc-box {
+    width: 85%;
+  }
+
+  .work-top {
+    transform: translateX(100px);
+    border-width: 20px;
+  }
+
+  #work .heading-hr {
+    margin-top: 50px;
+    width: 75px;
+    margin-bottom: 10px;
+  }
+
+  #work h1 {
+    font-size: 25px;
+  }
+
+  .work-desc-box {
+    margin-top: 60px;
+  }
+
+  .work-desc-box h2 {
+    font-size: 1rem;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .work-desc-box hr {
+    width: 60%;
+    transform: translateX(80px);
+  }
+
+  .work-desc-box label {
+    font-size: 15px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+  }
+
+  .work-bottom {
+    margin-top: 50%;
   }
 }
 
@@ -1171,6 +1666,11 @@ body {
 }
 
 @media (max-width: 414px) {
+  .heading-hr {
+    border-width: 3px;
+    width: 60px;
+    margin: 0 0 5px;
+  }
 
   /* ===== Nevigation Bar Section ===== */
   .top-logo {
@@ -1188,7 +1688,7 @@ body {
   .menu-list {
     right: -100%;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 12%;
     line-height: 2.5;
   }
 
@@ -1204,6 +1704,44 @@ body {
 
   .team-list a {
     font-size: 1.2rem;
+  }
+
+  /* ===== About Section ===== */
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-div {
+    height: 500px;
+  }
+
+  #about .dot-decor {
+    width: 8%;
+    top: 200%;
+    left: 3%;
+  }
+
+  .about-decs-box {
+    left: 16%;
+  }
+
+  .about-decs-box label {
+    font-size: .7rem;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .about-pic-basket {
+    width: 38%;
+    right: 20%;
+    top: 35%;
+  }
+
+  .about-pic-circle {
+    width: 100%;
+    top: 15%;
+    right: -25%;
   }
 
   /* ===== Team ===== */
@@ -1255,6 +1793,49 @@ body {
 }
 
 @media (max-width: 320px) {
+  .heading-hr {
+    border-width: 2px;
+    width: 60px;
+    margin: 0 0 5px;
+  }
+
+  /* ===== About Section ===== */
+  .about-text {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .about-div {
+    height: 500px;
+  }
+
+  #about .dot-decor {
+    width: 10%;
+    top: 250%;
+    left: 3%;
+  }
+
+  .about-decs-box {
+    left: 20%;
+  }
+
+  .about-decs-box label {
+    font-size: .7rem;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .about-pic-basket {
+    width: 38%;
+    right: 20%;
+    top: 58%;
+  }
+
+  .about-pic-circle {
+    width: 100%;
+    top: 40%;
+    right: -25%;
+  }
 
   /* ===== Team ===== */
   .team-box {
@@ -1306,6 +1887,27 @@ body {
     font-size: 1rem;
   }
 
+  .heading-hr {
+    width: 50px;
+  }
+
+  /* ===== About Section ===== */
+  #about .dot-decor {
+    top: 300%;
+  }
+
+  .about-pic-basket {
+    width: 38%;
+    right: 20%;
+    top: 70%;
+  }
+
+  .about-pic-circle {
+    width: 100%;
+    top: 55%;
+    right: -25%;
+  }
+
   /* ===== Team ===== */
   .team-box {
     margin-bottom: 0;
@@ -1351,6 +1953,7 @@ body {
   display: inline-block;
   overflow: hidden;
 }
+
 .reveal-block {
   position: absolute;
   top: 0;
@@ -1358,6 +1961,7 @@ body {
   height: 101%;
   background: #000;
 }
+
 .reveal-block::before {
   position: absolute;
   content: '';
@@ -1369,27 +1973,33 @@ body {
   transition-property: transform;
   transition-duration: 0.5s;
 }
+
 .reveal-block.left::before {
   transform: scaleX(0);
   transform-origin: 100% 0;
 }
+
 .reveal-block.left.aos-animate::before {
   transform: scaleX(1);
 }
+
 [data-aos="reveal-left"] {
   transform: scaleX(1);
   transform-origin: 0 100%;
   transition-property: transform;
   transition-delay: 0.5s;
 }
+
 [data-aos="reveal-left"].aos-animate {
   transform: scaleX(0);
 }
+
 [data-aos="reveal-item"] {
   visibility: hidden;
   transition-property: visibility;
   transition-duration: 0s;
 }
+
 [data-aos="reveal-item"].aos-animate {
   visibility: visible;
 }
