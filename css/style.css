@@ -2568,6 +2568,24 @@ body {
   }
 }
 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+
+  #home{
+    height: 969px;
+  }
+  .small-yellow-circle{
+    width: 25%;
+    position: absolute;
+    left: 55.5%;
+    top: -27.7%;
+    z-index: 1;
+  }
+}
+
+
+
 /* Head Reveal */
 /* Source: https://medium.com/@kathykato/creating-reveal-effects-on-scroll-9cb04b39c9a5 */
 .reveal-holder {
