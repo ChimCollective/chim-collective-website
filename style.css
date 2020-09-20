@@ -335,9 +335,10 @@ body {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/work-bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position: 100% 100%;
   transform-origin: top center !important;
-  height: 780px;
+  height: 100%;
 }
 
 .work-middle {
@@ -351,7 +352,7 @@ body {
   padding: 3% 5%;
   background-color: #000;
   width: 660px;
-  height: 380px;
+  height: 100%;
 }
 
 .work-desc-box span {
@@ -1071,6 +1072,9 @@ body {
     width: 100%;
     border-width: 25px;
   }
+  .work-box{
+    background-size: 100% 100%;
+  }
 
   .work-desc-box {
     width: 60%;
@@ -1257,6 +1261,10 @@ body {
     top: 5%;
     right: -40%;
   }
+  /*=======Work========*/
+  .work-desc-box label {
+    font-size: 1rem !important;
+  }
 
   /* ===== Team ===== */
   .team-box {
@@ -1366,6 +1374,14 @@ body {
 
   .team-list a {
     font-size: .9rem;
+  }
+  /*=====WORK=======*/
+  .work-bottom{
+    margin-top: 50px !important;
+  }
+
+  .work-desc-box{
+    margin: 0px 5px !important;
   }
 
   /* ===== Team ===== */
@@ -1584,8 +1600,18 @@ body {
   }
 
   /* ===== Work ===== */
+
+
   #work h1 {
     font-size: 30px;
+  }
+  #work .heading-hr{
+    margin-top: 10px: 
+    height: 50px;
+  }
+  
+  .work-box{
+    background-size: 100% 100%;
   }
 
   .work-desc-box {
@@ -1602,6 +1628,9 @@ body {
     border-width: 25px;
   }
 
+.work-middle{
+  margin: 0;
+}
   .work-bottom {
     margin-top: 17%;
   }
@@ -2389,9 +2418,9 @@ body {
   }
 
   .work-desc-box label {
-    font-size: 15px;
-    padding-bottom: 25px;
-    padding-right: 25px;
+    font-size: 0.7rem;
+    padding-bottom: 20px;
+    padding-right: 20px;
   }
 
   .work-bottom {
@@ -2520,7 +2549,7 @@ body {
          top: 18%;
        }
     }
-
+  
   /* ===== Contact ===== */
   .info-box label {
     font-size: 20px;
@@ -2684,7 +2713,7 @@ body {
   }
 
   .about-decs-box label {
-    font-size: .7rem;
+    font-size: .7rem ;
     text-indent: 1rem;
     margin-top: 2%;
   }
@@ -2700,6 +2729,18 @@ body {
     top: 15%;
     right: -25%;
   }
+
+  /*=====WORK====*/
+  .work-desc-box label{
+    font-size: .7rem !important;
+    text-indent: 1rem;
+    margin-top: 2%;
+  }
+
+  .work-bottom a{
+    font-size: 0.9rem;
+  }
+
 
   /* ===== Team ===== */
   .team-box {
