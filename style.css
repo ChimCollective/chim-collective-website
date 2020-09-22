@@ -951,18 +951,18 @@ body {
   text-align: center;
 }
 
-#buttom-bar {
+#bottom-bar {
   margin-top: 10%;
   padding: 2% 0;
 }
 
-#buttom-bar a {
+#bottom-bar a {
   margin: auto 4%;
   text-decoration: none;
   color: #000;
 }
 
-#buttom-bar a:hover {
+#bottom-bar a:hover {
   color: #fff;
 }
 
@@ -3544,7 +3544,7 @@ body {
   .team-list a {
     font-size: 1.2rem;
   }
-  
+
   /* ===== HOME ===== */
   .carousel-item {
     height: 667px;
