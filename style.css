@@ -4346,10 +4346,9 @@ body {
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 
-  /* Obviously it has to be changed for every responsive*/
+  /* HOME */
   .carousel-item {
     height: 969px;
-    background-color: #000;
   }
 
   /* PAGE 1 */
@@ -4359,6 +4358,11 @@ body {
     left: 55.5%;
     top: -22.7%;
     z-index: 1;
+  }
+
+  /* ===== Work ===== */
+  .work-box{
+    height: 860px;
   }
 }
 
