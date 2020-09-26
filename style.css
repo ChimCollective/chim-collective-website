@@ -3427,6 +3427,12 @@ body {
     margin-right: 25px;
   }
 
+  /* Footer */
+  #bottom-bar a {
+    margin: 2% auto;
+    display: block;
+  }
+
   /*===========OUR TEAM PAGE=============*/
   .team-container {
     margin: 10px 10px;
