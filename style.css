@@ -2465,7 +2465,7 @@ body {
     left: 64%;
   }
 
-  #buttom-bar {
+  #bottom-bar {
     display: grid;
     line-height: 2.5;
     font-size: 1.2rem;
@@ -3425,12 +3425,6 @@ body {
 
   .submit-btn {
     margin-right: 25px;
-  }
-
-  /* Footer */
-  #bottom-bar a {
-    margin: 2% auto;
-    display: block;
   }
 
   /*===========OUR TEAM PAGE=============*/
