@@ -1586,7 +1586,7 @@ body {
     position: absolute;
     left: 60%;
     top: 39%;
-    margin-right: -11%;
+    margin-right: -14%;
     animation: sfx3-p3-taplet 3s;
   }
 
@@ -3425,6 +3425,12 @@ body {
 
   .submit-btn {
     margin-right: 25px;
+  }
+
+  /* Footer */
+  #bottom-bar a {
+    margin: 2% auto;
+    display: block;
   }
 
   /*===========OUR TEAM PAGE=============*/
