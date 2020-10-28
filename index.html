@@ -27,296 +27,342 @@
 </head>
 
 <body>
+
   <!-- Nevigation Bar Section -->
   <section id="navigation-bar">
 
-    <div class="">
-      <div class="">
-        <img src="./assets/graphic/logo-chim-collective.png" class="top-logo" alt="Chim Collective Logo">
-        <label class="menu-btn"><i data-feather="plus"></i></label>
+    <nav class="navbar navbar-expand navbar-light">
+
+      <a class="navbar-brand" href="#home">
+        <img src="assets/logo-chim-collective.png" width="180px" alt="" loading="lazy">
+      </a>
+
+      <div class="nav-menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#home">HOME</a>
+            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#work">WORK</a>
+            <a class="nav-link" href="#team">TEAM</a>
+            <button type="button" class="btn btn-warning nav-link">CONTACT US</button>
+          </div>
+        </div>
       </div>
 
-      <div class="head-font menu-list">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#work">WORK</a>
-        <a class="team-a" href="ourteam.html#navigation-bar-team">TEAM</a>
-        <div class="team-list">
-          <a href="ourteam.html#operation">OPERATIONS</a>
-          <a href="ourteam.html#marketing">MARKETING</a>
-          <a href="ourteam.html#software">SOFTWARE</a>
-          <a href="ourteam.html#media">MEDIA</a>
-          <a href="ourteam.html#food">FOOD</a>
-        </div>
-        <a class="contact-a" href="#contact">CONTACT US</a>
-      </div>
-    </div>
+    </nav>
 
   </section>
 
   <!-- Home -->
   <section id="home">
-    <div class="home">
-
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="container-fluid">
+      <div id="carouselHomeSlide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselHomeSlide" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselHomeSlide" data-slide-to="1"></li>
+          <li data-target="#carouselHomeSlide" data-slide-to="2"></li>
+        </ol>
 
         <div class="carousel-inner">
-
-          <!-- 1st Page -->
-          <div class="col-lg carousel-item active">
-            <img class="blank-circle" src="assets\Landing1\Mainpage1_Subtraction 9.png" alt="">
-            <img class="pineapplecurry" src="assets\Landing1\Group 138.png" alt="">
-
-            <img class="small-yellow-circle" src="assets\Landing1\Mainpage1_Small Ellipse.png" alt="">
-            <img class="humanhappiness" src="assets\Landing1\humanhappiness2_03.png" alt="">
-
-            <img class="small-blank-circle" src="assets\Landing1\Mainpage1_Subtraction 10.png" alt="">
-            <img class="small-yellow-circle2" src="assets\Landing1\Mainpage1_Small Ellipse.png" alt="">
-            <img class="takrai" src="assets\Landing1\Untitled-1_12.png" alt="">
-
-            <div class="home-quote">
-              <h1>&nbsp;&nbsp;&nbsp;&nbsp;"The discovery of a new dish does more for human happiness than the discovery of a new star."</h1>
-              <p><b>Anthelme Brillat-Savarin ─────────────────</b></p>
+          <div class="carousel-item active slide1" ata-interval="3000">
+            <div class="container">
+              <label class="">"The discovery of a new dish does more for human happiness than the discovery of a new star."</label>
+              <label class="">"<i>Anthelme Brillat-Savarin"</i></label>
             </div>
+            <!-- <img src="assets/01.JPG" class="d-block w-100"> -->
           </div>
 
-          <!-- 2nd Page -->
-          <div class="col-lg carousel-item">
-            <img class="girl" src="assets\Landing2\Untitled-1_21.png" alt="">
-            <img class="big-yellow2" src="assets\Landing2\Mainpage2_Big Ellipse.png" alt="">
-            <img class="dotted2" src="assets\Landing2\Mainpage2_Repeat Grid 125.png" alt="">
-
-            <img class="small-white2" src="assets\Landing2\Mainpage2_Ellipse 40.png" alt="">
-            <img class="finger" src="assets\Landing2\Untitled-1_03.png" alt="">
-
-            <div><img class="small-blank2" src="assets\Landing2\Mainpage2_Subtraction 9.png" alt=""></div>
-            <div><img class="small-yellow2" src="assets\Landing2\Mainpage2_Small Ellipse.png" alt=""></div>
-            <div><img class="lime" src="assets\Landing2\Untitled-1_05.png" alt=""></div>
-
-            <div class="home-quote-2">
-              <h1>We investigate the future of food through media and technology.</h1>
+          <div class="carousel-item slide2" data-interval="3000">
+            <div class="container">
+              <label class="">We investigate the future of food through media and technology.</label>
             </div>
+            <!-- <img src="assets/02.JPG" class="d-block w-100"> -->
           </div>
 
-          <!-- 3rd Page -->
-          <div class="col-lg carousel-item">
-            <img class="blank-circle3" src="assets\Landing3\Mainpage3_Subtraction 9.png" alt="">
-            <img class="platoo" src="assets\Landing3\Group 138.png" alt="">
-            <img class="line-circle3" src="assets\Landing3\Mainpage3_Subtraction 6.png" alt="">
-            <img class="dotted3" src="assets\Landing3\Mainpage3_Repeat Grid 125.png" alt="">
-
-            <img class="small-yellow3" src="assets\Landing3\Mainpage3_Small Ellipse.png" alt="">
-            <img class="red-curry" src="assets\Landing3\Untitled-1_17.png" alt="">
-
-            <div class="home-quote-3">
-              <h1>We accelerate innovation with the power of crowdsourcing and co-creation.</h1>
+          <div class="carousel-item slide3" data-interval="3000">
+            <div class="container">
+              <label class="">We accelerate innovation with the power of crowdsourcing and co-creation.</label>
             </div>
+            <!-- <img src="assets/03.JPG" class="d-block w-100"> -->
           </div>
-
         </div>
 
+        <a class="carousel-control-prev" href="#carouselHomeSlide" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselHomeSlide" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-
     </div>
   </section>
 
   <!-- About -->
   <section id="about">
     <div class="about-div">
-      <div class="row section-black">
+      <div class="container">
 
-        <div class="col-lg-6 about-text">
-          <img class="dot-decor" src="assets/graphic/dot-yellow-3-7.png" alt="">
-          <div class="about-decs-box">
-            <div class="reveal-holder" data-aos="reveal-item">
-              <hr class="head-hr">
-              <div class="reveal-block left" data-aos="reveal-left"></div>
-              <h1 class="head-1">ABOUT</h1>
-            </div>
-            <label class="body-1" data-aos="fade-up">Chim Collective is a collaborative program run by visionaries in food, media, and technology, facilitated
-              by Chim Media Inc. With the spirit of constant experimentation and open innovation, we investigate the
-              future of food through virtual platforms. As media, we promote knowledge and innovation in the food biz
-              ecosystem. As a marketing agency, we help connect everyone in the food value chain through the power of
-              creativity.</label>
-          </div>
+        <div class="reveal-holder" data-aos="reveal-item">
+          <hr class="head-hr">
+          <div class="reveal-block left" data-aos="reveal-left"></div>
+          <h1>ABOUT</h1>
         </div>
 
-        <div class="about-img-box col-lg-6">
-          <img class="about-pic-basket" src="assets/about-pic.png" alt="About Image" data-aos="fade-up">
-          <img class="about-pic-circle" src="assets/graphic/circle-decor-04.png" alt="About Image" data-aos="fade-up">
+        <div class="about-des">
+          <label class="body1" data-aos="fade-up">Chim Collective is a collaborative program run by visionaries in food, media, and technology, facilitated
+            by Chim Media Inc. With the spirit of constant experimentation and open innovation, we investigate the
+            future of food through virtual platforms. As media, we promote knowledge and innovation in the food biz
+            ecosystem. As a marketing agency, we help connect everyone in the food value chain through the power of
+            creativity.</label>
         </div>
 
       </div>
+      <!--container-->
     </div>
-
-
+    <!--about-div-->
   </section>
 
   <!-- Works -->
   <section id="work">
-    <div class="work-box">
-      <div id="work-top" data-aos="fade-left">
-        <hr class="work-top">
-      </div>
-      <div class="work-middle">
+    <div class="work-div">
+      <div class="container">
+
         <div class="reveal-holder" data-aos="reveal-item">
           <hr class="head-hr">
           <div class="reveal-block left" data-aos="reveal-left"></div>
-          <h1 class="head-1">WORK</h1>
+          <h1>WORK</h1>
         </div>
 
-        <div class="work-desc-box" data-aos="fade-left">
-          <h2 class="head-font"><span>01</span>ChimNYC.com</h2>
-          <hr>
-          <label class="body-2">Currently, we are working on ChimNYC.com, which is a marketplace for Thai food in New York City. We will embrace
-            crowdsourcing and facilitate co-creation for new food products and services – to become a playground for chefs,
-            scientists, artists, designers, and engineers to collaborate and manipulate food+tech as their medium.</label>
+        <div class="work-des-div">
+          <h2><span>01</span>ChimNYC.com</h2>
+          <hr class="work-des-hr">
+          <label class="body2" id="des1" data-aos="fade-up">Currently, we are working on ChimNYC.com,
+            which is a marketplace for Thai food in New York City.
+            We will embrace crowdsourcing and facilitate co-creation for new food
+            products and services to become a playground for chefs, scientists,
+            artists, designers, and engineers to collaborate and manipulate food & tech
+            as their medium.</label>
         </div>
-      </div>
 
-      <div id="work-bottom" data-aos="fade-up" data-aos-once="true">
-        <div class="work-bottom">
-          <div class="work-ver-line yellow first"></div>
-          <a class="head-font" style="color: #ffcd32;">ChimNYC.com</a>
-          <div class="work-ver-line yellow"></div>
-          <!-- <a class="head-font">PROJECT 02</a>
-        <div class="work-ver-line"></div>
-        <a class="head-font">PROJECT 03</a>
-        <div class="work-ver-line"></div>
-        <a class="head-font">PROJECT 04</a>
-        <div class="work-ver-line"></div>
-        <a class="head-font">PROJECT 05</a>
-        <div class="work-ver-line"></div> -->
+        <div class="work-footer-div">
+          <div class="work-ver-line"></div>
+          <a class="work-foot-menu" href="#des1">ChimNYC.com</a>
+          <div class="work-ver-line"></div>
+          <!-- <a class="work-foot-menu">ChimNYC.com</a>
+      <div class="work-ver-line"></div>
+      <a class="work-foot-menu">ChimNYC.com</a>
+      <div class="work-ver-line"></div>
+      <a class="work-foot-menu">ChimNYC.com</a>
+      <div class="work-ver-line"></div>
+      <a class="work-foot-menu">ChimNYC.com</a>
+      <div class="work-ver-line"></div> -->
         </div>
+
       </div>
+      <!--container-->
     </div>
+    <!--work-div-->
+  </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-div">
+      <div class="container">
+
+        <div class="reveal-holder" data-aos="reveal-item">
+          <hr class="head-hr">
+          <div class="reveal-block left" data-aos="reveal-left"></div>
+          <h1 class="head-1">CONTACT</h1>
+        </div>
+
+        <div class="info-box">
+          <h1>hi@chimcollective.com</h1>
+        </div>
+      </div>
+
+    </div>
+    <!--container-->
+    </div>
+    <!--contact-div-->
   </section>
 
   <!-- Team -->
   <section id="team">
+    <div class="team-div">
+      <div class="container">
 
-    <div class="team-box">
-
-      <div class="team-pic-box">
-        <div data-aos="fade-up">
-          <img id="pic1" src="./assets/graphic/logo-chim-collective.png">
-          <button onclick="window.location.href='ourteam.html#operation'" class="btn team-circle-pic pic2 head-font">OPERATION</button>
-          <button class="btn team-circle-pic pic3"></button>
-          <button onclick="window.location.href='ourteam.html#marketing'" class="btn team-circle-pic pic4 head-font">MARKETING</button>
-        </div>
-
-        <div data-aos="fade-up">
-          <button class="btn team-circle-pic pic5"></button>
-          <img id="pic6" src="./assets/graphic/logo-chim-collective.png">
-          <button onclick="window.location.href='ourteam.html#media'" class="btn team-circle-pic pic7 head-font">MEDIA</button>
-          <img id="pic8" src="./assets/graphic/logo-chim-collective.png">
-        </div>
-
-        <div data-aos="fade-up">
-          <img id="pic9" src="./assets/graphic/logo-chim-collective.png">
-          <button onclick="window.location.href='ourteam.html#food'" class="btn team-circle-pic pic10 head-font">FOOD</button>
-          <button class="btn team-circle-pic pic11"></button>
-          <button class="btn team-circle-pic pic12"></button>
-        </div>
-
-        <div data-aos="fade-up">
-          <button onclick="window.location.href='ourteam.html#software'" class="btn team-circle-pic pic13 head-font">SOFTWARE</button>
-          <button class="btn team-circle-pic pic14"></button>
-          <img id="pic15" src="./assets/graphic/logo-chim-collective.png">
-          <button onclick="window.location.href='ourteam.html'" class="btn team-circle-pic pic16">
-            <img src="assets/graphic/team-arrow.png" alt="">
-            <h5>See more</h5>
-          </button>
-        </div>
-      </div>
-
-      <div class="team-head">
         <div class="reveal-holder" data-aos="reveal-item">
           <hr class="head-hr">
           <div class="reveal-block left" data-aos="reveal-left"></div>
           <h1 class="head-1">TEAM</h1>
         </div>
-      </div>
 
+        <div class="clear"></div>
+        <div class="">
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Name</p>
+              <p class="card-text">Position</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+          <div class="card mb-4 team-card">
+            <svg class="bd-placeholder-img card-img-top" width="250" height="250">
+              <rect width="250" height="250" fill="#55595c" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+
+      </div>
+      <!--container-->
     </div>
+    <!--team-div-->
 
   </section>
 
   <!-- Contact -->
   <section id="contact">
+    <div class="contact-div">
+      <div class="container">
 
-    <hr class="contact-top" data-aos="fade-right">
+        <div class="row">
+          <div class="col-md-9">
+            <div data-aos="fade-up">
+              <div class="hjc-div">
+                <h1>Hire us.</h1>
+                <h1>Join us.</h1>
+                <h1>Collaborate with us.</h1>
+              </div>
 
-    <div class="contact-head">
-      <div class="reveal-holder" data-aos="reveal-item">
-        <hr class="head-hr">
-        <div class="reveal-block left" data-aos="reveal-left"></div>
-        <h1 class="head-1">CONTACT</h1>
-      </div>
-    </div>
-
-    <div class="contact-box" data-aos="fade-up">
-      <div class="row data-box">
-
-        <div class="hire-box col-md-5">
-          <form class="block form-horizontal">
-
-            <div>
-              <h3 class="head-2">Hire us,</h3>
-              <h3 class="head-2">Join us,</h3>
-              <h3 class="head-2">or collaborate</h3>
-              <h3 class="head-2">with us!</h3>
+              <div class="info-box">
+                <p>
+                <h1>hi@chimcollective.com</h1>
+                </p>
+              </div>
             </div>
+          </div>
 
-            <div class="info-box">
-              <p>
-                <i data-feather="mail"></i>
-                <label class="body-2">hi@chimcollective.com</label>
-              </p>
-
-              <!-- <p>
-                  <i data-feather="phone"></i>
-                  <label>(987) 654 3210</label>
-                </p> -->
+          <div class="col-md-3">
+            <div class="footer-div">
+              <a href="#home" class="footer-link">HOME</a><br>
+              <a href="#about" class="footer-link">ABOUT</a><br>
+              <a href="#work" class="footer-link">WORK</a><br>
+              <a href="#team" class="footer-link">TEAM</a><br>
+              <a href="#contact" class="footer-link">CONTACT US</a>
             </div>
-
-          </form>
-        </div>
-
-        <div class="input-box col-md-7">
-          <img class="dot-decor" src="assets/graphic/dot-yellow-2-10.png" alt="">
-          <form action="https://formspree.io/mooyong135@gmail.com" method="POST">
-            <div class="form-group">
-              <input type="text" class="form-control body-2" name="input-name" placeholder="Name">
-            </div>
-            <div class="form-group body-2">
-              <input type="email" class="form-control body-2" name="input-email" placeholder="Email">
-            </div>
-            <div class="form-group body-2">
-              <input type="text" class="form-control body-2" name="input-phone" placeholder="Phone Number">
-            </div>
-            <div class="form-group body-2">
-              <textarea class="form-control body-2" id="msg" name="input-msg" rows="3" placeholder="Message"></textarea>
-            </div>
-            <input type="submit" class="btn input-submit submit-btn head-font" value="Submit">
-          </form>
+          </div>
         </div>
 
       </div>
+      <!--container-->
     </div>
-
+    <!--contact-div-->
   </section>
 
   <!-- Buttom Bar -->
-  <div class="footer">
-    <div id="bottom-bar" class="head-font head-3">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#work">WORK</a>
-      <a href="ourteam.html#navigation-bar-team">TEAM</a>
-      <a href="#contact">CONTACT US</a>
-    </div>
+  <div class="container">
     <p class="copy-right">©2020 Chim</p>
   </div>
 
