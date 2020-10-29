@@ -5,15 +5,15 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <meta property="og:image" content="assets/graphic/logo-chim-collective-black.png" />
+  <meta property="og:image" content="assets/home-quote1.jpg" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chim Collective</title>
+  <title>CHiM COLLECTIVE</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <!-- Feather Font -->
+  <!-- Feather Icon -->
   <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Bootstrap core CSS -->
@@ -31,27 +31,24 @@
   <!-- Nevigation Bar Section -->
   <section id="navigation-bar">
 
-    <nav class="navbar navbar-expand navbar-light">
-
-      <a class="navbar-brand" href="#home">
-        <img src="assets/logo-chim-collective.png" width="180px" alt="" loading="lazy">
-      </a>
-
-      <div class="nav-menu">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-custom-color fixed-top">
+      <a class="navbar-brand" href="#home">CHiM COLLECTIVE</a>
+      <div class="d-flex justify-content-end">
+        <!-- <button class="hire-btn btn mr-3 head-font" type="button" name="button">HIRE US</button> -->
+        <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
+          <i data-feather="menu"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#home">HOME</a>
-            <a class="nav-link" href="#about">ABOUT</a>
-            <a class="nav-link" href="#work">WORK</a>
-            <a class="nav-link" href="#team">TEAM</a>
-            <button type="button" class="btn btn-warning nav-link">CONTACT US</button>
-          </div>
-        </div>
       </div>
 
+      <div class="collapse navbar-collapse" id="navbar-menus">
+        <ul class="navbar-nav mr-auto head-font" id="navbar-menu-list">
+          <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#about">ABOUT</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#works">WORKS</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#team">TEAM</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </nav>
 
   </section>
@@ -60,11 +57,11 @@
   <section id="home">
     <div class="container-fluid">
       <div id="carouselHomeSlide" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
           <li data-target="#carouselHomeSlide" data-slide-to="0" class="active"></li>
           <li data-target="#carouselHomeSlide" data-slide-to="1"></li>
           <li data-target="#carouselHomeSlide" data-slide-to="2"></li>
-        </ol>
+        </ol> -->
 
         <div class="carousel-inner">
           <div class="carousel-item active slide1" ata-interval="3000">
@@ -72,21 +69,18 @@
               <label class="">"The discovery of a new dish does more for human happiness than the discovery of a new star."</label>
               <label class="">"<i>Anthelme Brillat-Savarin"</i></label>
             </div>
-            <!-- <img src="assets/01.JPG" class="d-block w-100"> -->
           </div>
-
+          <!--
           <div class="carousel-item slide2" data-interval="3000">
             <div class="container">
               <label class="">We investigate the future of food through media and technology.</label>
             </div>
-            <!-- <img src="assets/02.JPG" class="d-block w-100"> -->
           </div>
 
           <div class="carousel-item slide3" data-interval="3000">
             <div class="container">
               <label class="">We accelerate innovation with the power of crowdsourcing and co-creation.</label>
             </div>
-            <!-- <img src="assets/03.JPG" class="d-block w-100"> -->
           </div>
         </div>
 
@@ -97,30 +91,36 @@
         <a class="carousel-control-next" href="#carouselHomeSlide" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-        </a>
+        </a> -->
+        </div>
       </div>
-    </div>
   </section>
 
   <!-- About -->
   <section id="about">
     <div class="about-div">
       <div class="container">
+        <div class="row">
 
-        <div class="reveal-holder" data-aos="reveal-item">
-          <hr class="head-hr">
-          <div class="reveal-block left" data-aos="reveal-left"></div>
-          <h1>ABOUT</h1>
+          <h1>- ABOUT -</h1>
+
+          <div class="about-des col-12">
+            <label class="body3">Chim Collective is a collaborative incubation program,
+              run by Chim Media Inc, designed to be a lab & studio for students,
+              fresh graudates, professionals, and entrepreneurs to collaborate
+              and manipulate food+tech as their medium.</label>
+
+            <label class="body2">With the spirit of constant experimentation, we investigate and accelerate the
+              future of food through art, design, science, and technology. We promote
+              knowledge and research in the food biz ecosystem and encourage everyone in
+              the value chain to innovate with the power of crowdsourcing and collaboration.</label>
+
+            <label class="body1">We help food entrepreneurs create new products, services, brands, and
+              ventures.</label>
+          </div>
+
         </div>
-
-        <div class="about-des">
-          <label class="body1" data-aos="fade-up">Chim Collective is a collaborative program run by visionaries in food, media, and technology, facilitated
-            by Chim Media Inc. With the spirit of constant experimentation and open innovation, we investigate the
-            future of food through virtual platforms. As media, we promote knowledge and innovation in the food biz
-            ecosystem. As a marketing agency, we help connect everyone in the food value chain through the power of
-            creativity.</label>
-        </div>
-
+        <!-- row -->
       </div>
       <!--container-->
     </div>
@@ -128,7 +128,7 @@
   </section>
 
   <!-- Works -->
-  <section id="work">
+  <!-- <section id="work">
     <div class="work-div">
       <div class="container">
 
@@ -151,9 +151,9 @@
 
         <div class="work-footer-div">
           <div class="work-ver-line"></div>
-          <a class="work-foot-menu" href="#des1">ChimNYC.com</a>
-          <div class="work-ver-line"></div>
-          <!-- <a class="work-foot-menu">ChimNYC.com</a>
+          <a class="work-foot-menu" href="#des1"> ChimNYC.com </a>
+          <div class="work-ver-line"></div> -->
+  <!-- <a class="work-foot-menu">ChimNYC.com</a>
       <div class="work-ver-line"></div>
       <a class="work-foot-menu">ChimNYC.com</a>
       <div class="work-ver-line"></div>
@@ -161,52 +161,31 @@
       <div class="work-ver-line"></div>
       <a class="work-foot-menu">ChimNYC.com</a>
       <div class="work-ver-line"></div> -->
-        </div>
+  <!-- </div> -->
 
-      </div>
-      <!--container-->
-    </div>
-    <!--work-div-->
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="contact-div">
-      <div class="container">
-
-        <div class="reveal-holder" data-aos="reveal-item">
-          <hr class="head-hr">
-          <div class="reveal-block left" data-aos="reveal-left"></div>
-          <h1 class="head-1">CONTACT</h1>
-        </div>
-
-        <div class="info-box">
-          <h1>hi@chimcollective.com</h1>
-        </div>
-      </div>
-
-    </div>
-    <!--container-->
-    </div>
-    <!--contact-div-->
-  </section>
+  <!-- </div> -->
+  <!--container-->
+  <!-- </div> -->
+  <!--work-div-->
+  <!-- </section> -->
 
   <!-- Team -->
   <section id="team">
     <div class="team-div">
       <div class="container">
 
-        <div class="reveal-holder" data-aos="reveal-item">
-          <hr class="head-hr">
-          <div class="reveal-block left" data-aos="reveal-left"></div>
-          <h1 class="head-1">TEAM</h1>
-        </div>
+        <h1 class="head-1">- TEAM -</h1>
 
         <div class="clear"></div>
         <div class="">
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
               <p class="card-text">Name</p>
@@ -216,100 +195,177 @@
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
 
           <div class="card mb-4 team-card">
             <svg class="bd-placeholder-img card-img-top" width="250" height="250">
-              <rect width="250" height="250" fill="#55595c" />
+              <defs>
+                <pattern id="imgpattern" x="0" y="0" width="1" height="1" viewBox="0 0 1024 576" preserveAspectRatio="xMidYMid slice">
+                  <image width="1024" height="576" xlink:href="https://www.warrenphotographic.co.uk/photography/bigs/43474-Adult-Pug-portrait.jpg" />
+                </pattern>
+              </defs>
+              <rect width="250" height="250" fill="url(#imgpattern)" />
             </svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Name:</p>
+              <p>Position:</p>
+              </p>
             </div>
           </div>
         </div>
@@ -327,42 +383,36 @@
     <div class="contact-div">
       <div class="container">
 
+        <h1 class="head-1">- CONTACT -</h1>
+
         <div class="row">
-          <div class="col-md-9">
-            <div data-aos="fade-up">
-              <div class="hjc-div">
-                <h1>Hire us.</h1>
-                <h1>Join us.</h1>
-                <h1>Collaborate with us.</h1>
-              </div>
-
-              <div class="info-box">
-                <p>
-                <h1>hi@chimcollective.com</h1>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="footer-div">
-              <a href="#home" class="footer-link">HOME</a><br>
-              <a href="#about" class="footer-link">ABOUT</a><br>
-              <a href="#work" class="footer-link">WORK</a><br>
-              <a href="#team" class="footer-link">TEAM</a><br>
-              <a href="#contact" class="footer-link">CONTACT US</a>
+          <div class="col-12">
+            <div class="hjc-div">
+              <h1>Hire us.</h1>
+              <h1>Join us.</h1>
+              <h1>Collaborate with us.</h1>
+              <h1>hi@chimcollective.com</h1>
             </div>
           </div>
         </div>
 
       </div>
-      <!--container-->
+
+    </div>
+    <!--container-->
     </div>
     <!--contact-div-->
   </section>
 
   <!-- Buttom Bar -->
   <div class="container">
+    <div class="footer-div">
+      <a href="#home" class="footer-link">HOME</a><br>
+      <a href="#about" class="footer-link">ABOUT</a><br>
+      <a href="#work" class="footer-link">WORK</a><br>
+      <a href="#team" class="footer-link">TEAM</a><br>
+      <a href="#contact" class="footer-link">CONTACT US</a>
+    </div>
     <p class="copy-right">©2020 Chim</p>
   </div>
 
