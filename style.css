@@ -136,55 +136,28 @@ body, .b1, .b2, .b3 {
 
 /* HOME */
 .carousel-item {
-  height: 900px;
-  margin-bottom: 5%;
+  height: 100%;
+  margin: 10% 0;
 }
 
-.quote1-text {
-  position: absolute;
-  margin-right: 66%;
-  top: 35%;
-  left: 12%;
+.quote1-div {
+  padding: 20% 0;
+  text-align: right;
+  width: 320px;
 }
 
-.quote1-name {
-  position: absolute;
-  left: 20.7%;
-  top: 48%;
-}
-
-.slide1, .slide2, .slide3 {
-  position: relative;
+.quote1-text-div {
+  text-align: left;
 }
 
 .slide1 {
-  border-top: 120px solid black;
-  border-left: 210px solid black;
-  border-right: 210px solid black;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 1)), url('assets/section-images/home-quote1.jpg');
-  background-size: cover;
+  background-position: right;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* .slide2 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('assets/home-quote2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffff;
-  font-size: 2.5vw;
-} */
-/* .slide3 {
-  background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('assets/home-quote3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffff;
-  font-size: 2.5vw;
-} */
-/* .quote1 {
-  width: 60%;
-} */
 /* ABOUT */
 .about-img {
   background: url('assets/section-images/about-bg.jpg');
@@ -269,36 +242,30 @@ body, .b1, .b2, .b3 {
 } */
 /* TEAM */
 .team-div {
-  border-left: 210px solid #000;
-  border-right: 210px solid #000;
   background: url('assets/section-images/team-bg.jpg');
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 2500px;
+  height: 200%;
 }
 
-.card {
+#team .card {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
   border-radius: 0;
-  width: 300px;
-  margin: auto 3%;
 }
 
-.card-body {
+#team .card-body {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 60px;
 }
 
-.card-img-top {
+#team .card-img-top {
   border-radius: 0;
-  width: 300px;
-  height: 300px;
 }
 
-.card-text {
+#team .card-text {
   margin-bottom: 0;
   font-size: 20px;
 }
@@ -354,196 +321,20 @@ body, .b1, .b2, .b3 {
 @media (max-width: 1440px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (max-width: 1200px) {
-
-  /* HOME */
-  .carousel-item {
-    height: 700px;
-  }
-
-  .quote1-text {
-    position: absolute;
-    margin-right: 58%;
-  }
-
-  .quote1-name {
-    left: 23.6%;
-    top: 50%;
-  }
-
-  .slide1 {
-    border-top: 120px solid black;
-    border-left: 50px solid black;
-    border-right: 50px solid black;
-    background-size: 100%;
-  }
-
-  /* TEAM */
-  .team-div {
-    border-left: 50px solid #000;
-    border-right: 50px solid #000;
-    height: 2500px;
-  }
-
-  .card {
-    width: 290px;
-  }
-
-  .card-img-top {
-    width: 290px;
-    height: 290px;
-  }
-
-  .card-text {
-    font-size: 17px;
-  }
-}
+@media (max-width: 1200px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media (max-width: 992px) {
-  .section-div{
-    margin-bottom: 10%;
-  }
-
-  /* HOME */
-  .carousel-item {
-    height: 650px;
-  }
-
-  .about-img {
-    background-position: bottom;
-    height: 800px;
-  }
-
-  /* TEAM */
-  .team-div{
-    height: 2000px;
-  }
-  .card {
-    width: 235px;
-  }
-
-  .card-img-top {
-    width: 235px;
-    height: 235px;
-  }
-
-  .card-text {
-    font-size: 17px;
-  }
-}
+@media (max-width: 992px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media (max-width: 768px) {
-  .navbar-brand>img {
-    width: 150px;
-  }
-
-  .carousel-inner {
-    height: 300px;
-  }
-
-  .slide1, .slide2, .slide3 {
-    background-size: contain;
-  }
-
-  /* About */
-  .reveal-holder h1 {
-    font-size: 18px;
-  }
-
-  .b1 {
-    font-size: 16px;
-  }
-
-  .about-des {
-    text-indent: 0.5rem;
-    margin: 20px auto 50px;
-  }
-}
+@media (max-width: 768px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media (max-width: 567px) {
-
-  /* Navbar */
-  .navbar-brand>img {
-    width: 100px;
-  }
-
-  .carousel-inner {
-    height: 300px;
-  }
-
-  .slide1, .slide2, .slide3 {
-    background-size: contain;
-  }
-
-<<<<<<< HEAD
-  /* About */
-  .reveal-holder h1 {
-    font-size: 24px;
-  }
-=======
-#contactTwo {
-  background: url(assets/contact2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 20% 10%;
-  color: #fff;
-}
-
-/************************************************************************************************************************************************************/
-/* Head Reveal */
-/* Source: https://medium.com/@kathykato/creating-reveal-effects-on-scroll-9cb04b39c9a5 */
-.reveal-holder {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-}
->>>>>>> cc9478508d6ab18a36bd73cfdb9ae28cce16300c
-
-  .b1 {
-    font-size: 18px;
-  }
-
-  .about-des {
-    text-indent: 1.5rem;
-    margin: 20px 10px 50px;
-  }
-}
+@media (max-width: 567px) {}
 
 /* Extra small devices (phones, 600px and down) */
-@media (max-width: 320px) {
+@media (max-width: 320px) {}
 
-  /* Navbar */
-  .navbar-brand>img {
-    width: 80px;
-  }
-
-  .carousel-inner {
-    height: 200px;
-  }
-
-  .slide1, .slide2, .slide3 {
-    background-size: contain;
-  }
-
-  /* About */
-  .reveal-holder h1 {
-    font-size: 24px;
-  }
-
-  .b1 {
-    font-size: 16px;
-  }
-
-  .about-des {
-    text-indent: 0.5rem;
-    margin: 20px auto 50px;
-  }
-}
-
-<<<<<<< HEAD
 /************************************************************************************************************************************************************/
 /* Head Reveal */
 /* Source: https://medium.com/@kathykato/creating-reveal-effects-on-scroll-9cb04b39c9a5 */
@@ -604,106 +395,3 @@ body, .b1, .b2, .b3 {
     visibility: visible;
   }
   */
-=======
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 320px) {
-
-  /* Navbar */
-  .navbar-brand>img {
-    width: 80px;
-  }
-
-  .carousel-inner {
-    height: 200px;
-  }
-
-  .slide1, .slide2, .slide3 {
-    background-size: contain;
-  }
-
-  /* About */
-  .reveal-holder h1 {
-    font-size: 24px;
-  }
-
-  .body1 {
-    font-size: 16px;
-  }
-
-  .about-des {
-    text-indent: 0.5rem;
-    margin: 20px auto 50px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 321px) and (max-width: 567px) {
-
-  /* Navbar */
-  .navbar-brand>img {
-    width: 100px;
-  }
-
-  .carousel-inner {
-    height: 300px;
-  }
-
-  .slide1, .slide2, .slide3 {
-    background-size: contain;
-  }
-
-  /* About */
-  .reveal-holder h1 {
-    font-size: 24px;
-  }
-
-  .body1 {
-    font-size: 18px;
-  }
-
-  .about-des {
-    text-indent: 1.5rem;
-    margin: 20px 10px 50px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 568px) and (max-width: 768px) {
-  .navbar-brand>img {
-    width: 150px;
-  }
-
-  .carousel-inner {
-    height: 300px;
-  }
-
-  .slide1, .slide2, .slide3 {
-    background-size: contain;
-  }
-
-  /* About */
-  .reveal-holder h1 {
-    font-size: 18px;
-  }
-
-  .body1 {
-    font-size: 16px;
-  }
-
-  .about-des {
-    text-indent: 0.5rem;
-    margin: 20px auto 50px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  #about {
-    background-position: top;
-    color: pink;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
->>>>>>> cc9478508d6ab18a36bd73cfdb9ae28cce16300c
