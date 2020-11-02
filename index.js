@@ -24,8 +24,3 @@ $(".navbar-toggler").click(function() {
 $(".navbar-nav>li>a").on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });
-
-// navbar collapse when click any anywhere on the dropdown
-$("#navbar-menus").on("click", function() {
-  $(".navbar-collapse").collapse("hide");
-});
