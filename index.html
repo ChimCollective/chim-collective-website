@@ -29,29 +29,23 @@
 <body>
 
   <!-- Nevigation Bar Section -->
-  <section id="navigation-bar">
+  <nav class="navbar navbar-custom-color fixed-top">
+    <a class="navbar-brand" href="#home">CHiM COLLECTIVE</a>
+    <div class="d-flex justify-content-end">
+      <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
 
-    <nav class="navbar navbar-custom-color fixed-top">
-      <a class="navbar-brand" href="#home">CHiM COLLECTIVE</a>
-      <div class="d-flex justify-content-end">
-        <!-- <button class="hire-btn btn mr-3 head-font" type="button" name="button">HIRE US</button> -->
-        <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbar-menus" aria-controls="navbar-menus" aria-expanded="false" aria-label="Toggle navigation">
-          <i data-feather="menu"></i>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbar-menus">
-        <ul class="navbar-nav mr-auto head-font" id="navbar-menu-list">
-          <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
-          <li class="nav-item active"><a class="nav-link" href="#about">ABOUT</a></li>
-          <!--<li class="nav-item active"><a class="nav-link" href="#works">WORK</a></li>-->
-          <li class="nav-item active"><a class="nav-link" href="#team">TEAM</a></li>
-          <li class="nav-item active"><a class="nav-link" href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav>
-
-  </section>
+    <div class="collapse navbar-collapse" id="navbar-menus">
+      <ul class="navbar-nav mr-auto head-font" id="navbar-menu-list">
+        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#about">ABOUT</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#team">TEAM</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Home -->
   <section id="home">
@@ -345,6 +339,11 @@
     </div>
   </div>
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <!-- Our Javascript -->
+  <script src="index.js" charset="utf-8"></script>
 
   <!-- AOS Scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -365,11 +364,6 @@
     feather.replace()
   </script>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-  <!-- Our Javascript -->
-  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
