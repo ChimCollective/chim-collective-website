@@ -38,6 +38,10 @@ body, .b1, .b2, .b3 {
   line-height: 1.5;
 }
 
+.bold {
+  font-weight: 500;
+}
+
 .b1 {
   font-size: 24px;
 }
@@ -262,19 +266,10 @@ body, .b1, .b2, .b3 {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 15%;
-  text-align: center;
 }
 
 #team .card-img-top {
-  border-radius: 50%;
-  filter: grayscale(100%);
-  transition: .7s;
-  cursor: pointer;
-}
-
-#team .card-img-top:hover {
-  filter: none;
-  transition: .7s;
+  border-radius: 0;
 }
 
 #team .card-text {
@@ -282,6 +277,10 @@ body, .b1, .b2, .b3 {
 }
 
 /* CONTACT */
+.section-div.contact-div {
+  margin-bottom: 0;
+}
+
 .contact-div {
   background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -302,7 +301,7 @@ body, .b1, .b2, .b3 {
 }
 
 /* FOOTER */
-.footer-div {
+/* .footer-div {
   margin-top: 50px;
   text-align: center;
 }
@@ -320,8 +319,7 @@ body, .b1, .b2, .b3 {
 
 .footer-link:hover {
   color: #fff;
-}
-
+} */
 @media (max-width: 1700px) {
 
   /* ABOUT */
