@@ -8,12 +8,9 @@ $(window).on("click", function() {
   $(".navbar-collapse").collapse("hide");
 });
 
+// hover bw to cl team img
 $(".card-img-top").hover(function() {
-  let imgNameBw = $(this).attr('src');
-  let imgNameCl = imgNameBw.replace("bw/bw-", "cl/");
-  $(this).attr('src', imgNameCl);
+  $(this).attr('src', $(this).attr('src').replace("bw/bw-", "cl/"));
 }, function() {
-  let imgNameCl = $(this).attr('src');
-  let imgNameBw = imgNameCl.replace("cl/", "bw/bw-");
-  $(this).attr('src', imgNameBw);
+  $(this).attr('src', $(this).attr('src').replace("cl/", "bw/bw-"));
 });
