@@ -245,12 +245,12 @@ body, .b1, .b2, .b3 {
   width: 3px;
 } */
 /* TEAM */
-.team-div {
+/* .team-div {
   background: url('assets/section-images/team-bg.jpg');
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
-}
+} */
 
 .team-cards-div {
   padding-bottom: 20%;
