@@ -148,7 +148,7 @@ body, .b1, .b2, .b3 {
 
 .quote1-div {
   margin-left: 20%;
-  padding: 13% 0;
+  padding: 16% 0;
   text-align: right;
   width: 320px;
 }
@@ -159,7 +159,7 @@ body, .b1, .b2, .b3 {
 
 .slide1 {
   background: url('assets/section-images/home-quote1.jpg');
-  background-position: right top;
+  background-position: right bottom;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -384,7 +384,8 @@ body, .b1, .b2, .b3 {
 
   /* HOME */
   .quote1-div {
-    padding: 17% 0;
+    margin: 0 auto 45%;
+    padding: 4% 0 0;
     width: 228px;
   }
 
@@ -445,13 +446,13 @@ body, .b1, .b2, .b3 {
   }
 
   /* HOME */
-  .carousel-item {
-    margin: 11% 0 0;
+  .quote1-div {
+    margin: 0 auto 65%;
+    padding: 3% 0 0;
   }
 
-  .quote1-div {
-    margin: 42% auto 0;
-    padding-bottom: 3%;
+  .carousel-item {
+    margin: 11% 0 0;
   }
 
   .slide1 {
@@ -528,11 +529,12 @@ body, .b1, .b2, .b3 {
 
   /* HOME */
   .carousel-item {
-    margin: 40% 0 0;
+    margin: 30% 0 0;
   }
 
   .quote1-div {
-    margin: 60% auto 0;
+    margin: 0 auto 75%;
+    padding: 0;
   }
 
   .slide1 {
