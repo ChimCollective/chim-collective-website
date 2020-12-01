@@ -245,12 +245,16 @@ body, .b1, .b2, .b3 {
   width: 3px;
 } */
 /* TEAM */
-/* .team-div {
-  background: url('assets/section-images/team-bg.jpg');
-  background-position: bottom;
+.team-div {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1),
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 1)), url('assets/section-images/team-bg.jpg');
+  background-position: center top;
   background-size: 100%;
-  background-repeat: no-repeat;
-} */
+  background-repeat: repeat-y;
+}
 
 .team-cards-div {
   padding-bottom: 20%;
@@ -263,9 +267,10 @@ body, .b1, .b2, .b3 {
 }
 
 #team .card-body {
+  background-color: rgba(0, 0, 0, .7);
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 15%;
+  margin-bottom: 15%;
 }
 
 #team .card-img-top {
@@ -282,9 +287,11 @@ body, .b1, .b2, .b3 {
 }
 
 .contact-div {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url('assets/section-images/contact-bg.jpg');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1),
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  url('assets/section-images/contact-bg.jpg');
   background-position: top right;
   background-size: 60%;
   background-repeat: no-repeat;
