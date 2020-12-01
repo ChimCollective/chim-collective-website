@@ -267,7 +267,6 @@ body, .b1, .b2, .b3 {
 }
 
 #team .card-body {
-  background-color: rgba(0, 0, 0, .7);
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 15%;
