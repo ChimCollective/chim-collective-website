@@ -10,7 +10,9 @@ $(window).on("click", function() {
 
 // hover bw to cl team img
 $(".card-img-top").hover(function() {
-  $(this).attr('src', $(this).attr('src').replace("bw/bw-", "cl/"));
+  $(this).attr('src', $(this).attr('src').replace("current/bw-", "current/"));
+  $(this).attr('src', $(this).attr('src').replace("former/bw-", "former/"));
 }, function() {
-  $(this).attr('src', $(this).attr('src').replace("cl/", "bw/bw-"));
+  $(this).attr('src', $(this).attr('src').replace("current/", "current/bw-"));
+  $(this).attr('src', $(this).attr('src').replace("former/", "former/bw-"));
 });
