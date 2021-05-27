@@ -54,6 +54,10 @@ body, .b1, .b2, .b3 {
   font-size: 18px;
 }
 
+.b4 {
+  font-size: 15px;
+}
+
 .section-div {
   margin-bottom: 6%;
 }
@@ -186,98 +190,46 @@ body, .b1, .b2, .b3 {
 }
 
 /* WORK */
-/* .work-div {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),
-  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url(public/work.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.reveal-holder > h1 {
-  color: #ffff;
-}
-.work-footer-div > a {
-  color: #ffff;
-}
-
-.work-des-div {
-  background-color: #fff;
-  padding: 60px;
-  margin-top: 50px;
-}
-
-.work-des-div h2 span {
-  margin-right: 5%;
-}
-
-.work-des-hr {
-  border-color: #000;
-  border-width: 3px;
-}
-
-.work-des-div label {
-  text-indent: 3rem;
-}
-
-.work-footer-div {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin-top: 80px;
-}
-
-.work-foot-menu {
-  font-family: Montserrat;
-  font-size: 1.3rem;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #000;
-}
-
-.work-foot-menu:hover {
-  text-decoration: none;
-  color: #ffcd32;
-}
-
-.work-ver-line {
-  background-color: #000;
-  height: 45px;
-  width: 3px;
-} */
 /* TEAM */
 .team-div {
   background: linear-gradient(180deg, rgba(0, 0, 0, 1),
-  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
-  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
-  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
-  rgba(0, 0, 0, 1)), url('assets/section-images/team-bg2.jpg');
+      rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)), url('assets/section-images/team-bg2.jpg');
   background-position: center top;
   background-size: 100%;
   background-repeat: repeat-y;
 }
 
 .team-cards-div {
-  padding-bottom: 20%;
+  padding-bottom: 5%;
 }
 
-#team .card {
+#work .card, #team .card {
   background-color: rgba(0, 0, 0, 0);
   border: 0;
   border-radius: 0;
 }
 
-#team .card-body {
+#work .card-body, #team .card-body {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 15%;
 }
 
-#team .card-img-top {
+#work .card-img-top, #team .card-img-top {
   border-radius: 0;
 }
 
-#team .card-text {
+#work .card-text, #team .card-text {
   margin-bottom: 0;
+}
+
+/* WORK */
+.work-title a {
+  color: #fff !important;
+  font-weight: bold;
 }
 
 /* CONTACT */
@@ -287,10 +239,10 @@ body, .b1, .b2, .b3 {
 
 .contact-div {
   background: linear-gradient(180deg, rgba(0, 0, 0, 1),
-  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
-  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
-  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-  url('assets/section-images/contact-bg.jpg');
+      rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url('assets/section-images/contact-bg.jpg');
   background-position: top right;
   background-size: 60%;
   background-repeat: no-repeat;
